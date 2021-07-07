@@ -42,7 +42,7 @@ const Jobs = ({ jobs }) => {
                         <div className="job-middle-section">
                         <img width="35" height="35" src={job.node.logo.publicURL}/>
                         <span className="title-mobile">{job.node.title}</span>
-                        <span className="date-mobile">{"Posted " + monthNames[dt.getMonth()] + ' '+ dt.getDate()}</span>
+                        <span className="date-mobile">Featured</span>
                         </div>
                         <br></br>
                         <span className="location-company-mobile">{job.node.location}</span>
@@ -136,7 +136,7 @@ const Jobs = ({ jobs }) => {
                         <div className="job-middle-section">
                         <img width="35" height="35" src={job.node.logo.publicURL}/>
                         <span className="title">{job.node.title}</span>
-                        <span className="date">{"Posted " + monthNames[dt.getMonth()] + ' '+ dt.getDate()}</span>
+                        <span className="date">Featured</span>
                         </div>
                         <br></br>
                         <span className="location company">{job.node.location}</span>
