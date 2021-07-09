@@ -11,7 +11,7 @@ const JobsPage = () => {
   
   const seo = {
     metaTitle: "NWA Daily Job Board",
-    metaDescription: "Find cool jobs in Northwest Arkansas",
+    metaDescription: "Find cool jobs in Northwest Arkansas from small businesses, startups, and corporations in Bentonville, Fayetteville, Springdale, Rogers, and more",
     shareImage: data.strapiHomepage.seo.shareImage,
   };
   return (
