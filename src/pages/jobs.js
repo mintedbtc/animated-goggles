@@ -133,7 +133,7 @@ class JobsPage extends React.Component {
       console.log(postId)
       }
     else {
-        postId = 'regular'
+        postId = 'jobs-fayetteville-chamber'
         console.log(postId)
       }
     if (this.state.email !== "") {
