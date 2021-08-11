@@ -51,7 +51,7 @@ const query = graphql`
       }
     }
     allStrapiEdition(sort: {order: DESC, fields: date},
-      filter: {writer: {id: {eq: 1}}}) {
+      filter: {writer: {id: {eq: 2}}}) {
       edges {
         node {
           strapiId
