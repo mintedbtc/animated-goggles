@@ -91,7 +91,25 @@ a {
       width: 70%;
   }
 
+  li.event {
+    font-size: 1.2rem;
+      padding: 18px 10px 18px 10px;
+      border: 1px solid rgba(144,146,148,0.2);
+      position: relative;
+      margin:auto;
+      width: 70%;
+  }
+
   li.mobile-job {
+    font-size: 1.2rem;
+      padding: 18px 10px 18px 10px;
+      border: 1px solid rgba(144,146,148,0.2);
+      position: relative;
+      margin:auto;
+      width: 100%;
+  }
+
+  li.mobile-event {
     font-size: 1.2rem;
       padding: 18px 10px 18px 10px;
       border: 1px solid rgba(144,146,148,0.2);
@@ -106,7 +124,19 @@ a {
     margin-top:20px;
   }
 
+  h2.event-header {
+    text-align: center;
+    margin-bottom:2px;
+    margin-top:20px;
+  }
+
   a.job {
+    display: block;
+    text-decoration: none !important;
+    border-bottom-style: none !important;
+  }
+
+  a.event {
     display: block;
     text-decoration: none !important;
     border-bottom-style: none !important;
@@ -116,10 +146,22 @@ a {
     display:inline-block; 
     width:100%;
   }
+
+  div.event-middle-section-mobile {
+    display:inline-block; 
+    width:100%;
+  }
+
   div.job-middle-section {
     display:inline-block; 
     width:100%;
   }
+
+  div.event-middle-section {
+    display:inline-block; 
+    width:100%;
+  }
+  
 span.title {
   color: #212529;
     font-family: "Neufile Grotesk Semi Bold", sans-serif;
@@ -269,6 +311,21 @@ span.location-company-mobile {
       font-size: 14px;
       border-radius: 24px;
   }
+
+  .event-post-button {
+    height: 48px;
+      background-color: hsl(165, 43%, 33%) !important;
+      display: inline;
+      color: white;
+      
+      margin: 0;
+      margin-top: 25px;
+      width: 220px;
+      padding: 0 20px;
+      text-transform: uppercase;
+      font-size: 14px;
+      border-radius: 24px;
+  }
   
   .job-post-button:hover {
     opacity: 0.9;
@@ -279,6 +336,19 @@ span.location-company-mobile {
     border-color: #307765;
   }
 
+  .event-post-button:hover {
+    opacity: 0.9;
+    outline: #307765;
+    cursor: pointer;
+    background-color: #307765;
+    color: white;
+    border-color: #307765;
+  }
+
   div.job-head {
+    text-align: center;
+  }
+
+  div.event-head {
     text-align: center;
   }
