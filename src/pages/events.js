@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, graphql, useStaticQuery, StaticQuery } from "gatsby";
 import Layout from "../components/layout";
-import JobsComponent from "../components/jobs";
+import EventsComponent from "../components/events";
 import "../assets/css/main.css";
 import { useBreakpoint } from 'gatsby-plugin-breakpoints';
 import { withBreakpoints } from 'gatsby-plugin-breakpoints';
@@ -14,7 +14,7 @@ import Close from "@material-ui/icons/Close";
 
 const email = ""
 
-class JobsPage extends React.Component {
+class EventsPage extends React.Component {
   constructor(props) {
     super(props);
     this.emailRef = React.createRef();
@@ -220,17 +220,17 @@ render() {
                                     }
                                   }
                                 }
-                                allStrapiJob(sort: {order: DESC, fields: published_at}) {
+                                allStrapiEvent(sort: {order: DESC, fields: published_at}) {
                                   edges {
                                     node {
                                       strapiId
                                       slug
                                       published_at
                                       description
-                                      title
+                                      name
                                       type
-                                      applicationLink
-                                      logo {
+                                      eventLink
+                                      photo {
                                         publicURL
                                       }
                                       location
@@ -243,12 +243,12 @@ render() {
                               render={data => (
                                 <Layout seo={data.strapiHomepage.seo}>
 
-{/* const JobsPage = () => {
+{/* const EventsPage = () => {
   const data = useStaticQuery(query);
   const breakpoints = useBreakpoint()
   
   const seo = {
-    metaTitle: "NWA Daily Job Board",
+    metaTitle: "NWA Daily Event Board",
     metaDescription: "Find cool jobs in Northwest Arkansas from small businesses, startups, and corporations in Bentonville, Fayetteville, Springdale, Rogers, and more",
     shareImage: data.strapiHomepage.seo.shareImage,
   };
@@ -367,14 +367,14 @@ render() {
       </a>
       </div>
 
-{data.allStrapiJob.edges.length > 0 ?
+{data.allStrapiEvent.edges.length > 0 ?
 (breakpoints.sm ? 
 (
 <div className="uk-section">
       {/* <h1 className="uk-text-center">{data.strapiHomepage.hero.title}</h1> */}
         <div className="uk-container uk-container-large" >
 
-          <JobsComponent jobs={data.allStrapiJob.edges} />
+          <EventsComponent jobs={data.allStrapiEvent.edges} />
         
         </div>
       </div>
@@ -385,7 +385,7 @@ render() {
       {/* <h1 className="uk-text-center">{data.strapiHomepage.hero.title}</h1> */}
         <div className="uk-container uk-container-large" >
         
-          <JobsComponent jobs={data.allStrapiJob.edges} />
+          <EventsComponent jobs={data.allStrapiEvent.edges} />
         
         </div>
       </div>
@@ -420,4 +420,4 @@ render() {
 }
 
 
-export default withBreakpoints(JobsPage);
+export default withBreakpoints(EventsPage);
