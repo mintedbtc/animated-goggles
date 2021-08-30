@@ -16,7 +16,7 @@ const Events = ({ events }) => {
     (
       
       <ul className="uk-list uk-list-divider uk-width-8-8">
-           {events.map((event, i) => {
+           {/* {events.map((event, i) => {
             let dt = new Date(event.node.published_at)
             const monthNames = ["January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December"
@@ -102,7 +102,7 @@ const Events = ({ events }) => {
         }
       })
           
-    }
+    } */}
       
       </ul>
     )
@@ -110,7 +110,7 @@ const Events = ({ events }) => {
     (
       
         <ul className="uk-list uk-list-divider uk-width-8-8">
-          {events.map((event, i) => {
+          {/* {events.map((event, i) => {
             let dt = new Date(event.node.published_at)
             const monthNames = ["January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December"
@@ -196,7 +196,7 @@ const Events = ({ events }) => {
         }
       })
           
-    }
+    } */}
         
           </ul>
     )}

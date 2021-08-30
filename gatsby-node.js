@@ -133,17 +133,17 @@ exports.createPages = async ({ graphql, actions }) => {
     });
 
 
-  // const EventTemplate = require.resolve("./src/templates/event.js");
+  const EventTemplate = require.resolve("./src/templates/event.js");
   
-  //   events.forEach((event, index) => {
-  //     createPage({
-  //       path: `/event/${event.node.slug}`,
-  //       component: EventTemplate,
-  //       context: {
-  //         slug: event.node.slug,
-  //       },
-  //     });
-  //   });
+    events.forEach((event, index) => {
+      createPage({
+        path: `/event/${event.node.slug}`,
+        component: EventTemplate,
+        context: {
+          slug: event.node.slug,
+        },
+      });
+    });
 
   };
   
