@@ -33,7 +33,7 @@ const Event = ({ data }) => {
   
   const seo = {
     metaTitle: event.title,
-    metaDescription: event.slug,
+    metaDescription: event.description,
     shareImage: event.image,
     event: true,
   };
