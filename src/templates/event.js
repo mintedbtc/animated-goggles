@@ -32,7 +32,7 @@ const Event = ({ data }) => {
   const event = data.strapiEvent;
   
   const seo = {
-    metaTitle: event.title,
+    metaTitle: event.name,
     metaDescription: event.description,
     shareImage: event.image,
     event: true,
