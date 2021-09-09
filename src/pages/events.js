@@ -229,6 +229,7 @@ render() {
                                       description
                                       name
                                       type
+                                      date
                                       eventLink
                                       photo {
                                         publicURL
@@ -360,11 +361,11 @@ render() {
             </DialogContent>
       </Dialog>
       <div className="job-head">
-      <h2 className="job-header">Browse cool jobs in NWA</h2>
-      <a href="/jobpost">
+      <h2 className="job-header">Browse upcoming events in Northwest Arkansas</h2>
+      {/* <a href="/jobpost">
       <button className="job-post-button"
-              >Post a job</button>
-      </a>
+              >Post an event</button>
+      </a> */}
       </div>
 
 {data.allStrapiEvent.edges.length > 0 ?
@@ -374,7 +375,7 @@ render() {
       {/* <h1 className="uk-text-center">{data.strapiHomepage.hero.title}</h1> */}
         <div className="uk-container uk-container-large" >
 
-          <EventsComponent jobs={data.allStrapiEvent.edges} />
+          <EventsComponent events={data.allStrapiEvent.edges} />
         
         </div>
       </div>
@@ -385,7 +386,7 @@ render() {
       {/* <h1 className="uk-text-center">{data.strapiHomepage.hero.title}</h1> */}
         <div className="uk-container uk-container-large" >
         
-          <EventsComponent jobs={data.allStrapiEvent.edges} />
+          <EventsComponent events={data.allStrapiEvent.edges} />
         
         </div>
       </div>

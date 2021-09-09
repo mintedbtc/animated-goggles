@@ -16,8 +16,8 @@ const Events = ({ events }) => {
     (
       
       <ul className="uk-list uk-list-divider uk-width-8-8">
-           {/* {events.map((event, i) => {
-            let dt = new Date(event.node.published_at)
+           {events.map((event, i) => {
+            let dt = new Date(event.node.date)
             const monthNames = ["January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December"
           ];
@@ -32,7 +32,7 @@ const Events = ({ events }) => {
                 
                    <a
                       className="event-mobile"
-                      href={'/events/'+event.node.slug}
+                      href={'/event/'+event.node.slug}
                       // state={{ postId: post.id }}
                       >
                        
@@ -40,7 +40,7 @@ const Events = ({ events }) => {
                         <span className="company-mobile">{event.node.organization}</span>
                         <br></br>
                         <div className="event-middle-section">
-                        <img width="35" height="35" src={event.node.logo.publicURL}/>
+                        <img width="35" height="35" src={event.node.photo.publicURL}/>
                         <span className="title-mobile">{event.node.title}</span>
                         <span className="date-mobile">Featured</span>
                         </div>
@@ -60,11 +60,12 @@ const Events = ({ events }) => {
         }
 
         {events.map((event, i) => {
-            let dt = new Date(event.node.published_at)
+            let dt = new Date(event.node.date)
             const monthNames = ["January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December"
           ];
-        if (event.node.type !== 'Featured') {
+          let today = new Date();
+        if (event.node.type !== 'Featured' && dt >= today) {
             
             return (
               // <Card
@@ -76,20 +77,21 @@ const Events = ({ events }) => {
                 
                    <a
                       className="event-mobile"
-                      href={'/events/'+event.node.slug}
+                      href={'/event/'+event.node.slug}
                       // state={{ postId: post.id }}
                       >
                        
+                       <div className="event-middle-section">
+                        <span className="company-mobile">{event.node.name}</span>
+                        <span className="category-mobile">{event.node.type}</span>
+                        {/* <br></br> */}
                         
-                        <span className="company-mobile">{event.node.organization}</span>
-                        <br></br>
-                        <div className="event-middle-section">
-                        <img width="35" height="35" src={event.node.logo.publicURL}/>
-                        <span className="title-mobile">{event.node.title}</span>
-                        <span className="date-mobile">{"Posted " + monthNames[dt.getMonth()] + ' '+ dt.getDate()}</span>
+                        {/* <img width="35" height="35" src={event.node.photo.publicURL}/> */}
+                        {/* <span className="title-mobile">{event.node.title}</span> */}
+                        <span className="date-mobile">{monthNames[dt.getMonth()] + ' '+ dt.getDate()}</span>
                         </div>
-                        <br></br>
-                        <span className="location-company-mobile">{event.node.location}</span>
+                        {/* <br></br> */}
+                        {/* <span className="location-company-mobile">{event.node.location}</span> */}
                         
                         
                         </a>
@@ -102,7 +104,7 @@ const Events = ({ events }) => {
         }
       })
           
-    } */}
+    }
       
       </ul>
     )
@@ -110,12 +112,13 @@ const Events = ({ events }) => {
     (
       
         <ul className="uk-list uk-list-divider uk-width-8-8">
-          {/* {events.map((event, i) => {
-            let dt = new Date(event.node.published_at)
+          {events.map((event, i) => {
+            let dt = new Date(event.node.date)
             const monthNames = ["January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December"
           ];
-          if (event.node.type === 'Featured') {
+          let today = new Date();
+          if (event.node.type === 'Featured' && dt >= today) {
             return (
               // <Card
               //   article={article}
@@ -126,20 +129,21 @@ const Events = ({ events }) => {
                 
                    <a
                       className="event"
-                      href={'/events/'+event.node.slug}
+                      href={'/event/'+event.node.slug}
                       // state={{ postId: post.id }}
                       >
                        
-                        
+                       <div className="event-middle-section">
                         <span className="company">{event.node.organization}</span>
-                        <br></br>
-                        <div className="event-middle-section">
-                        <img width="35" height="35" src={event.node.logo.publicURL}/>
-                        <span className="title">{event.node.title}</span>
+                        <span className="category">{event.node.type}</span>
+                        {/* <br></br> */}
+                        
+                        {/* <img width="35" height="35" src={event.node.photo.publicURL}/> */}
+                        {/* <span className="title">{event.node.title}</span> */}
                         <span className="date">Featured</span>
                         </div>
-                        <br></br>
-                        <span className="location company">{event.node.location}</span>
+                        {/* <br></br> */}
+                        {/* <span className="location company">{event.node.location}</span> */}
                         
                         
                         </a>
@@ -154,11 +158,14 @@ const Events = ({ events }) => {
         }
 
         {events.map((event, i) => {
-            let dt = new Date(event.node.published_at)
+            let dt = new Date(event.node.date)
             const monthNames = ["January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December"
           ];
-        if (event.node.type !== 'Featured') {
+          let today = new Date();
+          console.log(today)
+          console.log(dt)
+        if (event.node.type !== 'Featured' && dt >= today) {
             
             return (
               // <Card
@@ -170,20 +177,20 @@ const Events = ({ events }) => {
                 
                    <a
                       className="event"
-                      href={'/events/'+event.node.slug}
+                      href={'/event/'+event.node.slug}
                       // state={{ postId: post.id }}
                       >
                        
-                        
-                        <span className="company">{event.node.organization}</span>
-                        <br></br>
-                        <div className="event-middle-section">
-                        <img width="35" height="35" src={event.node.logo.publicURL}/>
-                        <span className="title">{event.node.title}</span>
-                        <span className="date">{"Posted " + monthNames[dt.getMonth()] + ' '+ dt.getDate()}</span>
+                       <div className="event-middle-section">
+                        <span className="company">{event.node.name}</span>
+                        {/* <br></br> */}
+                        <span className="category">{event.node.type}</span>
+                        {/* <img width="35" height="35" src={event.node.photo.publicURL}/> */}
+                        {/* <span className="title">{event.node.title}</span> */}
+                        <span className="date">{monthNames[dt.getMonth()] + ' '+ dt.getDate()}</span>
                         </div>
-                        <br></br>
-                        <span className="location company">{event.node.location}</span>
+                        {/* <br></br> */}
+                        {/* <span className="location company">{event.node.location}</span> */}
                         
                         
                         </a>
@@ -196,7 +203,7 @@ const Events = ({ events }) => {
         }
       })
           
-    } */}
+    }
         
           </ul>
     )}

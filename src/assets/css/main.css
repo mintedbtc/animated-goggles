@@ -206,6 +206,50 @@ span.company {
     font-size: 1rem;
 }
 
+span.category {
+	font-weight: bold;
+	font-size: 11px;
+  display: inline-block;
+  height: 100%;
+  margin: auto;
+  margin-left: 15px;
+  margin-bottom: -5px;
+  white-space: nowrap;
+  width: auto;
+
+  position: relative;
+  border-radius: 100px;
+  line-height: 1;
+  overflow: hidden;
+  padding: 0px 12px 0px 12px;
+  text-overflow: ellipsis;
+	line-height: 1.25rem;
+	color: #595959;
+  background: #a0caed;
+}
+
+span.category-mobile {
+	font-weight: bold;
+	font-size: 9px;
+  display: inline-block;
+  height: 100%;
+  margin: auto;
+  margin-left: 15px;
+  margin-bottom: -5px;
+  white-space: nowrap;
+  width: auto;
+
+  position: relative;
+  border-radius: 100px;
+  line-height: 1;
+  overflow: hidden;
+  padding: 0px 12px 0px 12px;
+  text-overflow: ellipsis;
+	line-height: 1.25rem;
+	color: #595959;
+  background: #a0caed;
+}
+
 span.company-mobile {
   color: #212529;
     font-family: "Neufile Grotesk Regular", sans-serif;
