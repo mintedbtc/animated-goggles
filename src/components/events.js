@@ -85,7 +85,7 @@ const Events = ({ events }) => {
                         <span className="company-mobile">{event.node.name}</span>
                         <span className="category-mobile">{event.node.type}</span>
                         {/* <br></br> */}
-                        
+                        {/* <br></br> */}
                         {/* <img width="35" height="35" src={event.node.photo.publicURL}/> */}
                         {/* <span className="title-mobile">{event.node.title}</span> */}
                         <span className="date-mobile">{monthNames[dt.getMonth()] + ' '+ dt.getDate()}</span>
