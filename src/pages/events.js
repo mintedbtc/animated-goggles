@@ -220,7 +220,7 @@ render() {
                                     }
                                   }
                                 }
-                                allStrapiEvent(sort: {order: DESC, fields: published_at}) {
+                                allStrapiEvent(sort: {order: ASC, fields: date}) {
                                   edges {
                                     node {
                                       strapiId
