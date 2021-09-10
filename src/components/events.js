@@ -82,13 +82,13 @@ const Events = ({ events }) => {
                       >
                        
                        <div className="event-middle-section">
-                        <span className="company-mobile">{event.node.name}</span>
+                        <span className="event-mobile">{event.node.name}</span>
                         <span className="category-mobile">{event.node.type}</span>
                         {/* <br></br> */}
                         {/* <br></br> */}
                         {/* <img width="35" height="35" src={event.node.photo.publicURL}/> */}
                         {/* <span className="title-mobile">{event.node.title}</span> */}
-                        <span className="date-mobile">{monthNames[dt.getMonth()] + ' '+ dt.getDate()}</span>
+                        <span className="event-date-mobile">{monthNames[dt.getMonth()] + ' '+ dt.getDate()}</span>
                         </div>
                         {/* <br></br> */}
                         {/* <span className="location-company-mobile">{event.node.location}</span> */}
@@ -134,13 +134,13 @@ const Events = ({ events }) => {
                       >
                        
                        <div className="event-middle-section">
-                        <span className="company">{event.node.organization}</span>
+                        <span className="event">{event.node.organization}</span>
                         <span className="category">{event.node.type}</span>
                         {/* <br></br> */}
                         
                         {/* <img width="35" height="35" src={event.node.photo.publicURL}/> */}
                         {/* <span className="title">{event.node.title}</span> */}
-                        <span className="date">Featured</span>
+                        <span className="event-date">Featured</span>
                         </div>
                         {/* <br></br> */}
                         {/* <span className="location company">{event.node.location}</span> */}
@@ -182,12 +182,12 @@ const Events = ({ events }) => {
                       >
                        
                        <div className="event-middle-section">
-                        <span className="company">{event.node.name}</span>
+                        <span className="event">{event.node.name}</span>
                         {/* <br></br> */}
                         <span className="category">{event.node.type}</span>
                         {/* <img width="35" height="35" src={event.node.photo.publicURL}/> */}
                         {/* <span className="title">{event.node.title}</span> */}
-                        <span className="date">{monthNames[dt.getMonth()] + ' '+ dt.getDate()}</span>
+                        <span className="event-date">{monthNames[dt.getMonth()] + ' '+ dt.getDate()}</span>
                         </div>
                         {/* <br></br> */}
                         {/* <span className="location company">{event.node.location}</span> */}
