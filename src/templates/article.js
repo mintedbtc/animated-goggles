@@ -39,13 +39,7 @@ export const query = graphql`
       }
       writer {
         name
-        picture {
-          childImageSharp {
-            fixed(width: 30, height: 30) {
-              src
-            }
-          }
-        }
+        
       }
     }
   }
