@@ -255,6 +255,7 @@ console.log(post.photoCredit)
                       <tr>
                       <td style={{padding:"15px"}}>
                     {/* <Markdown source={post.content} escapeHtml={false} /> */}
+                    {/* <Markdown source={post.content} escapeHtml={false} /> */}
                     <div key={post.strapiId} style={{color:"black"}} dangerouslySetInnerHTML={{__html:post.content.split('a title=').join('a style="border-bottom:2px solid #307765;text-decoration:none;color:#333" title=').split('a href=').join('a style="border-bottom:2px solid #307765;text-decoration:none;color:#333" href=').split('<em>').join('<em style="color:#666">').split('<li>').join('<li style="padding-bottom:10px">')}}></div>
                     </td>
             </tr>
