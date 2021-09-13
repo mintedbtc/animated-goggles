@@ -141,7 +141,9 @@ console.log(post.photoCredit)
               
                         {post.coverImage !== null ? (
                           <div>
-                        <img src={require(post.coverImage.publicURL)} />
+                   
+                        <img src={require( `${ post.coverImage.publicURL }`)} />
+                  
                         <p style={{lineHeight:"22px",marginTop:"0",marginBottom:"15px",paddingLeft:"10px",marginTop:"5px",marginBottom:"0px",lineHeight:"14px"}}>
                         <small style={{color:"#666"}}><em style={{color:"#666"}}>{post.photoCredit}</em></small>
                         </p>
@@ -242,7 +244,7 @@ console.log(post.photoCredit)
               
                         {post.coverImage !== null ? (
                           <div>
-                        <img src={require(post.coverImage.publicURL)} />
+                        <img src={require(`${ post.coverImage.publicURL }`)} />
                         <p style={{lineHeight:"22px",marginTop:"0",marginBottom:"15px",paddingLeft:"10px",marginTop:"5px",marginBottom:"0px",lineHeight:"14px"}}>
                         <small style={{color:"#666"}}><em style={{color:"#666"}}>{post.photoCredit}</em></small>
                         </p>
