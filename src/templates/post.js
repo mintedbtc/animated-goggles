@@ -153,7 +153,7 @@ console.log(post.photoCredit)
                       <td style={{padding:"15px"}}>
                       <div key={post.strapiId} style={{color:"black"}} dangerouslySetInnerHTML={{__html:post.content.split('a title=').join('a style="border-bottom:2px solid #307765;text-decoration:none;color:#333" title=').split('a href=').join('a style="border-bottom:2px solid #307765;text-decoration:none;color:#333" href=').split('<em>').join('<em style="color:#666">').split('<li>').join('<li style="padding-bottom:10px">')}}></div>
                     {/* <Markdown source={post.content} escapeHtml={false} /> */}
-                    
+                    {/* <Markdown source={post.content} escapeHtml={false} /> */}
                     </td>
             </tr>
             </table>
