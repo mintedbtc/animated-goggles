@@ -78,6 +78,7 @@ const Jobs = ({ jobs }) => {
                       className="job-mobile"
                       href={'/jobs/'+job.node.slug}
                       // state={{ postId: post.id }}
+                      // state={{ postId: post.id }}
                       >
                        
                         
