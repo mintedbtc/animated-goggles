@@ -21,7 +21,9 @@ const Jobs = ({ jobs }) => {
             const monthNames = ["January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December"
           ];
-          if (job.node.type === 'Featured') {
+          let dateLimit = new Date() - 30*60*60*24*1000;
+          console.log(dateLimit)
+          if (job.node.type === 'Featured' && dt >= dateLimit) {
             return (
               // <Card
               //   article={article}
@@ -64,7 +66,9 @@ const Jobs = ({ jobs }) => {
             const monthNames = ["January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December"
           ];
-        if (job.node.type !== 'Featured') {
+          let dateLimit = new Date() - 30*60*60*24*1000;
+          console.log(dateLimit)
+        if (job.node.type !== 'Featured' && dt >= dateLimit) {
             
             return (
               // <Card
@@ -116,7 +120,9 @@ const Jobs = ({ jobs }) => {
             const monthNames = ["January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December"
           ];
-          if (job.node.type === 'Featured') {
+          let dateLimit = new Date() - 30*60*60*24*1000;
+          console.log(dateLimit)
+          if (job.node.type === 'Featured' && dt >= dateLimit) {
             return (
               // <Card
               //   article={article}
@@ -159,7 +165,9 @@ const Jobs = ({ jobs }) => {
             const monthNames = ["January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December"
           ];
-        if (job.node.type !== 'Featured') {
+          let dateLimit = new Date() - 30*60*60*24*1000;
+          console.log(dateLimit)
+        if (job.node.type !== 'Featured' && dt >= dateLimit) {
             
             return (
               // <Card
