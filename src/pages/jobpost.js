@@ -847,7 +847,7 @@ class JobpostPage extends React.Component {
                     <p style={{textAlign:"center"}}>Free</p>
                     <ul>
                         <li>
-                            Position posted on NWA Daily's job board
+                        Position posted on NWA Daily's job board for 30 days
                         </li>
                     </ul>
                     <div style={{textAlign: "center"}}>
