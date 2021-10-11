@@ -133,7 +133,7 @@ class SharePage extends React.Component {
 (
 <div className="uk-section">
       {/* <h1 className="uk-text-center">{data.strapiHomepage.hero.title}</h1> */}
-      <h3 className="uk-text-center">Share with your friends to win prizes!</h3>
+      <h3 className="uk-text-center">Be a good friend, keep them in the know!</h3>
       <div style={{textAlign:"center"}}>
       <form class="uk-form" style={{marginLeft:"auto",marginRight:"auto",width:"90%"}}>
             
@@ -171,7 +171,8 @@ class SharePage extends React.Component {
               </div>
           
         </form>
-        <img src="https://nwa-daily-photos.s3.amazonaws.com/output_JBQF_2y_b550d1e6a2.gif"></img></div>
+        {/* <img src="https://nwa-daily-photos.s3.amazonaws.com/output_JBQF_2y_b550d1e6a2.gif"></img> */}
+        </div>
       {/* <p className="uk-text-center" style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}>We deliver a succinct newsletter on a daily basis to keep you up to date on what's happening in NWA. These emails are sent directly to your inbox every weekday morning, so you can easily and quickly get the information you need about your hometown.</p> */}
       
         
@@ -181,7 +182,7 @@ class SharePage extends React.Component {
 (
 <div className="uk-section">
       {/* <h1 className="uk-text-center">{data.strapiHomepage.hero.title}</h1> */}
-      <h3 className="uk-text-center">Share with your friends to win prizes!</h3>
+      <h3 className="uk-text-center">Be a good friend, keep them in the know!</h3>
       <div style={{textAlign:"center"}}>
       <form class="uk-form" style={{marginLeft:"auto",marginRight:"auto",width:"50%"}}>
             
@@ -219,7 +220,8 @@ class SharePage extends React.Component {
               </div>
           
         </form>
-        <img src="https://nwa-daily-photos.s3.amazonaws.com/output_JBQF_2y_88cfe6719f.gif"></img></div>
+        {/* <img src="https://nwa-daily-photos.s3.amazonaws.com/output_JBQF_2y_88cfe6719f.gif"></img> */}
+        </div>
       {/* <p className="uk-text-center" style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}>We deliver a succinct newsletter on a daily basis to keep you up to date on what's happening in NWA. These emails are sent directly to your inbox every weekday morning, so you can easily and quickly get the information you need about your hometown.</p> */}
       
         
