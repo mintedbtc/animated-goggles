@@ -48,6 +48,15 @@ exports.createPages = async ({ graphql, actions }) => {
             }
           }
 
+          guides: allStrapiGuide{
+            edges {
+              node {
+                strapiId
+                slug
+              }
+            }
+          }
+
           events: allStrapiEvent{
             edges {
               node {
@@ -71,6 +80,7 @@ exports.createPages = async ({ graphql, actions }) => {
     const posts = result.data.posts.edges;
     const jobs = result.data.jobs.edges;
     const events = result.data.events.edges;
+    const guides = result.data.guides.edges;
   
     const ArticleTemplate = require.resolve("./src/templates/article.js");
   
@@ -104,6 +114,18 @@ exports.createPages = async ({ graphql, actions }) => {
         component: StoryTemplate,
         context: {
           slug: story.node.slug,
+        },
+      });
+    });
+
+    const GuideTemplate = require.resolve("./src/templates/guide.js");
+  
+    guides.forEach((guide, index) => {
+      createPage({
+        path: `/guide/${guide.node.slug}`,
+        component: GuideTemplate,
+        context: {
+          slug: guide.node.slug,
         },
       });
     });
