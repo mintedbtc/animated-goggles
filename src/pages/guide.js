@@ -277,7 +277,7 @@ class GuidePage extends React.Component {
       {/* <h1 className="uk-text-center">{data.strapiHomepage.hero.title}</h1> */}
         <div style={{marginLeft:"3%"}} className="uk-container uk-container-large" >
         <h2 style={{marginLeft:"14%"}}>Browse all our guides</h2>
-          <GuidesComponent guides={data.allStrapiArticle.edges} />
+          <GuidesComponent guides={data.allStrapiGuide.edges} />
         
         </div>
       </div>
@@ -288,7 +288,7 @@ class GuidePage extends React.Component {
       {/* <h1 className="uk-text-center">{data.strapiHomepage.hero.title}</h1> */}
         <div style={{marginLeft:"23%"}} className="uk-container uk-container-large" >
         <h2 style={{marginLeft:"17%"}}>Browse all our guides</h2>
-          <GuidesComponent guides={data.allStrapiArticle.edges} />
+          <GuidesComponent guides={data.allStrapiGuide.edges} />
         
         </div>
       </div>
