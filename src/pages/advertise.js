@@ -107,7 +107,7 @@ class AdvertisePage extends React.Component {
     //   .catch(err => {
     //     console.log(err);
     //   });
-    fetch(`https://nwadailybackend.herokuapp.com/signup`, {
+    fetch(`https://nwadailybackend.herokuapp.com/advertiser`, {
       method: 'POST',
       body: JSON.stringify({email: email}),
       headers: {
