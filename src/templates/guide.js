@@ -35,6 +35,8 @@ const Guide = ({ data }) => {
   guide.content = guide.content.split('class="ql-align-center"').join('class="ql-align-center" style="text-align:center; margin-left:auto;margin-right:auto;display:block;width:50%"')
   guide.content = guide.content.split('<em>').join('<em style="color:black">')
   guide.content = guide.content.split('a href=').join('a style="border-bottom:2px solid #307765;text-decoration:none;color:#333" href=')
+  guide.content = guide.content.split('<pre class="ql-syntax" spellcheck="false">"').join('')
+  guide.content = guide.content.split('"</pre>').join('')
   
   return (
     
