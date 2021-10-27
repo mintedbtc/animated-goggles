@@ -63,7 +63,7 @@ const Guide = ({ data }) => {
         
           
         
-          <div style={{paddingLeft:"30%",paddingRight:"30%",paddingTop:"2%",paddingBottom:"5%"}}>
+          <div style={{paddingLeft:"25%",paddingRight:"25%",paddingTop:"2%",paddingBottom:"5%"}}>
           
           <div key={guide.strapiId} style={{color:"black"}} dangerouslySetInnerHTML={{__html:guide.content}}></div>
           </div>
