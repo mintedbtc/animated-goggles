@@ -37,18 +37,19 @@ const Guide = ({ data }) => {
   guide.content = guide.content.split('<em>').join('<em style="color:black">')
   guide.content = guide.content.split('a href=').join('a style="border-bottom:2px solid #307765;text-decoration:none;color:#333" href=')
   guide.content = guide.content.split('<p>&lt;blockquote').join('<blockquote').split('> <').join('><').split('" ').join('"').split('&gt;&lt;').join('><').split('gt').join('>').split('&>').join('>').split('";/').join('')
-  
+  guide.content = guide.content.split('<span class="ql-size-small">').join('<span style="font-weight:400; font-size:11px;">')
+  guide.content = guide.content.split('</span>').join('</span>')
   
   return (
     
     <Layout seo={seo}>
-      
+      <h2 style={{paddingTop:"10%"}} className="uk-text-center">{guide.title}</h2>
       {breakpoints.sm ? 
       (
         
       <div>
         
-          <h2 className="uk-text-center" style={{paddingTop:"15%",marginTop:"15%"}}>{guide.title}</h2>
+          
       
           <div style={{paddingLeft:"3%",paddingRight:"3%",paddingTop:"2%",paddingBottom:"5%"}}>
           <div key={guide.strapiId} style={{color:"black"}} dangerouslySetInnerHTML={{__html:guide.content}}></div>
@@ -60,9 +61,9 @@ const Guide = ({ data }) => {
       (
       <div>
         
-          <h2 className="uk-text-center">{guide.title}</h2>
+          
         
-          <div style={{paddingLeft:"15%",paddingRight:"15%",paddingTop:"2%",paddingBottom:"5%"}}>
+          <div style={{paddingLeft:"30%",paddingRight:"30%",paddingTop:"2%",paddingBottom:"5%"}}>
           
           <div key={guide.strapiId} style={{color:"black"}} dangerouslySetInnerHTML={{__html:guide.content}}></div>
           </div>
