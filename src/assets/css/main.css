@@ -444,3 +444,17 @@ span.location-company-mobile {
   div.event-head {
     text-align: center;
   }
+
+  .ql-size-small {
+    font-weight:400; 
+    font-size:11px;
+  }
+
+  a.ql-size-small {
+    text-align: right;
+    float:right;
+  }
+
+  p a.ql-size-small {
+    text-align: right;
+  }
