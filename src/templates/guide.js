@@ -36,7 +36,7 @@ const Guide = ({ data }) => {
   guide.content = guide.content.split('class="ql-align-center"').join('class="ql-align-center" style="text-align:center; margin-left:auto;margin-right:auto;display:block;width:50%"')
   guide.content = guide.content.split('<em>').join('<em style="color:black">')
   guide.content = guide.content.split('a href=').join('a style="border-bottom:2px solid #307765;text-decoration:none;color:#333" href=')
-  guide.content = guide.content.split('<p>&lt;blockquote').join('<blockquote').split('> <').join('><').split('" ').join('"').split('&gt;&lt;').join('><').split('gt').join('>').split('&>').join('>').split('";/').join('')
+  // guide.content = guide.content.split('<p>&lt;blockquote').join('<blockquote').split('> <').join('><').split('" ').join('"').split('&gt;&lt;').join('><').split('gt').join('>').split('&>').join('>').split('";/').join('')
   // guide.content = guide.content.split('<span class="ql-size-small">').join('<span style="font-weight:400; font-size:11px;">')
   // guide.content = guide.content.split('</span>').join('</span>')
   
