@@ -445,16 +445,28 @@ span.location-company-mobile {
     text-align: center;
   }
 
-  .ql-size-small {
+  /* .ql-size-small {
     font-weight:400; 
     font-size:11px;
-  }
+    line-height: 1;
+  } */
 
   a.ql-size-small {
-    text-align: right;
-    float:right;
+    /* text-align: right;
+    float:right; */
+  }
+
+  p.ql-align-justify {
+    /* text-align: right; */
+    font-weight:400;
+    font-size:11px;
+    color: #808080;
+    line-height: 0.1;
   }
 
   p a.ql-size-small {
-    text-align: right;
+    /* text-align: right; */
+  }
+  em {
+    font-size:11px;
   }
