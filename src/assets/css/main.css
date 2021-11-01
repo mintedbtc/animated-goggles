@@ -462,11 +462,12 @@ span.location-company-mobile {
     font-size:13px;
     margin-top: 5px;
     margin-bottom: 5px;
-    color: #808080;
+    color: hsl(0, 0%, 50%);
     line-height: 1;
   }
 
   p a.ql-size-small {
+    /* text-align: right; */
     /* text-align: right; */
   }
   p.ql-align-right {
