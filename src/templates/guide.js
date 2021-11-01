@@ -53,10 +53,9 @@ const Guide = ({ data }) => {
     
     <Layout seo={seo}>
       <PopupComponent/>
-      <div style={{backgroundImage: "url('https://nwa-daily-photos.s3.amazonaws.com/pedalers_Pub_761fcbcce0.JPG')", backgroundSize: "auto 100%"}}>
-      <h2 style={{paddingTop:"10%"}} className="uk-text-center">{guide.title}</h2>
-      <p style={{color:"#333"}} className="uk-text-center"><em style={{color:"#333"}}>By NWA Daily | Published Nov 2, 2021</em></p>
-      </div>
+      <h2 style={{color:"#000",paddingTop:"10%"}} className="uk-text-center">{guide.title}</h2>
+      <p style={{color:"#000"}} className="uk-text-center"><em style={{color:"#000"}}>By NWA Daily | Published Nov 2, 2021</em></p>
+      <img height={"50%"} width={"50%"} style={{marginLeft:"25%",marginRight:"25%"}} src="https://nwa-daily-photos.s3.amazonaws.com/pedalers_Pub_761fcbcce0.JPG"/>
       {breakpoints.sm ? 
       (
         
