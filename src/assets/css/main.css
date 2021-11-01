@@ -459,7 +459,7 @@ span.location-company-mobile {
   p.ql-align-justify {
     /* text-align: right; */
     font-weight:400;
-    font-size:11px;
+    font-size:12px;
     margin-top: 5px;
     margin-bottom: 5px;
     color: #808080;
@@ -471,6 +471,6 @@ span.location-company-mobile {
   }
   p.ql-align-right {
     margin-top: 0px;
-    font-size:11px;
+    font-size:12px;
     line-height: 1;
   }
