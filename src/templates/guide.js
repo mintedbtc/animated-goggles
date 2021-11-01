@@ -6,6 +6,14 @@ import Layout from "../components/layout";
 import Markdown from "react-markdown";
 import { useBreakpoint } from 'gatsby-plugin-breakpoints';
 import SubscribeComponent from "../components/subscribe";
+import Dialog from "@material-ui/core/Dialog";
+import DialogTitle from "@material-ui/core/DialogTitle";
+import DialogContent from "@material-ui/core/DialogContent";
+import DialogActions from "@material-ui/core/DialogActions";
+import IconButton from '@material-ui/core/IconButton';
+import Close from "@material-ui/icons/Close";
+import PopupComponent from "../components/popup";
+
 
 export const query = graphql`
   query GuideQuery($slug: String!) {
@@ -40,11 +48,15 @@ const Guide = ({ data }) => {
   // guide.content = guide.content.split('<span class="ql-size-small">').join('<span style="font-weight:400; font-size:11px;">')
   // guide.content = guide.content.split('</span>').join('</span>')
   // fdj
-  
+
   return (
     
     <Layout seo={seo}>
+      <PopupComponent/>
+      <div style={{backgroundImage: "url('https://nwa-daily-photos.s3.amazonaws.com/pedalers_Pub_761fcbcce0.JPG')", backgroundSize: "auto 100%"}}>
       <h2 style={{paddingTop:"10%"}} className="uk-text-center">{guide.title}</h2>
+      <p style={{color:"#333"}} className="uk-text-center"><em style={{color:"#333"}}>By NWA Daily | Published Nov 2, 2021</em></p>
+      </div>
       {breakpoints.sm ? 
       (
         

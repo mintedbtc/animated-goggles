@@ -5,7 +5,7 @@ import Moment from "react-moment";
 import Layout from "../components/layout";
 import Markdown from "react-markdown";
 import SubscribeComponent from "../components/subscribe";
-
+import PopupComponent from "../components/popup";
 import { useBreakpoint } from 'gatsby-plugin-breakpoints';
 
 export const query = graphql`
@@ -68,7 +68,7 @@ console.log(article)
   return (
     <Layout seo={seo}>
       <div>
-        
+        <PopupComponent/>
           <h2 className="uk-text-center" style={{paddingTop:"3%",marginTop:"3%"}}>{article.headline}</h2>
 
 

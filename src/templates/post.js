@@ -6,7 +6,7 @@ import Layout from "../components/layout";
 import Markdown from "react-markdown";
 import SubscribeComponent from "../components/subscribe";
 import "../assets/css/main.css";
-
+import PopupComponent from "../components/popup";
 import { useBreakpoint } from 'gatsby-plugin-breakpoints';
 
 export const query = graphql`
@@ -58,7 +58,7 @@ post.content = post.content.split('a href=').join('a style="border-bottom:2px so
   return (
     <Layout seo={seo}>
       <div>
-        
+        <PopupComponent/>
           <h2 className="uk-text-center" style={{paddingTop:"3%",marginTop:"3%"}}>{post.title}</h2>
 
 

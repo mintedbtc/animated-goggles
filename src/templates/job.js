@@ -6,6 +6,7 @@ import Layout from "../components/layout";
 import Markdown from "react-markdown";
 import { useBreakpoint } from 'gatsby-plugin-breakpoints';
 import SubscribeComponent from "../components/subscribe";
+import PopupComponent from "../components/popup";
 
 export const query = graphql`
   query JobQuery($slug: String!) {
@@ -46,6 +47,7 @@ const Job = ({ data }) => {
   return (
     
     <Layout seo={seo}>
+      <PopupComponent/>
       {breakpoints.sm ? 
       (
       <div>
