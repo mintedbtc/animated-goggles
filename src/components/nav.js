@@ -87,6 +87,9 @@ const Nav = () => {
             </div>
             <div className="uk-navbar-right">
             <ul className="uk-navbar-nav">
+            <li>
+                      <Link to="/guide">Guides</Link>
+                    </li>
                     <li>
                       <Link to="/events">Events</Link>
                     </li>
