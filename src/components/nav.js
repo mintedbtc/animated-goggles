@@ -27,6 +27,9 @@ const Nav = () => {
                 <div class="uk-navbar-dropdown">
                     <ul class="uk-nav uk-navbar-dropdown-nav">
                     <li>
+                      <Link to="/guide">Guides</Link>
+                    </li>
+                    <li>
                       <Link to="/events">Events</Link>
                     </li>
                     <li>
