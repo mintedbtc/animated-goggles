@@ -54,6 +54,13 @@ class Subscribe extends React.Component {
             postId = postId.split('&')[0]
             console.log(postId)
             }
+    else if (window.location.href.split('guide/').length > 1) {
+              console.log('idhere')
+              console.log(window.location.href)
+              postId = 'guide ' + window.location.href.split('guide/')[1]
+              postId = postId.split('&')[0]
+              console.log(postId)
+              }
     else {
         postId = 'regular'
         console.log(postId)
