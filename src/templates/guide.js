@@ -61,7 +61,7 @@ const Guide = ({ data }) => {
       <div>
         <h2 style={{color:"#000",paddingTop:"10%"}} className="uk-text-center">{guide.title}</h2>
       <p style={{color:"#000"}} className="uk-text-center"><em style={{color:"#000"}}>By NWA Daily | Published Nov 2, 2021</em></p>
-      <img height={"97%"} width={"97%"} style={{marginLeft:"3%",marginRight:"3%"}} src="https://nwa-daily-photos.s3.amazonaws.com/pedalers_Pub_761fcbcce0.JPG"/>
+      <img height={"97%"} width={"97%"} style={{marginLeft:"3%",marginRight:"3%"}}/>
           
       
           <div style={{paddingLeft:"3%",paddingRight:"3%",paddingTop:"2%",paddingBottom:"5%"}}>
