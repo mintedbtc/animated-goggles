@@ -40,7 +40,7 @@ const Guide = ({ data }) => {
   };
 
   console.log(guide.content)
-  guide.content = guide.content.split('<img ').join('<img style="text-align:center; margin-left:auto;margin-right:auto;display:block"')
+  guide.content = guide.content.split('<img ').join('<img width=100% style="text-align:center; margin-left:auto;margin-right:auto;display:block"')
   guide.content = guide.content.split('class="ql-align-center"').join('class="ql-align-center" style="text-align:center; margin-left:auto;margin-right:auto;display:block;width:50%"')
   guide.content = guide.content.split('<em>').join('<em style="color:black">')
   guide.content = guide.content.split('a href=').join('a style="border-bottom:2px solid #307765;text-decoration:none;color:#333" href=')

@@ -87,7 +87,7 @@ class Popup extends React.Component {
     const email = this.state.email.toLowerCase()
     const requestBody = {
         email: email,
-        location: "subscribe",
+        location: "popup",
         source: postId,
         subscribeDate: this.state.date,
         property: "NWA Daily"
