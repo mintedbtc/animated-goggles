@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import ArticlesComponent from "../components/articles";
 import AdvertiseComponent from "../components/advertise";
 import StoriesComponent from "../components/stories";
+import GuidesComponent from "../components/guides";
 import "../assets/css/main.css";
 import background from "../images/cover.png";
 import mobileBackground from "../images/mobileCover.png";
@@ -249,17 +250,13 @@ render() {
                                   }
                                 }
                                 
-                                allStrapiArticle(sort: {order: DESC, fields: publishedAt}, limit: 5) {
+                                allStrapiGuide(sort: {order: DESC, fields: publishedAt}, limit: 5) {
                                   edges {
                                     node {
                                       strapiId
                                       slug
                                       publishedAt
-                                      content
                                       title
-                                      author {
-                                        name
-                                      }
                                     }
                                   }
                                 }
@@ -495,13 +492,13 @@ render() {
   {breakpoints.sm ? 
         (
 <div style={{marginLeft:"0%"}}>
-<StoriesComponent stories={data.allStrapiArticle.edges} />
+<GuidesComponent guides={data.allStrapiGuide.edges} />
 </div>
         )
         :
         (
 <div style={{marginLeft:"25%"}}>
-<StoriesComponent stories={data.allStrapiArticle.edges} />
+<GuidesComponent guides={data.allStrapiGuide.edges} />
 </div>
         )}
 </div>

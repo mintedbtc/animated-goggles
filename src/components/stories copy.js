@@ -4,9 +4,9 @@ import { Link } from "gatsby";
 import "../assets/css/main.css";
 import { useBreakpoint } from 'gatsby-plugin-breakpoints';
 
-const Guides = ({ guides }) => {
+const Stories = ({ stories }) => {
   const breakpoints = useBreakpoint()
-  console.log(guides)
+  console.log(stories)
 
   return (
     
@@ -16,8 +16,8 @@ const Guides = ({ guides }) => {
     (
       
       <ul class="uk-list uk-list-divider uk-text-center uk-width-8-8">
-      {guides.map((guide, i) => {
-        let dt = new Date(guide.node.publishedAt)
+      {stories.map((story, i) => {
+        let dt = new Date(story.node.publishedAt)
         const monthNames = ["January", "February", "March", "April", "May", "June",
         "July", "August", "September", "October", "November", "December"
       ];
@@ -26,15 +26,15 @@ const Guides = ({ guides }) => {
           //   article={article}
           //   key={`article__left__${article.node.slug}`}
           // />
-          <li key={`guide__left__${guide.node.slug}`}>
+          <li key={`story__left__${story.node.slug}`}>
             
             
-               <a id="guide-link"
-                  href={'/guide/'+guide.node.slug}
+               <a id="story-link"
+                  href={'/story/'+story.node.slug}
                   // state={{ postId: post.id }}
-                  style={{fontFamily:"Helvetica,Arial,sans-serif",color:"black", fontSize:"20px",fontWeight:"700",marginBottom:"0",lineHeight:"26px",marginTop:"8px"}} >
-                    <strong style={{color:"black"}}>{guide.node.title}</strong></a>
-                  <p style={{color:"black"}}>{"Published " + monthNames[dt.getMonth()] + ' '+ dt.getDate() }</p>
+                  style={{fontFamily:"Helvetica,Arial,sans-serif",fontSize:"20px",fontWeight:"700",marginBottom:"0",lineHeight:"26px",marginTop:"8px"}} >
+                    <strong>{story.node.title}</strong></a>
+                  <p style={{color:"black"}}>{"Published " + monthNames[dt.getMonth()] + ' '+ dt.getDate() } | {"Written by "+story.node.author.name}</p>
                   <br></br>
               
               
@@ -47,8 +47,8 @@ const Guides = ({ guides }) => {
     (
       
         <ul class="uk-list uk-list-divider uk-text-center uk-width-2-3">
-          {guides.map((guide, i) => {
-            let dt = new Date(guide.node.publishedAt)
+          {stories.map((story, i) => {
+            let dt = new Date(story.node.publishedAt)
             const monthNames = ["January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December"
           ];
@@ -57,15 +57,15 @@ const Guides = ({ guides }) => {
               //   article={article}
               //   key={`article__left__${article.node.slug}`}
               // />
-              <li key={`guide__left__${guide.node.slug}`}>
+              <li key={`story__left__${story.node.slug}`}>
                 
                 
-                   <a id="guide-link"
-                      href={'/guide/'+guide.node.slug}
+                   <a id="story-link"
+                      href={'/story/'+story.node.slug}
                       // state={{ postId: post.id }}
-                      style={{fontFamily:"Helvetica,Arial,sans-serif",color:"black",fontSize:"20px",fontWeight:"700",marginBottom:"0",lineHeight:"26px",marginTop:"8px"}} >
-                        <strong>{guide.node.title}</strong></a>
-                      <p style={{color:"black"}}>{"Published " + monthNames[dt.getMonth()] + ' '+ dt.getDate() }</p>
+                      style={{fontFamily:"Helvetica,Arial,sans-serif",fontSize:"20px",fontWeight:"700",marginBottom:"0",lineHeight:"26px",marginTop:"8px"}} >
+                        <strong>{story.node.title}</strong></a>
+                      <p style={{color:"black"}}>{"Published " + monthNames[dt.getMonth()] + ' '+ dt.getDate() } | {"Written by "+story.node.author.name}</p>
                       <br></br>
                   
                   
@@ -80,4 +80,4 @@ const Guides = ({ guides }) => {
   );
 };
 
-export default Guides;
+export default Stories;
