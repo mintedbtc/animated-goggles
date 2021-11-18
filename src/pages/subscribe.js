@@ -180,7 +180,7 @@ class SubscribePage extends React.Component {
       {/* testing something */}
       {/* <h1 className="uk-text-center">{data.strapiHomepage.hero.title}</h1> */}
       <h3 className="uk-text-center">Subscribe to receive our daily newsletter</h3>
-      <p className="uk-text-center" style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}>We deliver a succinct newsletter on a daily basis to keep you up to date on what's happening in NWA. These emails are sent directly to your inbox every weekday morning, so you can easily and quickly get the information you need about your hometown.</p>
+      <p className="uk-text-center" style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}>Know all the happenings in NWA with a 5-minute read of our free email newsletter every weekday.</p>
       <form class="uk-form" style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}>
             
               <div class="test">

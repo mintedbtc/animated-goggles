@@ -33,7 +33,7 @@ const Post = ({ data }) => {
   const post = data.strapiPost;
   const seo = {
     metaTitle: post.title,
-    metaDescription: post.title,
+    metaDescription: post.content,
     shareImage: post.coverImage,
     post: true,
   };
