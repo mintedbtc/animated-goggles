@@ -33,7 +33,7 @@ const Footer = () => {
                   <Link to="/sweepstakes">{"Sweepstakes"}</Link>
                 </li>
                 <li>
-                <Link to="/">{"Built with ❤️ ".concat("  ").concat(" in Fayetteville")}</Link>
+                <Link to="/">{"Built with ❤️ ".concat("  ").concat(" in NWA")}</Link>
                 </li>
                 <li style={{display:"block"}}>
                 <Link to="/">&copy; {1900 + new Date().getYear()}, NWA Daily LLC</Link>
@@ -64,7 +64,7 @@ const Footer = () => {
             <div style={{paddingRight:"30px"}} className="uk-navbar-center">
               <ul className="uk-navbar-nav">
                 <li>
-                <Link to="/">{"Built with ❤️ ".concat("  ").concat(" in Fayetteville")}</Link>
+                <Link to="/">{"Built with ❤️ ".concat("  ").concat(" in NWA")}</Link>
                 </li>
               </ul>
             </div>
