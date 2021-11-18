@@ -7,6 +7,7 @@ import Markdown from "react-markdown";
 import SubscribeComponent from "../components/subscribe";
 import PopupComponent from "../components/popup";
 import { useBreakpoint } from 'gatsby-plugin-breakpoints';
+import ReactHtmlParser from 'react-html-parser';
 
 export const query = graphql`
   query EditionQuery($slug: String!) {
@@ -48,11 +49,12 @@ export const query = graphql`
 const Article = ({ data }) => {
   const breakpoints = useBreakpoint();
   const article = data.strapiEdition;
+  console.log(article.posts[0].content)
   const seo = {
     metaTitle: article.headline,
     metaDescription: article.posts.map(post => {
-        return post.title
-    }).join(','),
+        return post.content
+    }).join(', '),
     shareImage: article.image,
     article: true,
   };

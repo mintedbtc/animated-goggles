@@ -8,6 +8,7 @@ import SubscribeComponent from "../components/subscribe";
 import "../assets/css/main.css";
 import PopupComponent from "../components/popup";
 import { useBreakpoint } from 'gatsby-plugin-breakpoints';
+import ReactHtmlParser from 'react-html-parser';
 
 export const query = graphql`
   query PostQuery($slug: String!) {
@@ -33,7 +34,7 @@ const Post = ({ data }) => {
   const post = data.strapiPost;
   const seo = {
     metaTitle: post.title,
-    metaDescription: post.content,
+    metaDescription: ReactHtmlParser(post.content),
     shareImage: post.coverImage,
     post: true,
   };
