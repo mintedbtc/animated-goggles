@@ -53,6 +53,7 @@ class UnsubscribePage extends React.Component {
         location: "email",
         source: postId,
         unSubscribeDate: this.state.date,
+        subscribeDate: "",
         property: "NWA Daily"
       }
   
