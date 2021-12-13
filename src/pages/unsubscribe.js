@@ -57,7 +57,7 @@ class UnsubscribePage extends React.Component {
         property: "NWA Daily"
       }
   
-    fetch(`https://nwadailybackend.herokuapp.com/unsubscribes`, {
+    fetch(`https://nwadailybackend.herokuapp.com/update`, {
       method: 'POST',
       body: JSON.stringify(requestBody),
       headers: {
