@@ -51,7 +51,7 @@ class UnsubscribePage extends React.Component {
     const requestBody = {
         email: email,
         location: "email",
-        source: postId,
+        source: "",
         unSubscribeDate: this.state.date,
         subscribeDate: "",
         property: "NWA Daily"
