@@ -55,7 +55,7 @@ class SubscribePage extends React.Component {
         property: "NWA Daily"
       }
   
-    fetch(`https://nwadailybackend.herokuapp.com/emails`, {
+    fetch(`https://nwadailybackend.herokuapp.com/signup`, {
       method: 'POST',
       body: JSON.stringify(requestBody),
       headers: {
@@ -79,24 +79,24 @@ class SubscribePage extends React.Component {
       .catch(err => {
         console.log(err);
       });
-      fetch(`https://nwadailybackend.herokuapp.com/signup`, {
-      method: 'POST',
-      body: JSON.stringify({email: email}),
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      mode: 'cors'
-    })
-      .then(res => {
-        if (res.status !== 200 && res.status !== 201) {
-          console.log(res.status)
-          return res.status
-        }
-        return res;
-      })
-      .catch(err => {
-        console.log(err);
-      });
+    //   fetch(`https://nwadailybackend.herokuapp.com/signup`, {
+    //   method: 'POST',
+    //   body: JSON.stringify({email: email}),
+    //   headers: {
+    //     'Content-Type': 'application/json'
+    //   },
+    //   mode: 'cors'
+    // })
+    //   .then(res => {
+    //     if (res.status !== 200 && res.status !== 201) {
+    //       console.log(res.status)
+    //       return res.status
+    //     }
+    //     return res;
+    //   })
+    //   .catch(err => {
+    //     console.log(err);
+    //   });
   }
   else {
     this.setState({
