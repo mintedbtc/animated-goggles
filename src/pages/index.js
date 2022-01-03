@@ -74,57 +74,108 @@ class IndexPage extends React.Component {
   }
 
   submitAdHandler = (e) => {
-    e.preventDefault();
-    
-    
-    if (this.state.advertiser !== "") {
-    
-    const advertiser = this.state.advertiser.toLowerCase()
-    const oneLiner = this.state.oneLiner
-    const extendedText = this.state.extendedText
-    const sponsor = this.state.sponsor
-    const requestBody = {
-        email: advertiser,
-        oneLiner: oneLiner,
-        event: extendedText,
-        sponsor: sponsor,
-        property: "NWA Daily"
-        // location: "advertise",
-        // source: "regular",
-      }
-  
-    fetch(`https://nwadailybackend.herokuapp.com/inquiries`, {
-      method: 'POST',
-      body: JSON.stringify(requestBody),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-      .then(res => {
-        if (res.status !== 200 && res.status !== 201) {
-          throw new Error('Failed!');
+      e.preventDefault();
+      
+      let postId = null
+      console.log(window.location.href.split('?id=').length)
+      if (window.location.href.split('?id=').length > 1) {
+        console.log('idhere')
+        console.log(window.location.href)
+        postId = window.location.href.split('?id=')[1]
+        postId = postId.split('&')[0]
+        console.log(postId)
         }
-        return res.json();
+      else {
+          postId = 'regular'
+          console.log(postId)
+        }
+      if (this.state.email !== "") {
+      
+      const email = this.state.email.toLowerCase()
+      const oneLiner = this.state.oneLiner
+      const extendedText = this.state.extendedText
+      const sponsor = this.state.sponsor
+      const requestBody = {
+          email: email,
+          oneLiner: oneLiner,
+          event: extendedText,
+          sponsor: sponsor,
+          property: "NWA Daily"
+          // location: "advertise",
+          // source: "regular",
+        }
+    
+      fetch(`https://nwadailybackend.herokuapp.com/inquiries`, {
+        method: 'POST',
+        body: JSON.stringify(requestBody),
+        headers: {
+          'Content-Type': 'application/json'
+        }
       })
-      .then(resData => {
-        console.log(resData.data)
-        this.setState({
-          isAdSubmitted: true
+        .then(res => {
+          if (res.status !== 200 && res.status !== 201) {
+            throw new Error('Failed!');
+          }
+          return res.json();
         })
-        
+        .then(resData => {
+          console.log(resData.data)
+          this.setState({
+            isModalOpen: false,
+            isSubmitted: true
+          })
+          
+        })
+        .catch(err => {
+          console.log(err);
+        });
+      //   fetch(`https://boiling-lake-07785.herokuapp.com/https://nwadaily-emailer.herokuapp.com/signup/`, {
+      //   method: 'POST',
+      //   body: JSON.stringify({email: email}),
+      //   headers: {
+      //     'Access-Control-Allow-Origin':'http://localhost:8000/',
+      //     'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+      //     'Content-Type': 'application/json'
+      //   },
+      //   mode: 'cors'
+      // })
+      //   .then(res => {
+      //     if (res.status !== 200 && res.status !== 201) {
+      //       console.log(res.status)
+      //       return res.status
+      //     }
+      //     return res;
+      //   })
+      //   .catch(err => {
+      //     console.log(err);
+      //   });
+      fetch(`https://nwadailybackend.herokuapp.com/advertiser`, {
+        method: 'POST',
+        body: JSON.stringify({email: email}),
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        mode: 'cors'
       })
-      .catch(err => {
-        console.log(err);
-      });
-  }
-  else {
-    this.setState({
-      submitError: true,
-    })
-    console.log(true)
-  }
-  
-  }
+        .then(res => {
+          if (res.status !== 200 && res.status !== 201) {
+            console.log(res.status)
+            return res.status
+          }
+          return res;
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    }
+    else {
+      this.setState({
+        submitError: true,
+      })
+      console.log(true)
+    }
+    
+    }
 
   submitHandler = (e) => {
     e.preventDefault();
