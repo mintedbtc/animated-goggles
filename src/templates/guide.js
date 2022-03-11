@@ -48,6 +48,10 @@ const Guide = ({ data }) => {
   // guide.content = guide.content.split('<span class="ql-size-small">').join('<span style="font-weight:400; font-size:11px;">')
   // guide.content = guide.content.split('</span>').join('</span>')
   // fdj
+  let dt = new Date(guide.publishedAt)
+            const monthNames = ["January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December"
+          ];
 
   return (
     
@@ -60,7 +64,7 @@ const Guide = ({ data }) => {
         
       <div>
         <h2 style={{color:"#000",paddingTop:"10%"}} className="uk-text-center">{guide.title}</h2>
-      <p style={{color:"#000"}} className="uk-text-center"><em style={{color:"#000"}}>By NWA Daily | Published Nov 2, 2021</em></p>
+        <p style={{color:"#000"}} className="uk-text-center"><em style={{color:"#000"}}>{`By NWA Daily | Published ${monthNames[dt.getMonth()] + ' '+ dt.getDate()}`}</em></p>
       
           
       
@@ -74,7 +78,7 @@ const Guide = ({ data }) => {
       (
       <div>
           <h2 style={{color:"#000",paddingTop:"10%"}} className="uk-text-center">{guide.title}</h2>
-          <p style={{color:"#000"}} className="uk-text-center"><em style={{color:"#000"}}>By NWA Daily | Published Nov 2, 2021</em></p>
+          <p style={{color:"#000"}} className="uk-text-center"><em style={{color:"#000"}}>{`By NWA Daily | Published ${monthNames[dt.getMonth()] + ' '+ dt.getDate()}`}</em></p>
           
         
           <div style={{paddingLeft:"25%",paddingRight:"25%",paddingTop:"2%",paddingBottom:"5%"}}>
