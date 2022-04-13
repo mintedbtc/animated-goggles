@@ -53,6 +53,7 @@ const Story = ({ data }) => {
   return (
     
     <Layout seo={seo}>
+    <PopupComponent/>
       {breakpoints.sm ? 
       (
       <div>
