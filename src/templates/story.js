@@ -53,11 +53,11 @@ const Story = ({ data }) => {
   return (
     
     <Layout seo={seo}>
-    <PopupComponent/>
+    
       {breakpoints.sm ? 
       (
       <div>
-        
+        <PopupComponent/>
           <h2 className="uk-text-center" style={{paddingTop:"15%",marginTop:"15%"}}>{story.title}</h2>
           <p className="uk-text-center">{"By: "+story.author.name}</p>
           <div style={{paddingLeft:"3%",paddingRight:"3%",paddingTop:"2%",paddingBottom:"5%"}}>
@@ -70,7 +70,7 @@ const Story = ({ data }) => {
       :
       (
       <div>
-        
+        <PopupComponent/>
           <h2 className="uk-text-center">{story.title}</h2>
           <p className="uk-text-center">{"By: "+story.author.name}</p>
           <div style={{paddingLeft:"15%",paddingRight:"15%",paddingTop:"2%",paddingBottom:"5%"}}>
