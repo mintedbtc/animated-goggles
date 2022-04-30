@@ -63,7 +63,7 @@ const Advertise = ({ data }) => {
             <div style={{width:"30%",display:"inline-block"}}>
 
                 <div className="uk-card uk-card-default uk-card-hover uk-card-body" id="ad-card-sponsor">
-                    <h3 className="uk-card-title uk-text-center" id="sponsor-title">Sponsor</h3>
+                    <h3 className="uk-card-title uk-text-center" id="sponsor-title">Title Sponsor</h3>
                     <p>This ad spot is the most prominent spot we offer. It includes your logo and a description about your business or organization and will be the first thing our readers see.</p>
                     <div className="uk-text-center">
                     <img src="https://nwa-daily-photos.s3.amazonaws.com/sponsor_3905f62571.png" width="67%" height="67%" style={{marginBottom:"5%",textAlign:"center"}} alt="Bulletin Ad" />
@@ -75,7 +75,7 @@ const Advertise = ({ data }) => {
             <div style={{width:"30%",paddingLeft:"4.5%",display:"inline-block"}}>
 
                 <div className="uk-card uk-card-default uk-card-hover uk-card-body">
-                    <h3 className="uk-card-title uk-text-center">Extended Text with Image</h3>
+                    <h3 className="uk-card-title uk-text-center">Article Sponsor</h3>
                     <p>This ad spot is perfect for a business or that wants to tell its story. It is a block that includes a photo, a header, and text and looks like the rest of our content.</p>
                     <div className="uk-text-center">
                     <img src="https://nwa-daily-photos.s3.amazonaws.com/extened_Text_decd614915.png" width="67%" height="67%" style={{marginBottom:"5%",textAlign:"center"}} alt="Bulletin Ad" />
@@ -87,7 +87,7 @@ const Advertise = ({ data }) => {
             <div style={{width:"30%",paddingLeft:"4.5%",display:"inline-block"}}>
 
                 <div className="uk-card uk-card-default uk-card-hover uk-card-body">
-                    <h3 className="uk-card-title uk-text-center">Bulletin Board</h3>
+                    <h3 className="uk-card-title uk-text-center">Daily Pick</h3>
                     <p>This ad spot is a one line promotion of your business in a section at the bottom of the news letter. This is the most cost effective way to partner with us.</p>
                     <div className="uk-text-center">
                     <img src="https://nwa-daily-photos.s3.amazonaws.com/bulletin_0a3e0d74e3.png" width="67%" height="67%" style={{marginBottom:"5%",textAlign:"center"}} alt="Bulletin Ad" />
