@@ -29,9 +29,9 @@ const Nav = () => {
                     <li>
                       <Link to="/guide">Guides</Link>
                     </li>
-                    {/* <li>
+                    <li>
                       <Link to="/events">Events</Link>
-                    </li> */}
+                    </li>
                     <li>
                       <Link to="/story">Stories</Link>
                     </li>
@@ -90,9 +90,9 @@ const Nav = () => {
             <li>
                       <Link to="/guide">Guides</Link>
                     </li>
-                    {/* <li>
+                    <li>
                       <Link to="/events">Events</Link>
-                    </li> */}
+                    </li>
                 <li>
                   <Link to="/story">Stories</Link>
                 </li>
