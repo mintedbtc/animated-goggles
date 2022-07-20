@@ -77,7 +77,7 @@ console.log(article)
         <div className="uk-section">
         {breakpoints.sm ? 
         (
-          <div className="uk-container uk-container-small uk-width-11-12">
+          <div className="uk-container uk-container-small uk-width-10-12">
             <div style={{borderBottom:"1px solid #f9f9f9", borderRadius:"20px", marginBottom:"7px", textAlign:"left"}}>
               <div style={{borderBottom:"1px solid #f5f5f5", borderRadius:"19px"}}>
               <div style={{borderRight:"1px solid #f5f5f5", borderBottom:"1px solid #f2f2f2", borderRadius:"18px"}}>
@@ -255,7 +255,7 @@ console.log(article)
         )
         :
         (
-          <div className="uk-container uk-container-small uk-width-3-5">
+          <div className="uk-container uk-container-small uk-width-2-5">
            <div style={{borderBottom:"1px solid #f9f9f9", borderRadius:"20px", marginBottom:"7px", textAlign:"left"}}>
               <div style={{borderBottom:"1px solid #f5f5f5", borderRadius:"19px"}}>
               <div style={{borderRight:"1px solid #f5f5f5", borderBottom:"1px solid #f2f2f2", borderRadius:"18px"}}>
@@ -286,7 +286,32 @@ console.log(article)
             
             </tr>
             </table>
+            {
+              article.sponsor !== null ?
+            (
+            <div>
+            <br></br>
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style={{borderCollapse: "collapse"}}>
+              <tr>
+              <td><h3 style={{fontFamily:"Helvetica,Arial,sans-serif",textAlign:"center",fontSize:"20px",color:"#000000",fontWeight:"700",marginTop:"0",marginBottom:"0"}}>Together With</h3></td></tr>
+              <tr>
+              
+            <td width="100%" style={{textAlign:"center"}}><a href={article.sponsor.partnerWebsite} target="_blank"><img style={{width:"70%",maxWidth:"70%",maxHeight:"30%"}} src={article.sponsor.partnerLogo.publicURL}></img></a></td>
             
+            </tr>
+            
+            
+              <tr>
+              <td>
+            <div key={article.strapiId} style={{color:"black",textAlign:"left",padding:"15px"}} dangerouslySetInnerHTML={{__html:article.sponsor.partnerMessage.split('a title=').join('a style="border-bottom:2px solid #307765;text-decoration:none;color:#333" title=').split('a href=').join('a style="border-bottom:2px solid #307765;text-decoration:none;color:#333" href=').split('<em>').join('<em style="color:#666">')}}></div>
+            </td>
+            </tr>
+            </table>
+            <br></br>
+            </div>)
+            :
+            <br></br>
+          }
             
             </div>
             </div>
@@ -345,6 +370,7 @@ console.log(article)
                     </td>
             </tr>
             </table>
+            
                     </div>
             </div>
             </div>
