@@ -66,7 +66,7 @@ post.content = post.content.split('a href=').join('a style="border-bottom:2px so
         <div className="uk-section">
         {breakpoints.sm ? 
         (
-          <div className="uk-container uk-container-small uk-width-11-12">
+          <div className="uk-container uk-container-small uk-width-10-12">
             <div style={{borderBottom:"1px solid #f9f9f9", borderRadius:"20px", marginBottom:"7px", textAlign:"left"}}>
               <div style={{borderBottom:"1px solid #f5f5f5", borderRadius:"19px"}}>
               <div style={{borderRight:"1px solid #f5f5f5", borderBottom:"1px solid #f2f2f2", borderRadius:"18px"}}>
@@ -173,7 +173,7 @@ post.content = post.content.split('a href=').join('a style="border-bottom:2px so
         )
         :
         (
-          <div className="uk-container uk-container-small uk-width-3-5">
+          <div className="uk-container uk-container-small uk-width-2-5">
            <div style={{borderBottom:"1px solid #f9f9f9", borderRadius:"20px", marginBottom:"7px", textAlign:"left"}}>
               <div style={{borderBottom:"1px solid #f5f5f5", borderRadius:"19px"}}>
               <div style={{borderRight:"1px solid #f5f5f5", borderBottom:"1px solid #f2f2f2", borderRadius:"18px"}}>
