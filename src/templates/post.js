@@ -201,7 +201,7 @@ post.content = post.content.split('a href=').join('a style="border-bottom:2px so
               <table width="100%" cellpadding="0" cellspacing="0" border="0" style={{borderCollapse: "collapse"}}>
               <tr>
               
-            <td width="100%" style={{paddingBottom:"25px"}}><img style={{width:"100%",height:"288px",maxHeight: "12%"}} src="https://nwa-daily-photos.s3.amazonaws.com/OPG_Qp_Jd_Qqils_B_Eitd_D_Gl_985ded29be"/></td>
+            <td width="100%" style={{paddingBottom:"25px"}}><img style={{width:"100%",height:"225px",maxHeight: "12%"}} src="https://nwa-daily-photos.s3.amazonaws.com/OPG_Qp_Jd_Qqils_B_Eitd_D_Gl_985ded29be"/></td>
             
             </tr>
             </table>
