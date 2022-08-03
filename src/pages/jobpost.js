@@ -279,6 +279,7 @@ class JobpostPage extends React.Component {
       .catch(err => {
         console.log(err);
       });
+      // klsdfj
     //   fetch(`https://nwadailybackend.herokuapp.com/signup`, {
     //   method: 'POST',
     //   body: JSON.stringify({email: email}),
