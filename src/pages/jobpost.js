@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, graphql, useStaticQuery, StaticQuery } from "gatsby";
+import { Link, graphql, useStaticQuery, StaticQuery, navigate } from "gatsby";
 import Layout from "../components/layout";
 import { withBreakpoints } from 'gatsby-plugin-breakpoints';
 import "../assets/css/main.css";
@@ -184,6 +184,7 @@ class JobpostPage extends React.Component {
           isModalOpen: false,
           isSubmitted: true
         })
+        navigate('https://buy.stripe.com/3cs01a0dif6f5y0144')
         
       })
       .catch(err => {
@@ -273,7 +274,7 @@ class JobpostPage extends React.Component {
           isModalOpen: false,
           isSubmitted: true
         })
-        
+        navigate('https://buy.stripe.com/8wM29i7FK8HR9OgbIK')
       })
       .catch(err => {
         console.log(err);
@@ -362,7 +363,7 @@ class JobpostPage extends React.Component {
           isModalOpen: false,
           isSubmitted: true
         })
-        
+        navigate('https://buy.stripe.com/6oE8xGd04cY78Kc3cd')
       })
       .catch(err => {
         console.log(err);
@@ -555,8 +556,8 @@ class JobpostPage extends React.Component {
 
           <div className="uk-card uk-card-default uk-card-hover uk-card-body" id="ad-card-sponsor">
               <h3 className="uk-card-title uk-text-center" id="sponsor-title">Basic</h3>
-              <p style={{textDecoration:"line-through",textAlign:"center"}}>$100 / month</p>
-              <p style={{textAlign:"center"}}>Free</p>
+              <p style={{textAlign:"center"}}>$50 / job</p>
+              {/* <p style={{textAlign:"center"}}>Free</p> */}
               <ul>
                 <li>
                 Position posted on NWA Daily's job board for 30 days
@@ -596,14 +597,17 @@ class JobpostPage extends React.Component {
 
           <div className="uk-card uk-card-default uk-card-hover uk-card-body">
               <h3 className="uk-card-title uk-text-center">Featured</h3>
-              <p style={{textDecoration:"line-through",textAlign:"center"}}>$200 / month</p>
+              {/* <p style={{textDecoration:"line-through",textAlign:"center"}}>$200 / month</p> */}
               <p style={{textAlign:"center"}}>$100 / month</p>
               <ul>
               <li>
                     Job board posting
                 </li>
                 <li>
-                    Posted 2 times in newsletter
+                    Highlighted on job board
+                </li>
+                <li>
+                    Posted 1 time in newsletter
                 </li>
               </ul>
               <div style={{textAlign: "center"}}>
@@ -640,14 +644,17 @@ class JobpostPage extends React.Component {
 
           <div className="uk-card uk-card-default uk-card-hover uk-card-body">
               <h3 className="uk-card-title uk-text-center">Premium</h3>
-              <p style={{textDecoration:"line-through",textAlign:"center"}}>$250 / month</p>
+              {/* <p style={{textDecoration:"line-through",textAlign:"center"}}>$250 / month</p> */}
               <p style={{textAlign:"center"}}>$150 / month</p>
               <ul>
                 <li>
                     Job board posting
                 </li>
                 <li>
-                    Posted 4 times in newsletter
+                    Highlighted on job board
+                </li>
+                <li>
+                    Posted 2 times in newsletter
                 </li>
               </ul>
               <div style={{textAlign: "center"}}>
@@ -843,8 +850,8 @@ class JobpostPage extends React.Component {
 
                 <div className="uk-card uk-card-default uk-card-hover uk-card-body" id="ad-card-sponsor">
                     <h3 className="uk-card-title uk-text-center" id="sponsor-title">Basic</h3>
-                    <p style={{textDecoration:"line-through",textAlign:"center"}}>$100 / month</p>
-                    <p style={{textAlign:"center"}}>Free</p>
+                    <p style={{textAlign:"center"}}>$50 / month</p>
+                    {/* <p style={{textAlign:"center"}}>Free</p> */}
                     <ul>
                         <li>
                         Position posted on NWA Daily's job board for 30 days
@@ -884,14 +891,17 @@ class JobpostPage extends React.Component {
 
                 <div className="uk-card uk-card-default uk-card-hover uk-card-body">
                     <h3 className="uk-card-title uk-text-center">Featured</h3>
-                    <p style={{textDecoration:"line-through",textAlign:"center"}}>$200 / month</p>
+                    {/* <p style={{textDecoration:"line-through",textAlign:"center"}}>$200 / month</p> */}
                     <p style={{textAlign:"center"}}>$100 / month</p>
                     <ul>
                         <li>
                             Job board posting
                         </li>
                         <li>
-                            Posted 2 times in newsletter
+                            Highlighted on job board
+                        </li>
+                        <li>
+                            Posted 1 times in newsletter
                         </li>
                     </ul>
                     <div style={{textAlign: "center"}}>
@@ -928,11 +938,14 @@ class JobpostPage extends React.Component {
 
                 <div className="uk-card uk-card-default uk-card-hover uk-card-body">
                     <h3 className="uk-card-title uk-text-center">Premium</h3>
-                    <p style={{textDecoration:"line-through",textAlign:"center"}}>$250 / month</p>
+                    {/* <p style={{textDecoration:"line-through",textAlign:"center"}}>$250 / month</p> */}
                     <p style={{textAlign:"center"}}>$150 / month</p>
                     <ul>
                         <li>
                             Job board posting
+                        </li>
+                        <li>
+                            Highlighted on job board
                         </li>
                         <li>
                             Posted 4 times in newsletter
