@@ -28,7 +28,7 @@ module.exports = {
       resolve: "gatsby-source-strapi",
       options: {
         apiURL: process.env.API_URL ? "https://nwadailybackend.herokuapp.com": "https://nwadailybackend.herokuapp.com",
-        contentTypes: ["article", "job", "event","category", "writer","sponsor","edition","post","pick","guide"],
+        contentTypes: ["article", "job", "event","category", "writer","sponsor","edition","post","pick","guide","partner"],
         singleTypes: [`homepage`, `global`],
         queryLimit: 5000,
       },
