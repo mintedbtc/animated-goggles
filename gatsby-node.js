@@ -65,6 +65,15 @@ exports.createPages = async ({ graphql, actions }) => {
               }
             }
           }
+
+          partners: allStrapiPartner{
+            edges {
+              node {
+                strapiId
+                slug
+              }
+            }
+          }
         }
       `
     );
@@ -81,6 +90,7 @@ exports.createPages = async ({ graphql, actions }) => {
     const jobs = result.data.jobs.edges;
     const events = result.data.events.edges;
     const guides = result.data.guides.edges;
+    const partners = result.data.partners.edges;
   
     const ArticleTemplate = require.resolve("./src/templates/article.js");
   
@@ -163,6 +173,18 @@ exports.createPages = async ({ graphql, actions }) => {
         component: EventTemplate,
         context: {
           slug: event.node.slug,
+        },
+      });
+    });
+
+    const PartnerTemplate = require.resolve("./src/templates/partner.js");
+  
+    partners.forEach((partner, index) => {
+      createPage({
+        path: `/partner/${partner.node.slug}`,
+        component: PartnerTemplate,
+        context: {
+          slug: partner.node.slug,
         },
       });
     });
