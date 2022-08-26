@@ -45,6 +45,9 @@ const Nav = () => {
                       <Link to="/advertise">Advertise</Link>
                     </li>
                     <li>
+                      <Link to="/sponsor">Sponsor</Link>
+                    </li>
+                    <li>
                       <Link to="/subscribe">Subscribe</Link>
                     </li>
                     </ul>
@@ -105,6 +108,9 @@ const Nav = () => {
                 <li>
                   <Link to="/advertise">Advertise</Link>
                 </li>
+                <li>
+                      <Link to="/sponsor">Sponsor</Link>
+                    </li>
                 <li>
                   <Link to="/subscribe">Subscribe</Link>
                 </li>
