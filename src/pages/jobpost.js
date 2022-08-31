@@ -949,7 +949,7 @@ class JobpostPage extends React.Component {
                             Highlighted on job board
                         </li>
                         <li>
-                            Posted 4 times in newsletter
+                            Posted 2 times in newsletter
                         </li>
                     </ul>
                     <div style={{textAlign: "center"}}>
