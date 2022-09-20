@@ -302,7 +302,8 @@ render() {
                                   }
                                 }
                                 
-                                allStrapiGuide(sort: {order: DESC, fields: publishedAt}, limit: 5) {
+                                allStrapiGuide(sort: {order: DESC, fields: publishedAt}, limit: 5,
+				filter: {property: {eq: "NWA Daily"}}) {
                                   edges {
                                     node {
                                       strapiId
