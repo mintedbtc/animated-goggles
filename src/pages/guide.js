@@ -150,7 +150,8 @@ class GuidePage extends React.Component {
           }
         }
       }
-      allStrapiGuide(sort: {order: DESC, fields: publishedAt}) {
+      allStrapiGuide(sort: {order: DESC, fields: publishedAt},
+        filter: {property: {eq: "Tulsa Daily"}}) {
         edges {
           node {
             strapiId
