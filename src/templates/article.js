@@ -34,13 +34,24 @@ export const query = graphql`
           date
           content
       }
+      editionSeo {
+        id
+        metaDescription
+        metaTitle
+        sharedImage {
+          alt
+          id
+          media {
+            publicURL
+          }
+        }
+      }
       pick {
         title
         content
       }
       writer {
         name
-        
       }
     }
   }
@@ -51,11 +62,9 @@ const Article = ({ data }) => {
   const article = data.strapiEdition;
   console.log(article.posts[0].content)
   const seo = {
-    metaTitle: article.headline,
-    metaDescription: article.posts.map(post => {
-        return post.content
-    }).join(', '),
-    shareImage: article.image,
+    metaTitle: `${article.editionSeo.metaTitle} | NWA Daily`,
+    metaDescription: article.editionSeo.metaDescription,
+    shareImage: article.editionSeo.sharedImage.media.publicURL,
     article: true,
   };
   console.log(seo)
@@ -64,6 +73,7 @@ const Article = ({ data }) => {
   const monthNames = ["January", "February", "March", "April", "May", "June",
   "July", "August", "September", "October", "November", "December"
 ];
+console.log(article)
 console.log(article.date)
 const dt = new Date(article.posts[0].date)
 console.log(article)
