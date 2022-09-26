@@ -62,11 +62,11 @@ const Article = ({ data }) => {
   const article = data.strapiEdition;
   console.log(article.posts[0].content)
   const seo = {
-    metaTitle: `${article.editionSeo.metaTitle} | NWA Daily`,
-    metaDescription: article.editionSeo.metaDescription,
-    shareImage: article.editionSeo.sharedImage.media.publicURL,
+    metaTitle: article.editionSeo === null ? "NWA Daily - A daily newsletter about all things Northwest Arkansas" : `${article.editionSeo.metaTitle} | NWA Daily`,
+    metaDescription: article.editionSeo === null ? "NWA Daily is a daily email newsletter that keeps readers up to date on the latest Northwest Arkansas news or NWA news in events, restaurants, business,  the community, politics, art, entertainment, culture, and sports in Northwest Arkansas including news about Bentonville, Rogers, Springdale, and Fayetteville" : article.editionSeo.metaDescription,
+    shareImage: article.editionSeo === null ? "https://nwa-daily-photos.s3.amazonaws.com/gatsby_icon_1ccc6de2a6.png" : article.editionSeo.sharedImage.media.publicURL,
     article: true,
-  };
+    }
   console.log(seo)
   const header = article.headline;
   
