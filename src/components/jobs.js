@@ -34,7 +34,9 @@ const Jobs = ({ jobs }) => {
                 
                    <a
                       className="job-mobile"
-                      href={'/jobs/'+job.node.slug}
+                      // href={'/jobs/'+job.node.slug}
+                      href={job.node.applicationLink}
+                      
                       // state={{ postId: post.id }}
                       >
                        
@@ -80,7 +82,8 @@ const Jobs = ({ jobs }) => {
                 
                    <a
                       className="job-mobile"
-                      href={'/jobs/'+job.node.slug}
+                      // href={'/jobs/'+job.node.slug}
+                      href={job.node.applicationLink}
                       // state={{ postId: post.id }}
                       // state={{ postId: post.id }}
                       >
@@ -133,7 +136,8 @@ const Jobs = ({ jobs }) => {
                 
                    <a
                       className="job"
-                      href={'/jobs/'+job.node.slug}
+                      // href={'/jobs/'+job.node.slug}
+                      href={job.node.applicationLink}
                       // state={{ postId: post.id }}
                       >
                        
@@ -179,7 +183,8 @@ const Jobs = ({ jobs }) => {
                 
                    <a
                       className="job"
-                      href={'/jobs/'+job.node.slug}
+                      // href={'/jobs/'+job.node.slug}
+                      href={job.node.applicationLink}
                       // state={{ postId: post.id }}
                       >
                        
