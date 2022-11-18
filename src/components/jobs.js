@@ -44,7 +44,7 @@ const Jobs = ({ jobs }) => {
                         <span className="company-mobile">{job.node.organization}</span>
                         <br></br>
                         <div className="job-middle-section">
-                        <img width="35" height="35" src={job.node.logo.publicURL}/>
+                        <img width="35" height="35" src={job.node.logoUrl}/>
                         <span className="title-mobile">{job.node.title}</span>
                         <span className="date-mobile">Featured</span>
                         </div>
@@ -92,7 +92,7 @@ const Jobs = ({ jobs }) => {
                         <span className="company-mobile">{job.node.organization}</span>
                         <br></br>
                         <div className="job-middle-section">
-                        <img width="35" height="35" src={job.node.logo.publicURL}/>
+                        <img width="35" height="35" src={job.node.logoUrl}/>
                         <span className="title-mobile">{job.node.title}</span>
                         <span className="date-mobile">{"Posted " + monthNames[dt.getMonth()] + ' '+ dt.getDate()}</span>
                         </div>
@@ -145,7 +145,7 @@ const Jobs = ({ jobs }) => {
                         <span className="company">{job.node.organization}</span>
                         <br></br>
                         <div className="job-middle-section">
-                        <img width="35" height="35" src={job.node.logo.publicURL}/>
+                        <img width="35" height="35" src={job.node.logoUrl}/>
                         <span className="title">{job.node.title}</span>
                         <span className="date">Featured</span>
                         </div>
@@ -192,7 +192,7 @@ const Jobs = ({ jobs }) => {
                         <span className="company">{job.node.organization}</span>
                         <br></br>
                         <div className="job-middle-section">
-                        <img width="35" height="35" src={job.node.logo.publicURL}/>
+                        <img width="35" height="35" src={job.node.logoUrl}/>
                         <span className="title">{job.node.title}</span>
                         <span className="date">{"Posted " + monthNames[dt.getMonth()] + ' '+ dt.getDate()}</span>
                         </div>
