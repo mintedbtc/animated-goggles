@@ -230,6 +230,7 @@ render() {
                                       title
                                       type
                                       applicationLink
+                                      logoUrl
                                       logo {
                                         publicURL
                                       }

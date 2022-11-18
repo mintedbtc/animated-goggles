@@ -16,6 +16,7 @@ export const query = graphql`
       title
       organization
       location
+      logoUrl
       type
       applicationLink
       logo {
