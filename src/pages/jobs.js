@@ -220,7 +220,7 @@ render() {
                                     }
                                   }
                                 }
-                                allStrapiJob(sort: {order: DESC, fields: published_at}) {
+                                allStrapiJob(sort: {order: DESC, fields: posted_date}) {
                                   edges {
                                     node {
                                       strapiId
@@ -229,6 +229,7 @@ render() {
                                       description
                                       title
                                       type
+                                      posted_date
                                       applicationLink
                                       logoUrl
                                       logo {

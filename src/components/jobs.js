@@ -17,7 +17,7 @@ const Jobs = ({ jobs }) => {
       
       <ul className="uk-list uk-list-divider uk-width-8-8">
            {jobs.map((job, i) => {
-            let dt = new Date(job.node.published_at)
+            let dt = new Date(job.node.posted_date)
             const monthNames = ["January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December"
           ];
@@ -64,7 +64,7 @@ const Jobs = ({ jobs }) => {
         }
 
         {jobs.map((job, i) => {
-            let dt = new Date(job.node.published_at)
+            let dt = new Date(job.node.posted_date)
             const monthNames = ["January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December"
           ];
@@ -119,7 +119,7 @@ const Jobs = ({ jobs }) => {
       
         <ul className="uk-list uk-list-divider uk-width-8-8">
           {jobs.map((job, i) => {
-            let dt = new Date(job.node.published_at)
+            let dt = new Date(job.node.posted_date)
             const monthNames = ["January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December"
           ];
@@ -165,7 +165,7 @@ const Jobs = ({ jobs }) => {
         }
 
         {jobs.map((job, i) => {
-            let dt = new Date(job.node.published_at)
+            let dt = new Date(job.node.posted_date)
             const monthNames = ["January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December"
           ];

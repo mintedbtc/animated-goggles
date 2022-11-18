@@ -18,6 +18,7 @@ export const query = graphql`
       location
       logoUrl
       type
+      posted_date
       applicationLink
       logo {
         publicURL
