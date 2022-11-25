@@ -75,7 +75,7 @@ class IndexPage extends React.Component {
 
   submitAdHandler = (e) => {
       e.preventDefault();
-      
+      console.log(this.state.advertiser)
       let postId = null
       console.log(window.location.href.split('?id=').length)
       if (window.location.href.split('?id=').length > 1) {
@@ -89,9 +89,9 @@ class IndexPage extends React.Component {
           postId = 'regular'
           console.log(postId)
         }
-      if (this.state.email !== "") {
+      if (this.state.advertiser !== "") {
       
-      const email = this.state.email.toLowerCase()
+      const email = this.state.advertiser.toLowerCase()
       const oneLiner = this.state.oneLiner
       const extendedText = this.state.extendedText
       const sponsor = this.state.sponsor
