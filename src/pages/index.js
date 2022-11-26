@@ -122,7 +122,7 @@ class IndexPage extends React.Component {
           console.log(resData.data)
           this.setState({
             isModalOpen: false,
-            isSubmitted: true
+            isAdSubmitted: true
           })
           
         })
