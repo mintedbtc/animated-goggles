@@ -367,6 +367,47 @@ console.log(article)
             </div>
             )
         })}
+        <div style={{borderBottom:"1px solid #f9f9f9", borderRadius:"20px", marginBottom:"7px", textAlign:"left"}}>
+              <div style={{borderBottom:"1px solid #f5f5f5", borderRadius:"19px"}}>
+              <div style={{borderRight:"1px solid #f5f5f5", borderBottom:"1px solid #f2f2f2", borderRadius:"18px"}}>
+              <div style={{borderRight:"1px solid #f2f2f2", borderBottom:"1px solid #f0f0f0", borderRadius:"17px"}}>
+              <div style={{borderRight:"1px solid #eee",borderBottom:"1px solid #eee",borderRadius:"16px"}}>
+              <div style={{borderLeft:"0.3px solid #f5f5f5", borderTop:"0.1px solid #f2f2f2", borderRadius:"18px"}}>
+              <div style={{borderLeft:"0.3px solid #f2f2f2", borderTop:"0.1px solid #f0f0f0", borderRadius:"17px"}}>
+              <div style={{borderLeft:"0.3px solid #eee",borderTop:"0.1px solid #eee",borderRadius:"16px"}}>
+
+
+        
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style={{borderCollapse: "collapse"}}>
+              <tr>
+              <td style={{padding: "15px"}}>
+              <h3 style={{fontFamily:"Helvetica,Arial,sans-serif",fontSize:"16px",color:"#307765",fontWeight:"700",marginTop:"0",marginBottom:"0"}}>
+                NWA Daily Picks
+              </h3>
+              <h3 style={{fontFamily:"Helvetica,Arial,sans-serif",fontSize:"24px",color:"#333",fontWeight:"700",marginBottom:"0",lineHeight:"26px",marginTop:"8px"}}>
+              <font color="#000000">
+              In other news
+              </font>
+              </h3>
+              </td>
+              </tr>
+              </table>
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style={{borderCollapse: "collapse"}}>
+                <tr>
+                <td>
+                <div style={{color:"black", padding: "15px"}} dangerouslySetInnerHTML={{__html:article.pick.content.split('a title=').join('a style="border-bottom:2px solid #307765;text-decoration:none;color:#333" title=').split('a href=').join('a style="border-bottom:2px solid #307765;text-decoration:none;color:#333" href=').split('<em>').join('<em style="color:#666;">').split('<li>').join('<li style="padding-bottom:10px;">')}}></div>
+                </td>
+            </tr>
+            </table>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            
+            </div>
         {/* <div style={{borderBottom:"1px solid #f9f9f9", borderRadius:"20px", marginBottom:"7px", textAlign:"left"}}>
               <div style={{borderBottom:"1px solid #f5f5f5", borderRadius:"19px"}}>
               <div style={{borderRight:"1px solid #f5f5f5", borderBottom:"1px solid #f2f2f2", borderRadius:"18px"}}>
