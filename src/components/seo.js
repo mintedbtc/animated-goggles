@@ -8,7 +8,7 @@ const SEO = ({ seo = {} }) => {
   const { defaultSeo, siteName, favicon } = strapiGlobal;
 
   // Merge default and page-specific SEO values
-  const fullSeo = { ...defaultSeo, ...editionSeo };
+  const fullSeo = { ...defaultSeo, ...seo };
 
   const getMetaTags = () => {
     const tags = [];
