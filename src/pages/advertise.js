@@ -4,6 +4,7 @@ import AdvertiseComponent from "../components/advertise";
 import "../assets/css/main.css";
 import { Link, graphql, useStaticQuery, StaticQuery } from "gatsby";
 import { withBreakpoints } from 'gatsby-plugin-breakpoints';
+import { Calendar } from 'react-calendar';
 
 class AdvertisePage extends React.Component {
   constructor(props) {
@@ -424,10 +425,14 @@ class AdvertisePage extends React.Component {
 
             </div>
         </div>
+
         </div>
               )}
         
-    
+        <Calendar
+          onChange={date => setSelectedDate(date)}
+          value={selectedDate}
+        />              
         </div>
       
     </Layout>

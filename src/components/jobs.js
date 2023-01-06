@@ -21,7 +21,7 @@ const Jobs = ({ jobs }) => {
             const monthNames = ["January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December"
           ];
-          let dateLimit = new Date() - 30*60*60*24*1000;
+          let dateLimit = new Date() - 31*60*60*24*1000;
           console.log(dateLimit)
           if (job.node.type === 'Featured' && dt >= dateLimit) {
             return (
@@ -68,7 +68,7 @@ const Jobs = ({ jobs }) => {
             const monthNames = ["January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December"
           ];
-          let dateLimit = new Date() - 30*60*60*24*1000;
+          let dateLimit = new Date() - 31*60*60*24*1000;
           console.log(dateLimit)
         if (job.node.type !== 'Featured' && dt >= dateLimit) {
             
@@ -123,7 +123,7 @@ const Jobs = ({ jobs }) => {
             const monthNames = ["January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December"
           ];
-          let dateLimit = new Date() - 30*60*60*24*1000;
+          let dateLimit = new Date() - 31*60*60*24*1000;
           console.log(dateLimit)
           if (job.node.type === 'Featured' && dt >= dateLimit) {
             return (
@@ -169,7 +169,7 @@ const Jobs = ({ jobs }) => {
             const monthNames = ["January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December"
           ];
-          let dateLimit = new Date() - 30*60*60*24*1000;
+          let dateLimit = new Date() - 31*60*60*24*1000;
           console.log(dateLimit)
         if (job.node.type !== 'Featured' && dt >= dateLimit) {
             
