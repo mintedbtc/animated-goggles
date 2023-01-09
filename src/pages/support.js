@@ -426,24 +426,33 @@ class JobpostPage extends React.Component {
 (
 <div className="uk-section">
       
-      <h3 className="uk-text-center">Become a super fan</h3>
-      <p className="uk-text-center" style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}></p>
-      <form class="uk-form" style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}>
+      <h3 className="uk-text-center">Become a fan and support us!</h3>
+      <p className="uk-text-center" style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}>
+        At NWA Daily, we love delivering the you the content you love. We want to make sure you know all the great things going on in Northwest Arkansas, so you can be as connected as possible with your hometown. 
+      </p>
+      <p className="uk-text-center" style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}>
+        We're locally owned and operated and want to make sure we can sustainably keep delivering you great content and employing great local folks to do so. Becoming a fan with either a monthly or annual membership will help us continue to hire local folks to deliver you the best newsletter possible every weekday!
+      </p>
+      <p>
+        <img style={{textAlign:"center",marginLeft:"28%",marginRight:"auto",width:"40%",height:"50%"}} src="https://nwa-daily-photos.s3.amazonaws.com/NWA_Daily_Crew_fa690b6c71.jpeg"></img>
+      </p>
+      <form class="uk-form" style={{marginLeft:"auto",marginRight:"auto",width:"100%"}}>
             
               <div class="test">
                     
               {this.state.isSubmitted === false ?
                 (
                   <div class="uk-margin">
-            
+          
+              
                 <div className="uk-container">
       
         
-      <div style={{paddingRight:"20px",paddingTop:"25px",width:"100%"}}>
+            <div style={{display:"inline-block",paddingRight:"20px",marginLeft:"10%", marginBottom:"10px",width:"80%",textAlign:"center"}}>
 
-          <div className="uk-card uk-card-default uk-card-hover uk-card-body" id="ad-card-sponsor">
-              <h3 className="uk-card-title uk-text-center" id="sponsor-title">Monthly Supporter</h3>
-              <p style={{textAlign:"center"}}>$10 / month</p>
+                <div className="uk-card uk-card-default uk-card-hover uk-card-body" id="ad-card-sponsor">
+                    <h3 className="uk-card-title uk-text-center" id="sponsor-title">Big Fan</h3>
+                    <p style={{textAlign:"center"}}>$7 / mo</p>
               {/* <p style={{textAlign:"center"}}>Free</p> */}
               <ul>
                 <li>
@@ -456,88 +465,153 @@ class JobpostPage extends React.Component {
                 Help us keep growing and offering you better content!
                 </li>
               </ul>
-              <div style={{textAlign: "center"}}>
+              <div>
+              <div style={{textAlign: "center",display:"inline-block"}}>
                     <button 
-                    style={{width:"100%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
+                    style={{width:"50%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
                     className="uk-button uk-button-default"
                     onClick={this.submitBasicHandler}
-                    >Be a fan!</button>
+                    >$7/mo</button>
+                    <button 
+                    style={{width:"50%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
+                    className="uk-button uk-button-default"
+                    onClick={this.submitBasicHandler}
+                    >$70/yr</button>
                     </div>
-              {/* {this.state.basic === "0" ? 
-              (
-              <button 
-                style={{width:"70%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
-                className="uk-button uk-button-default uk-position-bottom-center"
-                onClick={e => {
-                console.log(e.target.value)
-                  this.setState({ basic: "1" })
-                }}
-                >Select</button>
-                )
-              :
-              (
-                <button style={{width:"70%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} className="uk-button uk-button-default uk-position-bottom-center"
-                onClick={e => {
-                    console.log(e.target.value)
-                  this.setState({ basic: "0" })
-                }}
-              >Selected</button>
-              )} */}
-          </div>
+                    {/* {this.state.basic === "0" ? 
+                    (
+                    <button 
+                      style={{width:"70%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
+                      className="uk-button uk-button-default uk-position-bottom-center"
+                      onClick={e => {
+                        console.log(e.target.value)
+                        this.setState({ basic: "1" })
+                      }}
+                      >Select</button>
+                      )
+                    :
+                    (
+                      <button style={{width:"70%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} className="uk-button uk-button-default uk-position-bottom-center"
+                      onClick={e => {
+                        console.log(e.target.value)
+                        this.setState({ basic: "0" })
+                      }}
+                    >Selected</button>
+                    )} */}
+                </div>
+                </div>
 
-      </div>
-      <div style={{paddingRight:"20px",paddingTop:"25px",width:"100%"}}>
+            </div>
+            <div style={{display:"inline-block",paddingRight:"20px",marginLeft:"10%", marginBottom:"10px",width:"80%",textAlign:"center"}}>
 
-          <div className="uk-card uk-card-default uk-card-hover uk-card-body">
-              <h3 className="uk-card-title uk-text-center">Annual Supporter</h3>
-              {/* <p style={{textDecoration:"line-through",textAlign:"center"}}>$200 / month</p> */}
-              <p style={{textAlign:"center"}}>$100 / year</p>
+                <div className="uk-card uk-card-default uk-card-hover uk-card-body">
+                    <h3 className="uk-card-title uk-text-center">Super Fan</h3>
+                    {/* <p style={{textDecoration:"line-through",textAlign:"center"}}>$200 / month</p> */}
+                    <p style={{textAlign:"center"}}>$10 / mo</p>
+              {/* <p style={{textAlign:"center"}}>Free</p> */}
               <ul>
-              <li>
-                    Job board posting
+                <li>
+                Support NWA Daily with an annual membership
                 </li>
                 <li>
-                    Highlighted on job board
+                Make sustainable, local journalism possible in NWA
                 </li>
                 <li>
-                    Posted 1 time in newsletter
+                Help us keep growing and offering you better content!
                 </li>
               </ul>
               <div style={{textAlign: "center"}}>
-                    <button 
-                    style={{width:"100%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
-                    className="uk-button uk-button-default"
-                    onClick={this.submitFeaturedHandler}
-                    >Be a super fan!</button>
-                    </div>
-              {/* {this.state.featured === "0" ? 
-              (
               <button 
-                style={{width:"70%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
-                className="uk-button uk-button-default uk-position-bottom-center"
-                onClick={e => {
-                    console.log(e.target.value)
-                  this.setState({ featured: "1" })
-                }}
-                >Select</button>
-                )
-              :
-              (
-                <button style={{width:"70%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} className="uk-button uk-button-default uk-position-bottom-center"
-                onClick={e => {
-                    console.log(e.target.value)
-                  this.setState({ featured: "0" })
-                }}
-              >Selected</button>
-              )} */}
-          </div>
+                    style={{width:"50%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
+                    className="uk-button uk-button-default"
+                    onClick={this.submitBasicHandler}
+                    >$10/mo</button>
+                    <button 
+                    style={{width:"50%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
+                    className="uk-button uk-button-default"
+                    onClick={this.submitBasicHandler}
+                    >$100/yr</button>
+                    </div>
+                    {/* {this.state.featured === "0" ? 
+                    (
+                    <button 
+                      style={{width:"70%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
+                      className="uk-button uk-button-default uk-position-bottom-center"
+                      onClick={e => {
+                        console.log(e.target.value)
+                        this.setState({ featured: "1" })
+                      }}
+                      >Select</button>
+                      )
+                    :
+                    (
+                      <button style={{width:"70%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} className="uk-button uk-button-default uk-position-bottom-center"
+                      onClick={e => {
+                        console.log(e.target.value)
+                        this.setState({ featured: "0" })
+                      }}
+                    >Selected</button>
+                    )} */}
+                </div>
 
-      </div>
-      
-  </div>
-                <br></br>
-                <br></br>
-                
+            </div>
+            <div style={{display:"inline-block",paddingRight:"20px",marginLeft:"10%", marginBottom:"10px",width:"80%",textAlign:"center"}}>
+
+                <div className="uk-card uk-card-default uk-card-hover uk-card-body">
+                    <h3 className="uk-card-title uk-text-center">Mega Fan</h3>
+                    {/* <p style={{textDecoration:"line-through",textAlign:"center"}}>$200 / month</p> */}
+                    <p style={{textAlign:"center"}}>$15 / mo</p>
+              {/* <p style={{textAlign:"center"}}>Free</p> */}
+              <ul>
+                <li>
+                Support NWA Daily with an annual membership
+                </li>
+                <li>
+                Make sustainable, local journalism possible in NWA
+                </li>
+                <li>
+                Help us keep growing and offering you better content!
+                </li>
+              </ul>
+              <div style={{textAlign: "center"}}>
+              <button 
+                    style={{width:"50%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
+                    className="uk-button uk-button-default"
+                    onClick={this.submitBasicHandler}
+                    >$15/mo</button>
+                    <button 
+                    style={{width:"50%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
+                    className="uk-button uk-button-default"
+                    onClick={this.submitBasicHandler}
+                    >$150/yr</button>
+                    </div>
+                    {/* {this.state.featured === "0" ? 
+                    (
+                    <button 
+                      style={{width:"70%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
+                      className="uk-button uk-button-default uk-position-bottom-center"
+                      onClick={e => {
+                        console.log(e.target.value)
+                        this.setState({ featured: "1" })
+                      }}
+                      >Select</button>
+                      )
+                    :
+                    (
+                      <button style={{width:"70%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} className="uk-button uk-button-default uk-position-bottom-center"
+                      onClick={e => {
+                        console.log(e.target.value)
+                        this.setState({ featured: "0" })
+                      }}
+                    >Selected</button>
+                    )} */}
+                </div>
+
+            </div>
+            
+        </div>
+        <br></br>
+        <br></br>
                 {/* <div style={{textAlign: "center"}}>
             <button 
               style={{textAlign: "center",backgroundColor:"#307765",opacity:1,color:"white"}} 
@@ -569,6 +643,9 @@ class JobpostPage extends React.Component {
       </p>
       <p className="uk-text-center" style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}>
         We're locally owned and operated and want to make sure we can sustainably keep delivering you great content and employing great local folks to do so. Becoming a fan with either a monthly or annual membership will help us continue to hire local folks to deliver you the best newsletter possible every weekday!
+      </p>
+      <p>
+        <img style={{textAlign:"center",marginLeft:"28%",marginRight:"auto",width:"40%",height:"50%"}} src="https://nwa-daily-photos.s3.amazonaws.com/NWA_Daily_Crew_fa690b6c71.jpeg"></img>
       </p>
       <form class="uk-form" style={{marginLeft:"auto",marginRight:"auto",width:"75%"}}>
             
