@@ -5,7 +5,7 @@ import { withBreakpoints } from 'gatsby-plugin-breakpoints';
 import "../assets/css/main.css";
 import 'react-quill/dist/quill.snow.css';
 
-class SupportPage extends React.Component {
+class JobpostPage extends React.Component {
   constructor(props) {
     super(props);
     if (typeof window !== 'undefined') {
@@ -73,10 +73,10 @@ class SupportPage extends React.Component {
         organization: organization,
         description: description,
         applicationLink: applicationLink,
-        // property: "NWA Daily"
+        // property: "Tulsa Daily"
       }
   
-    fetch(`https://nwadailybackend.herokuapp.com/jobs`, {
+    fetch(`https://tulsadaily.herokuapp.com/jobs`, {
       method: 'POST',
       body: JSON.stringify(requestBody),
       headers: {
@@ -100,7 +100,7 @@ class SupportPage extends React.Component {
       .catch(err => {
         console.log(err);
       });
-    //   fetch(`https://nwadailybackend.herokuapp.com/signup`, {
+    //   fetch(`https://tulsadaily.herokuapp.com/signup`, {
     //   method: 'POST',
     //   body: JSON.stringify({email: email}),
     //   headers: {
@@ -130,181 +130,181 @@ class SupportPage extends React.Component {
 
   submitBasicHandler = (e) => {
     e.preventDefault();
-    navigate('https://buy.stripe.com/3cs01a0dif6f5y0144')
-    let postId = null
-    console.log(window.location.href.split('?id=').length)
-    if (window.location.href.split('?id=').length > 1) {
-      console.log('idhere')
-      console.log(window.location.href)
-      postId = window.location.href.split('?id=')[1]
-      postId = postId.split('&')[0]
-      console.log(postId)
-      }
-    else {
-        postId = 'regular'
-        console.log(postId)
-      }
-    if (this.state.email !== "") {
+    navigate('https://buy.stripe.com/6oE3dme488HR8KcdQV')
+  //   let postId = null
+  //   console.log(window.location.href.split('?id=').length)
+  //   if (window.location.href.split('?id=').length > 1) {
+  //     console.log('idhere')
+  //     console.log(window.location.href)
+  //     postId = window.location.href.split('?id=')[1]
+  //     postId = postId.split('&')[0]
+  //     console.log(postId)
+  //     }
+  //   else {
+  //       postId = 'regular'
+  //       console.log(postId)
+  //     }
+  //   if (this.state.email !== "") {
     
-    const email = this.state.email.toLowerCase()
-    const location = this.state.location
-    const organization = this.state.organization
-    const description = this.state.description
-    const title = this.state.title
-    const applicationLink = this.state.applicationLink
+  //   const email = this.state.email.toLowerCase()
+  //   const location = this.state.location
+  //   const organization = this.state.organization
+  //   const description = this.state.description
+  //   const title = this.state.title
+  //   const applicationLink = this.state.applicationLink
 
-    const requestBody = {
-        email: email,
-        location: location,
-        // source: postId,
-        title: title,
-        organization: organization,
-        description: description,
-        type: 'Basic',
-        applicationLink: applicationLink,
-        // property: "NWA Daily"
-      }
+  //   const requestBody = {
+  //       email: email,
+  //       location: location,
+  //       // source: postId,
+  //       title: title,
+  //       organization: organization,
+  //       description: description,
+  //       type: 'Basic',
+  //       applicationLink: applicationLink,
+  //       // property: "NWA Daily"
+  //     }
   
-    fetch(`https://nwadailybackend.herokuapp.com/jobs`, {
-      method: 'POST',
-      body: JSON.stringify(requestBody),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-      .then(res => {
-        if (res.status !== 200 && res.status !== 201) {
-          throw new Error('Failed!');
-        }
-        return res.json();
-      })
-      .then(resData => {
-        console.log(resData.data)
-        this.setState({
-          isModalOpen: false,
-          isSubmitted: true
-        })
-        navigate('https://buy.stripe.com/3cs01a0dif6f5y0144')
+  //   fetch(`https://nwadailybackend.herokuapp.com/jobs`, {
+  //     method: 'POST',
+  //     body: JSON.stringify(requestBody),
+  //     headers: {
+  //       'Content-Type': 'application/json'
+  //     }
+  //   })
+  //     .then(res => {
+  //       if (res.status !== 200 && res.status !== 201) {
+  //         throw new Error('Failed!');
+  //       }
+  //       return res.json();
+  //     })
+  //     .then(resData => {
+  //       console.log(resData.data)
+  //       this.setState({
+  //         isModalOpen: false,
+  //         isSubmitted: true
+  //       })
+  //       navigate('https://buy.stripe.com/3cs01a0dif6f5y0144')
         
-      })
-      .catch(err => {
-        console.log(err);
-      });
-    //   fetch(`https://nwadailybackend.herokuapp.com/signup`, {
-    //   method: 'POST',
-    //   body: JSON.stringify({email: email}),
-    //   headers: {
-    //     'Content-Type': 'application/json'
-    //   },
-    //   mode: 'cors'
-    // })
-    //   .then(res => {
-    //     if (res.status !== 200 && res.status !== 201) {
-    //       console.log(res.status)
-    //       return res.status
-    //     }
-    //     return res;
-    //   })
-    //   .catch(err => {
-    //     console.log(err);
-    //   });
-  }
-  else {
-    this.setState({
-      submitError: true,
-    })
-    console.log(true)
-  }
+  //     })
+  //     .catch(err => {
+  //       console.log(err);
+  //     });
+  //   //   fetch(`https://nwadailybackend.herokuapp.com/signup`, {
+  //   //   method: 'POST',
+  //   //   body: JSON.stringify({email: email}),
+  //   //   headers: {
+  //   //     'Content-Type': 'application/json'
+  //   //   },
+  //   //   mode: 'cors'
+  //   // })
+  //   //   .then(res => {
+  //   //     if (res.status !== 200 && res.status !== 201) {
+  //   //       console.log(res.status)
+  //   //       return res.status
+  //   //     }
+  //   //     return res;
+  //   //   })
+  //   //   .catch(err => {
+  //   //     console.log(err);
+  //   //   });
+  // }
+  // else {
+  //   this.setState({
+  //     submitError: true,
+  //   })
+  //   console.log(true)
+  // }
   
   }
 
   submitFeaturedHandler = (e) => {
     e.preventDefault();
+    navigate('https://buy.stripe.com/6oE3dme488HR8KcdQV')
+  //   let postId = null
+  //   console.log(window.location.href.split('?id=').length)
+  //   if (window.location.href.split('?id=').length > 1) {
+  //     console.log('idhere')
+  //     console.log(window.location.href)
+  //     postId = window.location.href.split('?id=')[1]
+  //     postId = postId.split('&')[0]
+  //     console.log(postId)
+  //     }
+  //   else {
+  //       postId = 'regular'
+  //       console.log(postId)
+  //     }
+  //   if (this.state.email !== "") {
     
-    let postId = null
-    console.log(window.location.href.split('?id=').length)
-    if (window.location.href.split('?id=').length > 1) {
-      console.log('idhere')
-      console.log(window.location.href)
-      postId = window.location.href.split('?id=')[1]
-      postId = postId.split('&')[0]
-      console.log(postId)
-      }
-    else {
-        postId = 'regular'
-        console.log(postId)
-      }
-    if (this.state.email !== "") {
-    
-    const email = this.state.email.toLowerCase()
-    const location = this.state.location
-    const organization = this.state.organization
-    const description = this.state.description
-    const title = this.state.title
-    const applicationLink = this.state.applicationLink
+  //   const email = this.state.email.toLowerCase()
+  //   const location = this.state.location
+  //   const organization = this.state.organization
+  //   const description = this.state.description
+  //   const title = this.state.title
+  //   const applicationLink = this.state.applicationLink
 
-    const requestBody = {
-        email: email,
-        location: location,
-        // source: postId,
-        title: title,
-        organization: organization,
-        description: description,
-        type: 'Featured',
-        applicationLink: applicationLink,
-        // property: "NWA Daily"
-      }
+  //   const requestBody = {
+  //       email: email,
+  //       location: location,
+  //       // source: postId,
+  //       title: title,
+  //       organization: organization,
+  //       description: description,
+  //       type: 'Basic',
+  //       applicationLink: applicationLink,
+  //       // property: "NWA Daily"
+  //     }
   
-    fetch(`https://nwadailybackend.herokuapp.com/jobs`, {
-      method: 'POST',
-      body: JSON.stringify(requestBody),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-      .then(res => {
-        if (res.status !== 200 && res.status !== 201) {
-          throw new Error('Failed!');
-        }
-        return res.json();
-      })
-      .then(resData => {
-        console.log(resData.data)
-        this.setState({
-          isModalOpen: false,
-          isSubmitted: true
-        })
-        navigate('https://buy.stripe.com/8wM29i7FK8HR9OgbIK')
-      })
-      .catch(err => {
-        console.log(err);
-      });
-      // klsdfj
-    //   fetch(`https://nwadailybackend.herokuapp.com/signup`, {
-    //   method: 'POST',
-    //   body: JSON.stringify({email: email}),
-    //   headers: {
-    //     'Content-Type': 'application/json'
-    //   },
-    //   mode: 'cors'
-    // })
-    //   .then(res => {
-    //     if (res.status !== 200 && res.status !== 201) {
-    //       console.log(res.status)
-    //       return res.status
-    //     }
-    //     return res;
-    //   })
-    //   .catch(err => {
-    //     console.log(err);
-    //   });
-  }
-  else {
-    this.setState({
-      submitError: true,
-    })
-    console.log(true)
-  }
+  //   fetch(`https://nwadailybackend.herokuapp.com/jobs`, {
+  //     method: 'POST',
+  //     body: JSON.stringify(requestBody),
+  //     headers: {
+  //       'Content-Type': 'application/json'
+  //     }
+  //   })
+  //     .then(res => {
+  //       if (res.status !== 200 && res.status !== 201) {
+  //         throw new Error('Failed!');
+  //       }
+  //       return res.json();
+  //     })
+  //     .then(resData => {
+  //       console.log(resData.data)
+  //       this.setState({
+  //         isModalOpen: false,
+  //         isSubmitted: true
+  //       })
+  //       navigate('https://buy.stripe.com/3cs01a0dif6f5y0144')
+        
+  //     })
+  //     .catch(err => {
+  //       console.log(err);
+  //     });
+  //   //   fetch(`https://nwadailybackend.herokuapp.com/signup`, {
+  //   //   method: 'POST',
+  //   //   body: JSON.stringify({email: email}),
+  //   //   headers: {
+  //   //     'Content-Type': 'application/json'
+  //   //   },
+  //   //   mode: 'cors'
+  //   // })
+  //   //   .then(res => {
+  //   //     if (res.status !== 200 && res.status !== 201) {
+  //   //       console.log(res.status)
+  //   //       return res.status
+  //   //     }
+  //   //     return res;
+  //   //   })
+  //   //   .catch(err => {
+  //   //     console.log(err);
+  //   //   });
+  // }
+  // else {
+  //   this.setState({
+  //     submitError: true,
+  //   })
+  //   console.log(true)
+  // }
   
   }
 
@@ -342,10 +342,10 @@ class SupportPage extends React.Component {
         description: description,
         type: 'Premium',
         applicationLink: applicationLink,
-        // property: "NWA Daily"
+        // property: "Tulsa Daily"
       }
   
-    fetch(`https://nwadailybackend.herokuapp.com/jobs`, {
+    fetch(`https://tulsadaily.herokuapp.com/jobs`, {
       method: 'POST',
       body: JSON.stringify(requestBody),
       headers: {
@@ -369,7 +369,7 @@ class SupportPage extends React.Component {
       .catch(err => {
         console.log(err);
       });
-    //   fetch(`https://nwadailybackend.herokuapp.com/signup`, {
+    //   fetch(`https://tulsadaily.herokuapp.com/signup`, {
     //   method: 'POST',
     //   body: JSON.stringify({email: email}),
     //   headers: {
@@ -426,7 +426,7 @@ class SupportPage extends React.Component {
 (
 <div className="uk-section">
       
-      <h3 className="uk-text-center">Post a job on our job board</h3>
+      <h3 className="uk-text-center">Become a super fan</h3>
       <p className="uk-text-center" style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}></p>
       <form class="uk-form" style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}>
             
@@ -435,133 +435,25 @@ class SupportPage extends React.Component {
               {this.state.isSubmitted === false ?
                 (
                   <div class="uk-margin">
-              <label>
-              Job Title
-              </label>
-              <br></br>
-              <input style={{width:"100%",color:"#307765", marginBottom:"0px",paddingBottom:"0px"}} 
-              className="uk-input" 
-              id="jobTitle"
-              name="title" 
-              type="text" 
-              placeholder="Job Title"
-              labelText="Job Title"
-              value={this.state.title}
-                onChange={(e) => {
-                  console.log(e.target.value)
-                  this.setState({title:e.target.value})
-              }}
-              />
-              <br></br>
-              <br></br>
-              <label>
-              Organization
-              </label>
-              <br></br>
-              
-              <input style={{width:"100%",color:"#307765", marginBottom:"0px",paddingBottom:"0px"}} 
-              className="uk-input" 
-              id="jobOrganization"
-              name="organization" 
-              type="text" 
-              placeholder="Organization"
-              labelText="Organization"
-              value={this.state.organization}
-                onChange={(e) => {
-                  console.log(e.target.value)
-                  this.setState({organization:e.target.value})
-              }}
-              />
-              <br></br>
-              <br></br>
-              <label>
-              Job Location
-              </label>
-              <br></br>
-              
-              <input style={{width:"100%",color:"#307765", marginBottom:"0px",paddingBottom:"0px"}} 
-              className="uk-input" 
-              id="jobLocation"
-              name="location" 
-              type="text" 
-              placeholder="Job Location"
-              labelText="Location"
-              value={this.state.location}
-                onChange={(e) => {
-                  console.log(e.target.value)
-                  this.setState({location:e.target.value})
-              }}
-              />
-              
-              <br></br>
-              <br></br>
-              <label>
-              Job Description
-              </label>
-              <br></br>
-             
-              {(typeof window !== 'undefined' && ReactQuill) ? 
-                (
-              <ReactQuill theme="snow" 
-                  name="jobDescription"
-                  value={this.state.description}
-                  onChange={(content) => {
-                  this.setState({description:content})
-                  }}
-              />
-                )
-                :
-                (
-                    <textarea />
-                )}
-              
-              <br></br>
-              <label>
-              Job Application Link
-              </label>
-              <input style={{width:"100%",color:"#307765", marginBottom:"0px",paddingBottom:"0px"}} 
-                className="uk-input" 
-                id="jobLink"
-                name="link" 
-                type="text" 
-                placeholder="Job Application Link"
-                labelText="Job Application Link"
-                value={this.state.applicationLink}
-                  onChange={(e) => {
-                    console.log(e.target.value)
-                    this.setState({applicationLink:e.target.value})
-                }}
-                />
-                <br></br>
-                <br></br>
-              <label>
-              Contact Email Address
-              </label>
-              <input style={{width:"100%",color:"#307765", marginBottom:"0px",paddingBottom:"0px"}} 
-                className="uk-input" 
-                id="jobEmail"
-                name="email" 
-                type="text" 
-                placeholder="Email Address"
-                labelText="Your Email"
-                value={this.state.email}
-                  onChange={(e) => {
-                    console.log(e.target.value)
-                    this.setState({email:e.target.value})
-                }}
-                />
+            
                 <div className="uk-container">
       
         
       <div style={{paddingRight:"20px",paddingTop:"25px",width:"100%"}}>
 
           <div className="uk-card uk-card-default uk-card-hover uk-card-body" id="ad-card-sponsor">
-              <h3 className="uk-card-title uk-text-center" id="sponsor-title">Basic</h3>
-              <p style={{textAlign:"center"}}>$50 / job</p>
+              <h3 className="uk-card-title uk-text-center" id="sponsor-title">Monthly Supporter</h3>
+              <p style={{textAlign:"center"}}>$10 / month</p>
               {/* <p style={{textAlign:"center"}}>Free</p> */}
               <ul>
                 <li>
-                Position posted on NWA Daily's job board for 30 days
+                Support NWA Daily with a monthly membership
+                </li>
+                <li>
+                Make sustainable, local journalism possible in NWA
+                </li>
+                <li>
+                Help us keep growing and offering you better content!
                 </li>
               </ul>
               <div style={{textAlign: "center"}}>
@@ -569,7 +461,7 @@ class SupportPage extends React.Component {
                     style={{width:"100%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
                     className="uk-button uk-button-default"
                     onClick={this.submitBasicHandler}
-                    >Post Basic</button>
+                    >Be a fan!</button>
                     </div>
               {/* {this.state.basic === "0" ? 
               (
@@ -597,9 +489,9 @@ class SupportPage extends React.Component {
       <div style={{paddingRight:"20px",paddingTop:"25px",width:"100%"}}>
 
           <div className="uk-card uk-card-default uk-card-hover uk-card-body">
-              <h3 className="uk-card-title uk-text-center">Featured</h3>
+              <h3 className="uk-card-title uk-text-center">Annual Supporter</h3>
               {/* <p style={{textDecoration:"line-through",textAlign:"center"}}>$200 / month</p> */}
-              <p style={{textAlign:"center"}}>$100 / month</p>
+              <p style={{textAlign:"center"}}>$100 / year</p>
               <ul>
               <li>
                     Job board posting
@@ -616,7 +508,7 @@ class SupportPage extends React.Component {
                     style={{width:"100%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
                     className="uk-button uk-button-default"
                     onClick={this.submitFeaturedHandler}
-                    >Post Featured</button>
+                    >Be a super fan!</button>
                     </div>
               {/* {this.state.featured === "0" ? 
               (
@@ -641,55 +533,7 @@ class SupportPage extends React.Component {
           </div>
 
       </div>
-      <div style={{width:"100%",paddingTop:"25px"}}>
-
-          <div className="uk-card uk-card-default uk-card-hover uk-card-body">
-              <h3 className="uk-card-title uk-text-center">Premium</h3>
-              {/* <p style={{textDecoration:"line-through",textAlign:"center"}}>$250 / month</p> */}
-              <p style={{textAlign:"center"}}>$150 / month</p>
-              <ul>
-                <li>
-                    Job board posting
-                </li>
-                <li>
-                    Highlighted on job board
-                </li>
-                <li>
-                    Posted 2 times in newsletter
-                </li>
-              </ul>
-              <div style={{textAlign: "center"}}>
-                    <button 
-                    style={{width:"100%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
-                    className="uk-button uk-button-default"
-                    onClick={this.submitPremiumHandler}
-                    >Post Premium</button>
-                    </div>
-              {/* {this.state.premium === "0" ? 
-              (
-              <button 
-                style={{width:"70%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
-                className="uk-button uk-button-default uk-position-bottom-center"
-                onClick={e => {
-                    console.log(e.target.value)
-                  this.setState({ premium: "1" })
-                }}
-                >Select</button>
-              )
-              :
-              (
-                <button 
-                style={{width:"70%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
-                className="uk-button uk-button-default uk-position-bottom-center"
-                onClick={e => {
-                    console.log(e.target.value)
-                  this.setState({ premium: "0" })
-                }}
-                >Selected</button>
-              )} */}
-          </div>
-
-      </div>
+      
   </div>
                 <br></br>
                 <br></br>
@@ -719,8 +563,13 @@ class SupportPage extends React.Component {
 (
 <div className="uk-section">
       
-      <h3 className="uk-text-center">Post a job on our job board</h3>
-      <p className="uk-text-center" style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}></p>
+      <h3 className="uk-text-center">Become a fan and support us!</h3>
+      <p className="uk-text-center" style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}>
+        At NWA Daily, we love delivering the you the content you love. We want to make sure you know all the great things going on in Northwest Arkansas, so you can be as connected as possible with your hometown. 
+      </p>
+      <p className="uk-text-center" style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}>
+        We're locally owned and operated and want to make sure we can sustainably keep delivering you great content and employing great local folks to do so. Becoming a fan with either a monthly or annual membership will help us continue to hire local folks to deliver you the best newsletter possible every weekday!
+      </p>
       <form class="uk-form" style={{marginLeft:"auto",marginRight:"auto",width:"75%"}}>
             
               <div class="test">
@@ -728,142 +577,40 @@ class SupportPage extends React.Component {
               {this.state.isSubmitted === false ?
                 (
                   <div class="uk-margin">
-              <label>
-              Job Title
-              </label>
-              <br></br>
-              <input style={{width:"100%",color:"#307765", marginBottom:"0px",paddingBottom:"0px"}} 
-              className="uk-input" 
-              id="jobTitle"
-              name="title" 
-              type="text" 
-              placeholder="Job Title"
-              labelText="Job Title"
-              value={this.state.title}
-                onChange={(e) => {
-                  console.log(e.target.value)
-                  this.setState({title:e.target.value})
-              }}
-              />
-              <br></br>
-              <br></br>
-              <label>
-              Organization
-              </label>
-              <br></br>
+          
               
-              <input style={{width:"100%",color:"#307765", marginBottom:"0px",paddingBottom:"0px"}} 
-              className="uk-input" 
-              id="jobOrganization"
-              name="organization" 
-              type="text" 
-              placeholder="Organization"
-              labelText="Organization"
-              value={this.state.organization}
-                onChange={(e) => {
-                  console.log(e.target.value)
-                  this.setState({organization:e.target.value})
-              }}
-              />
-              <br></br>
-              <br></br>
-              <label>
-              Job Location
-              </label>
-              <br></br>
-              
-              <input style={{width:"100%",color:"#307765", marginBottom:"0px",paddingBottom:"0px"}} 
-              className="uk-input" 
-              id="jobLocation"
-              name="location" 
-              type="text" 
-              placeholder="Job Location"
-              labelText="Location"
-              value={this.state.location}
-                onChange={(e) => {
-                  console.log(e.target.value)
-                  this.setState({location:e.target.value})
-              }}
-              />
-              
-              <br></br>
-              <br></br>
-              <label>
-              Job Description
-              </label>
-              <br></br>
-              {(typeof window !== 'undefined' && ReactQuill) ? 
-                (
-              <ReactQuill theme="snow" 
-                  name="jobDescription"
-                  value={this.state.description}
-                  onChange={(content) => {
-                  this.setState({description:content})
-                  }}
-              />
-                )
-                :
-                (
-                    <textarea />
-                )}
-              
-              <br></br>
-              <label>
-              Job Application Link
-              </label>
-              <input style={{width:"100%",color:"#307765", marginBottom:"0px",paddingBottom:"0px"}} 
-                className="uk-input" 
-                id="jobLink"
-                name="link" 
-                type="text" 
-                placeholder="Job Application Link"
-                labelText="Job Application Link"
-                value={this.state.applicationLink}
-                  onChange={(e) => {
-                    console.log(e.target.value)
-                    this.setState({applicationLink:e.target.value})
-                }}
-                />
-                <br></br>
-                <br></br>
-              <label>
-              Contact Email Address
-              </label>
-              <input style={{width:"100%",color:"#307765", marginBottom:"0px",paddingBottom:"0px"}} 
-                className="uk-input" 
-                id="jobEmail"
-                name="email" 
-                type="text" 
-                placeholder="Email Address"
-                labelText="Your Email"
-                value={this.state.email}
-                  onChange={(e) => {
-                    console.log(e.target.value)
-                    this.setState({email:e.target.value})
-                }}
-                />
-                <br></br>
-                <br></br>
                 <div className="uk-container">
       
         
             <div style={{display:"inline-block",paddingRight:"20px",width:"30%"}}>
 
                 <div className="uk-card uk-card-default uk-card-hover uk-card-body" id="ad-card-sponsor">
-                    <h3 className="uk-card-title uk-text-center" id="sponsor-title">Basic</h3>
-                    <p style={{textAlign:"center"}}>$50 / month</p>
-                    {/* <p style={{textAlign:"center"}}>Free</p> */}
-                    <ul>
-                        <li>
-                        Position posted on NWA Daily's job board for 30 days
-                        </li>
-                    </ul>
-                    <div style={{textAlign: "center"}}>
+                    <h3 className="uk-card-title uk-text-center" id="sponsor-title">Big Fan</h3>
+                    <p style={{textAlign:"center"}}>$7 / mo</p>
+              {/* <p style={{textAlign:"center"}}>Free</p> */}
+              <ul>
+                <li>
+                Support NWA Daily with a monthly membership
+                </li>
+                <li>
+                Make sustainable, local journalism possible in NWA
+                </li>
+                <li>
+                Help us keep growing and offering you better content!
+                </li>
+              </ul>
+              <div>
+              <div style={{textAlign: "center",display:"inline-block"}}>
                     <button 
-                    style={{width:"100%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
+                    style={{width:"50%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
                     className="uk-button uk-button-default"
                     onClick={this.submitBasicHandler}
-                    >Post Basic</button>
+                    >$7/mo</button>
+                    <button 
+                    style={{width:"50%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
+                    className="uk-button uk-button-default"
+                    onClick={this.submitBasicHandler}
+                    >$70/yr</button>
                     </div>
                     {/* {this.state.basic === "0" ? 
                     (
@@ -886,31 +633,38 @@ class SupportPage extends React.Component {
                     >Selected</button>
                     )} */}
                 </div>
+                </div>
 
             </div>
             <div style={{paddingRight:"20px",display:"inline-block",width:"30%"}}>
 
                 <div className="uk-card uk-card-default uk-card-hover uk-card-body">
-                    <h3 className="uk-card-title uk-text-center">Featured</h3>
+                    <h3 className="uk-card-title uk-text-center">Super Fan</h3>
                     {/* <p style={{textDecoration:"line-through",textAlign:"center"}}>$200 / month</p> */}
-                    <p style={{textAlign:"center"}}>$100 / month</p>
-                    <ul>
-                        <li>
-                            Job board posting
-                        </li>
-                        <li>
-                            Highlighted on job board
-                        </li>
-                        <li>
-                            Posted 1 times in newsletter
-                        </li>
-                    </ul>
-                    <div style={{textAlign: "center"}}>
-                    <button 
-                    style={{width:"100%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
+                    <p style={{textAlign:"center"}}>$10 / mo</p>
+              {/* <p style={{textAlign:"center"}}>Free</p> */}
+              <ul>
+                <li>
+                Support NWA Daily with an annual membership
+                </li>
+                <li>
+                Make sustainable, local journalism possible in NWA
+                </li>
+                <li>
+                Help us keep growing and offering you better content!
+                </li>
+              </ul>
+              <div style={{textAlign: "center"}}>
+              <button 
+                    style={{width:"50%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
                     className="uk-button uk-button-default"
-                    onClick={this.submitFeaturedHandler}
-                    >Post Featured</button>
+                    onClick={this.submitBasicHandler}
+                    >$10/mo</button>
+                    <button 
+                    style={{width:"50%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
+                    className="uk-button uk-button-default"
+                    onClick={this.submitBasicHandler}
+                    >$100/yr</button>
                     </div>
                     {/* {this.state.featured === "0" ? 
                     (
@@ -935,55 +689,60 @@ class SupportPage extends React.Component {
                 </div>
 
             </div>
-            <div style={{display:"inline-block",width:"30%"}}>
+            <div style={{paddingRight:"20px",display:"inline-block",width:"30%"}}>
 
                 <div className="uk-card uk-card-default uk-card-hover uk-card-body">
-                    <h3 className="uk-card-title uk-text-center">Premium</h3>
-                    {/* <p style={{textDecoration:"line-through",textAlign:"center"}}>$250 / month</p> */}
-                    <p style={{textAlign:"center"}}>$150 / month</p>
-                    <ul>
-                        <li>
-                            Job board posting
-                        </li>
-                        <li>
-                            Highlighted on job board
-                        </li>
-                        <li>
-                            Posted 2 times in newsletter
-                        </li>
-                    </ul>
-                    <div style={{textAlign: "center"}}>
-                    <button 
-                    style={{width:"100%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
+                    <h3 className="uk-card-title uk-text-center">Mega Fan</h3>
+                    {/* <p style={{textDecoration:"line-through",textAlign:"center"}}>$200 / month</p> */}
+                    <p style={{textAlign:"center"}}>$15 / mo</p>
+              {/* <p style={{textAlign:"center"}}>Free</p> */}
+              <ul>
+                <li>
+                Support NWA Daily with an annual membership
+                </li>
+                <li>
+                Make sustainable, local journalism possible in NWA
+                </li>
+                <li>
+                Help us keep growing and offering you better content!
+                </li>
+              </ul>
+              <div style={{textAlign: "center"}}>
+              <button 
+                    style={{width:"50%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
                     className="uk-button uk-button-default"
-                    onClick={this.submitPremiumHandler}
-                    >Post Premium</button>
+                    onClick={this.submitBasicHandler}
+                    >$15/mo</button>
+                    <button 
+                    style={{width:"50%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
+                    className="uk-button uk-button-default"
+                    onClick={this.submitBasicHandler}
+                    >$150/yr</button>
                     </div>
-                    {/* {this.state.premium === "0" ? 
+                    {/* {this.state.featured === "0" ? 
                     (
                     <button 
                       style={{width:"70%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
                       className="uk-button uk-button-default uk-position-bottom-center"
                       onClick={e => {
                         console.log(e.target.value)
-                        this.setState({ premium: "1" })
+                        this.setState({ featured: "1" })
                       }}
                       >Select</button>
-                    )
+                      )
                     :
                     (
-                      <button 
-                      style={{width:"70%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
-                      className="uk-button uk-button-default uk-position-bottom-center"
+                      <button style={{width:"70%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} className="uk-button uk-button-default uk-position-bottom-center"
                       onClick={e => {
                         console.log(e.target.value)
-                        this.setState({ premium: "0" })
+                        this.setState({ featured: "0" })
                       }}
-                      >Selected</button>
+                    >Selected</button>
                     )} */}
                 </div>
 
             </div>
+            
         </div>
         <br></br>
         <br></br>
@@ -1018,4 +777,4 @@ class SupportPage extends React.Component {
 }
 
 
-export default withBreakpoints(SupportPage);
+export default withBreakpoints(JobpostPage);
