@@ -427,14 +427,14 @@ class JobpostPage extends React.Component {
 <div className="uk-section">
       
       <h3 className="uk-text-center">Become a fan and support us!</h3>
-      <p className="uk-text-center" style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}>
+      <p  style={{marginLeft:"auto",marginRight:"auto",width:"70%"}}>
         At NWA Daily, we love delivering the you the content you love. We want to make sure you know all the great things going on in Northwest Arkansas, so you can be as connected as possible with your hometown. 
       </p>
-      <p className="uk-text-center" style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}>
+      <p  style={{marginLeft:"auto",marginRight:"auto",width:"70%"}}>
         We're locally owned and operated and want to make sure we can sustainably keep delivering you great content and employing great local folks to do so. Becoming a fan with either a monthly or annual membership will help us continue to hire local folks to deliver you the best newsletter possible every weekday!
       </p>
       <p>
-        <img style={{textAlign:"center",marginLeft:"28%",marginRight:"auto",width:"40%",height:"50%"}} src="https://nwa-daily-photos.s3.amazonaws.com/NWA_Daily_Crew_fa690b6c71.jpeg"></img>
+        <img style={{textAlign:"center",marginLeft:"20%",marginRight:"auto",width:"60%",height:"50%"}} src="https://nwa-daily-photos.s3.amazonaws.com/NWA_Daily_Crew_fa690b6c71.jpeg"></img>
       </p>
       <form class="uk-form" style={{marginLeft:"auto",marginRight:"auto",width:"100%"}}>
             
