@@ -131,32 +131,32 @@ class FanPage extends React.Component {
 
   submitBigMonthlyHandler = (e) => {
     e.preventDefault();
-    navigate('https://buy.stripe.com/6oE3dme488HR8KcdQV')
+    navigate('https://buy.stripe.com/9AQ9BK1hm3nx0dG6oz')
   }
 
   submitBigAnnualHandler = (e) => {
     e.preventDefault();
-    navigate('https://buy.stripe.com/6oE3dme488HR8KcdQV')
+    navigate('https://buy.stripe.com/5kA5lu9NS9LVgcEdR0')
   }
 
   submitSuperMonthlyHandler = (e) => {
     e.preventDefault();
-    navigate('https://buy.stripe.com/6oE3dme488HR8KcdQV')
+    navigate('https://buy.stripe.com/5kA9BK8JO7DN7G86ox')
   }
 
   submitSuperAnnualHandler = (e) => {
     e.preventDefault();
-    navigate('https://buy.stripe.com/6oE3dme488HR8KcdQV')
+    navigate('https://buy.stripe.com/7sI15e8JO9LV8Kc28g')
   }
 
   submitMegaMonthlyHandler = (e) => {
     e.preventDefault();
-    navigate('https://buy.stripe.com/6oE3dme488HR8KcdQV')
+    navigate('https://buy.stripe.com/00g7tCe487DNgcEcMS')
   }
 
   submitMegaAnnualHandler = (e) => {
     e.preventDefault();
-    navigate('https://buy.stripe.com/6oE3dme488HR8KcdQV')
+    navigate('https://buy.stripe.com/eVag081hmgaj0dG3cj')
   }
 
 
@@ -196,7 +196,52 @@ class FanPage extends React.Component {
       <p  style={{marginLeft:"auto",marginRight:"auto",width:"70%"}}>
         We're locally owned and operated and want to make sure we can sustainably keep delivering you great content and employing great local folks to do so. Becoming a fan with either a monthly or annual membership will help us continue to hire local folks to deliver you the best newsletter possible every weekday!
       </p>
-      
+      <div>
+      {this.state.time === "monthly" ? (
+      <button 
+                    style={{marginLeft:"21%",marginRight:"auto",width:"30%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
+                    className="uk-button uk-button-default"
+                    onClick={(e) => {
+                      console.log("monthly")
+                      this.setState({time:"monthly"})
+                  }}                    
+                    >Monthly</button>
+      )
+                    :
+                    (
+                      <button 
+                    style={{marginLeft:"21%",marginRight:"auto",width:"30%",backgroundColor:"#525252",opacity:1,color:"white",marginBottom:"10px"}} 
+                    className="uk-button uk-button-default"
+                    onClick={(e) => {
+                      console.log("monthly")
+                      this.setState({time:"monthly"})
+                  }}                    
+                    >Monthly</button>
+                    )
+                }
+      {this.state.time === "annual" ? (
+      <button 
+                    style={{marginLeft:"auto",marginRight:"auto",width:"30%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
+                    className="uk-button uk-button-default"
+                    onClick={(e) => {
+                      console.log("annual")
+                      this.setState({time:"annual"})
+                  }}                    
+                    >Annual</button>
+      )
+      :
+      (
+        <button 
+                    style={{marginLeft:"auto",marginRight:"auto",width:"30%",backgroundColor:"#525252",opacity:1,color:"white",marginBottom:"10px"}} 
+                    className="uk-button uk-button-default"
+                    onClick={(e) => {
+                      console.log("annual")
+                      this.setState({time:"annual"})
+                  }}                    
+                    >Annual</button>
+      )
+                }
+      </div>
       <form class="uk-form" style={{marginLeft:"auto",marginRight:"auto",width:"100%"}}>
             
               <div class="test">
@@ -209,11 +254,18 @@ class FanPage extends React.Component {
                 <div className="uk-container">
       
         
-            <div style={{display:"inline-block",paddingRight:"20px",marginLeft:"10%", marginBottom:"10px",width:"80%",textAlign:"center"}}>
+            <div style={{display:"inline-block",paddingRight:"20px",marginLeft:"10%",width:"80%"}}>
 
                 <div className="uk-card uk-card-default uk-card-hover uk-card-body" id="ad-card-sponsor">
                     <h3 className="uk-card-title uk-text-center" id="sponsor-title">Big Fan</h3>
-                    <p style={{textAlign:"center"}}>$7 / mo</p>
+                    {this.state.time === "monthly" ? (
+                    <h4 style={{textAlign:"center"}}>$7 / mo</h4>
+                    )
+                    :
+                    (
+                      <h4 style={{textAlign:"center"}}>$70 / yr</h4>
+                    )
+                    }
               {/* <p style={{textAlign:"center"}}>Free</p> */}
               <ul>
                 <li>
@@ -223,22 +275,28 @@ class FanPage extends React.Component {
                 Make sustainable, local journalism possible in NWA
                 </li>
                 <li>
-                Help us keep growing and offering you better content!
+                <strong>Access to exclusive giveaways only available to fans!</strong>
                 </li>
               </ul>
               <div>
-              <div style={{textAlign: "center",display:"inline-block"}}>
+              
+              {this.state.time === "monthly" ? (
                     <button 
-                    style={{width:"50%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
+                    style={{marginLeft:"auto",marginRight:"auto",textAlign:"center",width:"100%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
                     className="uk-button uk-button-default"
-                    onClick={this.submitBasicHandler}
-                    >$7/mo</button>
-                    <button 
-                    style={{width:"50%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
+                    onClick={this.submitBigMonthlyHandler}
+                    >Become a Big Fan</button>
+              )
+              :
+              (
+                <button 
+                    style={{marginLeft:"auto",marginRight:"auto",textAlign:"center",width:"100%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
                     className="uk-button uk-button-default"
-                    onClick={this.submitBasicHandler}
-                    >$70/yr</button>
-                    </div>
+                    onClick={this.submitBigAnnualHandler}
+                    >Become a Big Fan</button>
+              )
+              }
+                    
                     {/* {this.state.basic === "0" ? 
                     (
                     <button 
@@ -263,12 +321,20 @@ class FanPage extends React.Component {
                 </div>
 
             </div>
-            <div style={{display:"inline-block",paddingRight:"20px",marginLeft:"10%", marginBottom:"10px",width:"80%",textAlign:"center"}}>
+            <div style={{paddingRight:"20px",display:"inline-block",marginLeft:"10%",width:"80%"}}>
 
                 <div className="uk-card uk-card-default uk-card-hover uk-card-body">
                     <h3 className="uk-card-title uk-text-center">Super Fan</h3>
                     {/* <p style={{textDecoration:"line-through",textAlign:"center"}}>$200 / month</p> */}
-                    <p style={{textAlign:"center"}}>$10 / mo</p>
+                    
+                    {this.state.time === "monthly" ? (
+                    <h4 style={{textAlign:"center"}}>$10 / mo</h4>
+                    )
+                    :
+                    (
+                      <h4 style={{textAlign:"center"}}>$100 / yr</h4>
+                    )
+                    }
               {/* <p style={{textAlign:"center"}}>Free</p> */}
               <ul>
                 <li>
@@ -278,21 +344,25 @@ class FanPage extends React.Component {
                 Make sustainable, local journalism possible in NWA
                 </li>
                 <li>
-                Help us keep growing and offering you better content!
+                <strong>Access to exclusive giveaways only available to fans!</strong>
                 </li>
               </ul>
-              <div style={{textAlign: "center"}}>
-              <button 
-                    style={{width:"50%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
-                    className="uk-button uk-button-default"
-                    onClick={this.submitBasicHandler}
-                    >$10/mo</button>
+              {this.state.time === "monthly" ? (
                     <button 
-                    style={{width:"50%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
+                    style={{marginLeft:"auto",marginRight:"auto",textAlign:"center",width:"100%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
                     className="uk-button uk-button-default"
-                    onClick={this.submitBasicHandler}
-                    >$100/yr</button>
-                    </div>
+                    onClick={this.submitSuperMonthlyHandler}
+                    >Become a Super Fan</button>
+              )
+              :
+              (
+                <button 
+                    style={{marginLeft:"auto",marginRight:"auto",textAlign:"center",width:"100%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
+                    className="uk-button uk-button-default"
+                    onClick={this.submitSuperAnnualHandler}
+                    >Become a Super Fan</button>
+              )
+              }
                     {/* {this.state.featured === "0" ? 
                     (
                     <button 
@@ -316,12 +386,20 @@ class FanPage extends React.Component {
                 </div>
 
             </div>
-            <div style={{display:"inline-block",paddingRight:"20px",marginLeft:"10%", marginBottom:"10px",width:"80%",textAlign:"center"}}>
+            <div style={{paddingRight:"20px",display:"inline-block",marginLeft:"10%",width:"80%"}}>
 
                 <div className="uk-card uk-card-default uk-card-hover uk-card-body">
                     <h3 className="uk-card-title uk-text-center">Mega Fan</h3>
                     {/* <p style={{textDecoration:"line-through",textAlign:"center"}}>$200 / month</p> */}
-                    <p style={{textAlign:"center"}}>$15 / mo</p>
+                    
+                    {this.state.time === "monthly" ? (
+                    <h4 style={{textAlign:"center"}}>$15 / mo</h4>
+                    )
+                    :
+                    (
+                      <h4 style={{textAlign:"center"}}>$150 / yr</h4>
+                    )
+                    }
               {/* <p style={{textAlign:"center"}}>Free</p> */}
               <ul>
                 <li>
@@ -331,21 +409,25 @@ class FanPage extends React.Component {
                 Make sustainable, local journalism possible in NWA
                 </li>
                 <li>
-                Help us keep growing and offering you better content!
+                <strong>Access to exclusive giveaways only available to fans!</strong>
                 </li>
               </ul>
-              <div style={{textAlign: "center"}}>
-              <button 
-                    style={{width:"50%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
-                    className="uk-button uk-button-default"
-                    onClick={this.submitBasicHandler}
-                    >$15/mo</button>
+              {this.state.time === "monthly" ? (
                     <button 
-                    style={{width:"50%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
+                    style={{marginLeft:"auto",marginRight:"auto",textAlign:"center",width:"100%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
                     className="uk-button uk-button-default"
-                    onClick={this.submitBasicHandler}
-                    >$150/yr</button>
-                    </div>
+                    onClick={this.submitMegaMonthlyHandler}
+                    >Become a Mega Fan</button>
+              )
+              :
+              (
+                <button 
+                    style={{marginLeft:"auto",marginRight:"auto",textAlign:"center",width:"100%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
+                    className="uk-button uk-button-default"
+                    onClick={this.submitMegaAnnualHandler}
+                    >Become a Mega Fan</button>
+              )
+              }
                     {/* {this.state.featured === "0" ? 
                     (
                     <button 
@@ -372,7 +454,7 @@ class FanPage extends React.Component {
             
         </div>
         <p>
-        <img style={{textAlign:"center",marginLeft:"20%",marginRight:"auto",width:"60%",height:"50%"}} src="https://nwa-daily-photos.s3.amazonaws.com/NWA_Daily_Crew_fa690b6c71.jpeg"></img>
+        <img style={{textAlign:"center",marginLeft:"29%",marginRight:"auto",width:"40%",height:"50%"}} src="https://nwa-daily-photos.s3.amazonaws.com/NWA_Daily_Crew_fa690b6c71.jpeg"></img>
       </p>
         <br></br>
         <br></br>
