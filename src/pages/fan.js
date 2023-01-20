@@ -454,7 +454,7 @@ class FanPage extends React.Component {
             
         </div>
         <p>
-        <img style={{textAlign:"center",marginLeft:"29%",marginRight:"auto",width:"40%",height:"50%"}} src="https://nwa-daily-photos.s3.amazonaws.com/NWA_Daily_Crew_fa690b6c71.jpeg"></img>
+        <img style={{textAlign:"center",marginLeft:"10%",marginRight:"auto",width:"80%",height:"50%"}} src="https://nwa-daily-photos.s3.amazonaws.com/NWA_Daily_Crew_fa690b6c71.jpeg"></img>
       </p>
         <br></br>
         <br></br>
