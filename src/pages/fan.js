@@ -254,7 +254,7 @@ class FanPage extends React.Component {
                 <div className="uk-container">
       
         
-            <div style={{display:"inline-block",paddingRight:"20px",marginLeft:"10%",width:"80%"}}>
+            <div style={{display:"inline-block",paddingRight:"20px",marginLeft:"10%",marginBottom:"10px",width:"80%"}}>
 
                 <div className="uk-card uk-card-default uk-card-hover uk-card-body" id="ad-card-sponsor">
                     <h3 className="uk-card-title uk-text-center" id="sponsor-title">Big Fan</h3>
@@ -321,7 +321,7 @@ class FanPage extends React.Component {
                 </div>
 
             </div>
-            <div style={{paddingRight:"20px",display:"inline-block",marginLeft:"10%",width:"80%"}}>
+            <div style={{paddingRight:"20px",display:"inline-block",marginLeft:"10%",marginBottom:"10px",width:"80%"}}>
 
                 <div className="uk-card uk-card-default uk-card-hover uk-card-body">
                     <h3 className="uk-card-title uk-text-center">Super Fan</h3>
@@ -386,7 +386,7 @@ class FanPage extends React.Component {
                 </div>
 
             </div>
-            <div style={{paddingRight:"20px",display:"inline-block",marginLeft:"10%",width:"80%"}}>
+            <div style={{paddingRight:"20px",display:"inline-block",marginLeft:"10%",marginBottom:"10px",width:"80%"}}>
 
                 <div className="uk-card uk-card-default uk-card-hover uk-card-body">
                     <h3 className="uk-card-title uk-text-center">Mega Fan</h3>
