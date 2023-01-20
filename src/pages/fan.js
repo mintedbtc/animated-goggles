@@ -269,10 +269,10 @@ class FanPage extends React.Component {
               {/* <p style={{textAlign:"center"}}>Free</p> */}
               <ul>
                 <li>
-                Support NWA Daily with a monthly commitment
+                Help us meet goals like hiring full time employees
                 </li>
                 <li>
-                Make sustainable, local journalism possible in NWA
+                Make sustainable, local news curation possible in NWA
                 </li>
                 <li>
                 <strong>Access to exclusive giveaways available only to FANS!</strong>
@@ -341,7 +341,7 @@ class FanPage extends React.Component {
                 Help us meet goals like hiring full time employees
                 </li>
                 <li>
-                Make sustainable, local journalism possible in NWA
+                Make sustainable, local news curation possible in NWA
                 </li>
                 <li>
                 <strong>Access to exclusive giveaways available only to FANS!</strong>
@@ -406,7 +406,7 @@ class FanPage extends React.Component {
                 Help us meet goals like hiring full time employees
                 </li>
                 <li>
-                Make sustainable, local journalism possible in NWA
+                Make sustainable, local news curation possible in NWA
                 </li>
                 <li>
                 <strong>Access to exclusive giveaways available only to FANS!</strong>
@@ -566,7 +566,7 @@ class FanPage extends React.Component {
                 Support NWA Daily with a monthly commitment
                 </li>
                 <li>
-                Make sustainable, local journalism possible in NWA
+                Make sustainable, local news curation possible in NWA
                 </li>
                 <li>
                 <strong>Access to exclusive giveaways available only to FANS!</strong>
@@ -635,7 +635,7 @@ class FanPage extends React.Component {
                 Help us meet goals like hiring full time employees
                 </li>
                 <li>
-                Make sustainable, local journalism possible in NWA
+                Make sustainable, local news curation possible in NWA
                 </li>
                 <li>
                 <strong>Access to exclusive giveaways available only to FANS!</strong>
@@ -700,7 +700,7 @@ class FanPage extends React.Component {
                 Help us meet goals like hiring full time employees
                 </li>
                 <li>
-                Make sustainable, local journalism possible in NWA
+                Make sustainable, local news curation possible in NWA
                 </li>
                 <li>
                 <strong>Access to exclusive giveaways available only to FANS!</strong>
