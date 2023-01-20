@@ -563,7 +563,7 @@ class FanPage extends React.Component {
               {/* <p style={{textAlign:"center"}}>Free</p> */}
               <ul>
                 <li>
-                Support NWA Daily with a monthly commitment
+                Help us meet goals like hiring full time employees
                 </li>
                 <li>
                 Make sustainable, local news curation possible in NWA
