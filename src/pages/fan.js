@@ -191,10 +191,10 @@ class FanPage extends React.Component {
       
       <h3 className="uk-text-center">Become a fan and support us!</h3>
       <p  style={{marginLeft:"auto",marginRight:"auto",width:"70%"}}>
-        At NWA Daily, we love delivering the you the content you love. We want to make sure you know all the great things going on in Northwest Arkansas, so you can be as connected as possible with your hometown. 
+        At NWA Daily, we're passionate about delivering the content you love. We want to make sure you know all the great things going on in Northwest Arkansas, so you can be as connected as possible with your hometown. 
       </p>
       <p  style={{marginLeft:"auto",marginRight:"auto",width:"70%"}}>
-        We're locally owned and operated and want to make sure we can sustainably keep delivering you great content and employing great local folks to do so. Becoming a fan with either a monthly or annual membership will help us continue to hire local folks to deliver you the best newsletter possible every weekday!
+        We're locally owned and operated and want to make sure we can sustainably keep delivering you great content and employing great local folks to do so. Becoming a fan with either a monthly or annual commitment will help us continue to hire local folks to deliver you the best newsletter possible every weekday!
       </p>
       <div>
       {this.state.time === "monthly" ? (
@@ -269,13 +269,13 @@ class FanPage extends React.Component {
               {/* <p style={{textAlign:"center"}}>Free</p> */}
               <ul>
                 <li>
-                Support NWA Daily with a monthly membership
+                Support NWA Daily with a monthly commitment
                 </li>
                 <li>
                 Make sustainable, local journalism possible in NWA
                 </li>
                 <li>
-                <strong>Access to exclusive giveaways only available to fans!</strong>
+                <strong>Access to exclusive giveaways available only to FANS!</strong>
                 </li>
               </ul>
               <div>
@@ -338,13 +338,13 @@ class FanPage extends React.Component {
               {/* <p style={{textAlign:"center"}}>Free</p> */}
               <ul>
                 <li>
-                Support NWA Daily with an annual membership
+                Help us meet goals like hiring full time employees
                 </li>
                 <li>
                 Make sustainable, local journalism possible in NWA
                 </li>
                 <li>
-                <strong>Access to exclusive giveaways only available to fans!</strong>
+                <strong>Access to exclusive giveaways available only to FANS!</strong>
                 </li>
               </ul>
               {this.state.time === "monthly" ? (
@@ -403,13 +403,13 @@ class FanPage extends React.Component {
               {/* <p style={{textAlign:"center"}}>Free</p> */}
               <ul>
                 <li>
-                Support NWA Daily with an annual membership
+                Help us meet goals like hiring full time employees
                 </li>
                 <li>
                 Make sustainable, local journalism possible in NWA
                 </li>
                 <li>
-                <strong>Access to exclusive giveaways only available to fans!</strong>
+                <strong>Access to exclusive giveaways available only to FANS!</strong>
                 </li>
               </ul>
               {this.state.time === "monthly" ? (
@@ -485,10 +485,10 @@ class FanPage extends React.Component {
       
       <h3 className="uk-text-center">Become a fan and support us!</h3>
       <p style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}>
-        At NWA Daily, we love delivering the you the content you love. We want to make sure you know all the great things going on in Northwest Arkansas, so you can be as connected as possible with your hometown. 
+        At NWA Daily, we're passionate about delivering the content you love. We want to make sure you know all the great things going on in Northwest Arkansas, so you can be as connected as possible with your hometown. 
       </p>
       <p style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}>
-        We're locally owned and operated and want to make sure we can sustainably keep delivering you great content and employing great local folks to do so. Becoming a fan with either a monthly or annual membership will help us continue to hire local folks to deliver you the best newsletter possible every weekday!
+        We're locally owned and operated and want to make sure we can sustainably keep delivering you great content and employing great local folks to do so. Becoming a fan with either a monthly or annual commitment will help us continue to hire local folks to deliver you the best newsletter possible every weekday!
       </p>
       <div>
       {this.state.time === "monthly" ? (
@@ -563,13 +563,13 @@ class FanPage extends React.Component {
               {/* <p style={{textAlign:"center"}}>Free</p> */}
               <ul>
                 <li>
-                Support NWA Daily with a monthly membership
+                Support NWA Daily with a monthly commitment
                 </li>
                 <li>
                 Make sustainable, local journalism possible in NWA
                 </li>
                 <li>
-                <strong>Access to exclusive giveaways only available to fans!</strong>
+                <strong>Access to exclusive giveaways available only to FANS!</strong>
                 </li>
               </ul>
               <div>
@@ -632,13 +632,13 @@ class FanPage extends React.Component {
               {/* <p style={{textAlign:"center"}}>Free</p> */}
               <ul>
                 <li>
-                Support NWA Daily with an annual membership
+                Help us meet goals like hiring full time employees
                 </li>
                 <li>
                 Make sustainable, local journalism possible in NWA
                 </li>
                 <li>
-                <strong>Access to exclusive giveaways only available to fans!</strong>
+                <strong>Access to exclusive giveaways available only to FANS!</strong>
                 </li>
               </ul>
               {this.state.time === "monthly" ? (
@@ -697,13 +697,13 @@ class FanPage extends React.Component {
               {/* <p style={{textAlign:"center"}}>Free</p> */}
               <ul>
                 <li>
-                Support NWA Daily with an annual membership
+                Help us meet goals like hiring full time employees
                 </li>
                 <li>
                 Make sustainable, local journalism possible in NWA
                 </li>
                 <li>
-                <strong>Access to exclusive giveaways only available to fans!</strong>
+                <strong>Access to exclusive giveaways available only to FANS!</strong>
                 </li>
               </ul>
               {this.state.time === "monthly" ? (
