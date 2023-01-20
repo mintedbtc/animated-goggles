@@ -176,6 +176,7 @@ exports.createPages = async ({ graphql, actions }) => {
         },
       });
     });
+    
 
     const PartnerTemplate = require.resolve("./src/templates/partner.js");
   
