@@ -17,6 +17,7 @@ import DialogContent from "@material-ui/core/DialogContent";
 import DialogActions from "@material-ui/core/DialogActions";
 import IconButton from '@material-ui/core/IconButton';
 import Close from "@material-ui/icons/Close";
+import axios from 'axios';
 
 const email = ""
 
@@ -32,6 +33,7 @@ class IndexPage extends React.Component {
       isSubmitted: false,
       isAdSubmitted: false,
       advertiser: "",
+      emails: 22000,
       oneLiner: "0",
       extendedText: "0",
       sponsor: "0",
@@ -39,9 +41,29 @@ class IndexPage extends React.Component {
     }
   }
 
-  componentDidMount(){
+  componentDidMount = () => {
 		// Set delay in milliseconds
 		window.setTimeout(() =>{this.setState({ isModalOpen: true })}, 2000);
+    fetch(`https://nwadailybackend.herokuapp.com/emails/count`, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+        .then(res => {
+          if (res.status !== 200 && res.status !== 201) {
+            throw new Error('Failed!');
+          }
+          return res.json();
+        })
+        .then(resData => {
+          console.log(resData)
+          this.setState({ emails: resData })
+        })
+        .catch(err => {
+          console.log(err);
+        });
+
 	}  
 
   handleInputChange = event => {
@@ -344,7 +366,7 @@ render() {
           >
             <Close />
           </IconButton>
-          <h3 style={{fontWeight:"bold"}}>Join thousands of NWA locals and subscribe to the free daily newsletter</h3>
+          <h3 style={{fontWeight:"bold"}}>{`Join ${this.state.emails.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} NWA locals and subscribe to the free daily newsletter`}</h3>
         </DialogTitle>
         <DialogContent
           id="modal-slide-description"
@@ -560,7 +582,7 @@ render() {
               (
                 <div style={{paddingBottom:"50px",marginBottom:"0px"}} className="uk-section uk-section-muted uk-section-large">
                 <h2 className="uk-title uk-text-center">Advertise with us</h2>
-                <h3 className="uk-text-center" style={{color:"#666",marginLeft:"auto",marginRight:"auto",width:"93%"}}>Get in front of thousands of Northwest Arkansans. Select any or all of these options to indicate your interest, submit your email, and we'll get right back to you</h3>
+                <h3 className="uk-text-center" style={{color:"#666",marginLeft:"auto",marginRight:"auto",width:"93%"}}>{`Get in front of ${this.state.emails.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} Northwest Arkansans. Select any or all of these options to indicate your interest, submit your email, and we'll get right back to you`}</h3>
                 <form class="uk-form" style={{marginLeft:"auto",marginRight:"auto",width:"93%"}}>
                       
                         <div class="test">
@@ -696,7 +718,7 @@ render() {
               (
                 <div style={{paddingBottom:"50px",marginBottom:"0px"}} className="uk-section uk-section-muted uk-section-large">
       <h2 className="uk-title uk-text-center">Advertise with us</h2>
-      <h3 className="uk-text-center" style={{color:"#666",marginLeft:"auto",marginRight:"auto",width:"70%"}}>Get in front of thousands of Northwest Arkansans. Select any or all of these options to indicate your interest, submit your email, and we'll get right back to you</h3>
+      <h3 className="uk-text-center" style={{color:"#666",marginLeft:"auto",marginRight:"auto",width:"70%"}}>{`Get in front of ${this.state.emails.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} Northwest Arkansans. Select any or all of these options to indicate your interest, submit your email, and we'll get right back to you`}</h3>
       <form class="uk-form" style={{marginLeft:"auto",marginRight:"auto",width:"50%"}}>
             
               <div class="test">

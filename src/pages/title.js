@@ -11,18 +11,41 @@ import moment from 'moment';
 
 const momentDateFormat = "MM/DD/YYYY";
 
-const holidays = [
-  new Date(2023, 10, 14),
-  new Date(2023, 11, 11),
-  new Date(2023, 10, 28),
-  new Date(2023, 12, 25),
-  new Date(2023, 0, 1),
-  new Date(2023, 0, 20),
-  new Date(2023, 2, 17),
-  new Date(2023, 5, 25),
-  new Date(2023, 7, 3),
-  new Date(2023, 9, 7)
-];
+const currentDate = new Date();
+const fourteenDaysFromNow = new Date(currentDate.getTime() + 14 * 24 * 60 * 60 * 1000);
+const sevenDaysFromNow = new Date(currentDate.getTime() + 7 * 24 * 60 * 60 * 1000);
+const endOfYear = new Date(new Date().getFullYear(), 11, 31);
+let nextDate = fourteenDaysFromNow;
+let startDate = currentDate
+const datesArray = []
+
+
+while (nextDate <= endOfYear) {
+  datesArray.push(nextDate);
+  nextDate = new Date(nextDate.getTime() + 24 * 60 * 60 * 1000);
+}
+
+while (startDate <= sevenDaysFromNow) {
+  console.log(startDate)
+  datesArray.push(startDate);
+  startDate = new Date(startDate.getTime() + 24 * 60 * 60 * 1000);
+}
+
+const date = new Date();
+const year = date.getFullYear();
+const weekends = [];
+
+for (let month = 0; month < 12; month++) {
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+    for (let day = 1; day <= daysInMonth; day++) {
+        const currentDate = new Date(year, month, day);
+        if (currentDate.getDay() === 6 || currentDate.getDay() === 0) {
+            datesArray.push(currentDate);
+        }
+    }
+}
+
+const holidays = datesArray
 
 
 class TitlePage extends React.Component {
@@ -44,7 +67,7 @@ class TitlePage extends React.Component {
       submitError: false,
       isSubmitted: false,
       date: new Date(),
-      price: 500.00,
+      price: 0,
       dpDate: moment().toDate(),
       ipDate: moment().format(momentDateFormat)
     }
@@ -653,7 +676,7 @@ class TitlePage extends React.Component {
 <div className="uk-section">
       
       <h3 className="uk-text-center">Sponsor a newsletter!</h3>
-      <p className="uk-text-center" style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}></p>
+      <p className="uk-text-center" style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}>Every day NWA Daily is sent out to over 22,000 subscribers and has a 50% plus open rate. It's a great way to reach an engaged, local audience.</p>
       <form class="uk-form" style={{marginLeft:"auto",marginRight:"auto",width:"75%"}}>
             
               <div class="test">

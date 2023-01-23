@@ -15,11 +15,38 @@ class AdvertisePage extends React.Component {
       isModalOpen: false,
       submitError: false,
       isSubmitted: false,
+      emails: 22000,
       oneLiner: "0",
       extendedText: "0",
       sponsor: "0",
     }
   }
+
+  componentDidMount = () => {
+		// Set delay in milliseconds
+		window.setTimeout(() =>{this.setState({ isModalOpen: true })}, 2000);
+    fetch(`https://nwadailybackend.herokuapp.com/emails/count`, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+        .then(res => {
+          if (res.status !== 200 && res.status !== 201) {
+            throw new Error('Failed!');
+          }
+          return res.json();
+        })
+        .then(resData => {
+          console.log(resData)
+          this.setState({ emails: resData })
+        })
+        .catch(err => {
+          console.log(err);
+        });
+
+	}  
+
   handleInputChange = event => {
     console.log('test')
     const target = event.target
@@ -168,7 +195,7 @@ class AdvertisePage extends React.Component {
               (
                 <div style={{paddingBottom:"50px",marginBottom:"0px"}} className="uk-section uk-section-muted uk-section-large">
                 <h2 className="uk-title uk-text-center">Advertise with us</h2>
-                <h3 className="uk-text-center" style={{color:"#666",marginLeft:"auto",marginRight:"auto",width:"93%"}}>Get in front of thousands of Northwest Arkansans. Select any or all of these options to indicate your interest, submit your email, and we'll get right back to you</h3>
+                <h3 className="uk-text-center" style={{color:"#666",marginLeft:"auto",marginRight:"auto",width:"93%"}}>{`Get in front of ${this.state.emails.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} Northwest Arkansans. Select any or all of these options to indicate your interest, submit your email, and we'll get right back to you`}</h3>
                 <form class="uk-form" style={{marginLeft:"auto",marginRight:"auto",width:"93%"}}>
                       
                         <div class="test">
@@ -304,7 +331,8 @@ class AdvertisePage extends React.Component {
               (
                 <div style={{paddingBottom:"50px",marginBottom:"0px"}} className="uk-section uk-section-muted uk-section-large">
       <h2 className="uk-title uk-text-center">Advertise with us</h2>
-      <h3 className="uk-text-center" style={{color:"#666",marginLeft:"auto",marginRight:"auto",width:"70%"}}>Get in front of thousands of Northwest Arkansans. Select any or all of these options to indicate your interest, submit your email, and we'll get right back to you</h3>
+      <h3 className="uk-text-center" style={{color:"#666",marginLeft:"auto",marginRight:"auto",width:"70%"}}>{`Get in front of ${this.state.emails.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} Northwest Arkansans. Select any or all of these options to indicate your interest, submit your email, and we'll get right back to you`}</h3>
+      
       <form class="uk-form" style={{marginLeft:"auto",marginRight:"auto",width:"50%"}}>
             
               <div class="test">
