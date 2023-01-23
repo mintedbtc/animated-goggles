@@ -12,8 +12,8 @@ import moment from 'moment';
 const momentDateFormat = "MM/DD/YYYY";
 
 const currentDate = new Date();
-const fourteenDaysFromNow = new Date(currentDate.getTime() + 14 * 24 * 60 * 60 * 1000);
-const sevenDaysFromNow = new Date(currentDate.getTime() + 7 * 24 * 60 * 60 * 1000);
+const fourteenDaysFromNow = new Date(currentDate.getTime() + 21 * 24 * 60 * 60 * 1000);
+const sevenDaysFromNow = new Date(currentDate.getTime() + 1 * 24 * 60 * 60 * 1000);
 const endOfYear = new Date(new Date().getFullYear(), 11, 31);
 let nextDate = fourteenDaysFromNow;
 let startDate = currentDate
@@ -21,13 +21,17 @@ const datesArray = []
 
 
 while (nextDate <= endOfYear) {
-  datesArray.push(nextDate);
+  if (!datesArray.includes(nextDate)) {
+    datesArray.push(nextDate);
+  }
   nextDate = new Date(nextDate.getTime() + 24 * 60 * 60 * 1000);
 }
 
 while (startDate <= sevenDaysFromNow) {
   console.log(startDate)
-  datesArray.push(startDate);
+  if (!datesArray.includes(startDate)) {
+    datesArray.push(startDate);
+  }
   startDate = new Date(startDate.getTime() + 24 * 60 * 60 * 1000);
 }
 
@@ -39,7 +43,7 @@ for (let month = 0; month < 12; month++) {
     const daysInMonth = new Date(year, month + 1, 0).getDate();
     for (let day = 1; day <= daysInMonth; day++) {
         const currentDate = new Date(year, month, day);
-        if (currentDate.getDay() === 6 || currentDate.getDay() === 0) {
+        if ((currentDate.getDay() === 6 || currentDate.getDay() === 0) && !datesArray.includes(currentDate)) {
             datesArray.push(currentDate);
         }
     }
@@ -63,15 +67,66 @@ class TitlePage extends React.Component {
       location: "",
       basic: "0",
       facebook: "",
+      contact: "",
+      logoLink: "",
       isModalOpen: false,
       submitError: false,
       isSubmitted: false,
+      takenDates: [],
       date: new Date(),
       price: 0,
+      emails: 22000,
       dpDate: moment().toDate(),
       ipDate: moment().format(momentDateFormat)
     }
   }
+
+  componentDidMount = () => {
+		// Set delay in milliseconds
+		window.setTimeout(() =>{this.setState({ isModalOpen: true })}, 2000);
+    fetch(`https://nwadailybackend.herokuapp.com/emails/count`, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+        .then(res => {
+          if (res.status !== 200 && res.status !== 201) {
+            throw new Error('Failed!');
+          }
+          return res.json();
+        })
+        .then(resData => {
+          console.log(resData)
+          this.setState({ emails: resData })
+        })
+        .catch(err => {
+          console.log(err);
+        });
+
+        fetch(`https://nwadailybackend.herokuapp.com/sponsors?_limit=1000&_sort=date:DESC`, {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        })
+          .then(res => {
+            if (res.status !== 200 && res.status !== 201) {
+              throw new Error('Failed!');
+            }
+            return res.json();
+          })
+          .then(resData => {
+            resData.map(sponsor => {
+              console.log(sponsor.date)
+              datesArray.push(sponsor.date)
+            })
+          })
+          .catch(err => {
+            console.log(err);
+          });
+
+	}  
 
   handleInputChange = event => {
     event.preventDefault();
@@ -216,43 +271,27 @@ class TitlePage extends React.Component {
 
   submitBasicHandler = (e) => {
     e.preventDefault();
-    
-    let postId = null
-    console.log(window.location.href.split('?id=').length)
-    if (window.location.href.split('?id=').length > 1) {
-      console.log('idhere')
-      console.log(window.location.href)
-      postId = window.location.href.split('?id=')[1]
-      postId = postId.split('&')[0]
-      console.log(postId)
-      }
-    else {
-        postId = 'regular'
-        console.log(postId)
-      }
       if (this.state.organization !== "") {
     
         // const email = this.state.email.toLowerCase()
-        const location = this.state.location
+        const date = this.state.date
+        const website = 'https://northwestarkansasdaily.com/'
+        const signup = 'https://www.northwestarkansasdaily.com/subscribe/'
         const link = this.state.link
-        const organization = this.state.organization
-        const description = this.state.description
-        const instagram = this.state.instagram
-        const facebook = this.state.facebook
+        const logoLink = this.state.logoLink
+        const contact = this.state.contact
+        
     
         const requestBody = {
-            Location: location,
-            url: link,
-            instagram: instagram,
+            date: date,
+            partnerWebsite: link,
+            partnerMessage: logoLink,
             // source: postId,
-            facebook: facebook,
-            Name: organization,
-            slug: organization.replaceAll(' ', '-').toLowerCase(),
-            description: description,
-            // property: "NWA Daily"
+            contact: contact,
+            slug: link.replaceAll(' ', '-').toLowerCase(),
           }
   
-    fetch(`https://nwadailybackend.herokuapp.com/partners`, {
+    fetch(`https://nwadailybackend.herokuapp.com/sponsors`, {
       method: 'POST',
       body: JSON.stringify(requestBody),
       headers: {
@@ -267,11 +306,11 @@ class TitlePage extends React.Component {
       })
       .then(resData => {
         console.log(resData.data)
-        this.setState({
-          isModalOpen: false,
-          isSubmitted: true
-        })
-        navigate('https://buy.stripe.com/4gwbJS9NS4rB9OgbIL')
+        // this.setState({
+        //   isModalOpen: false,
+        //   isSubmitted: true
+        // })
+        navigate('https://buy.stripe.com/fZeaFO5xC3nxgcEcMY')
         
       })
       .catch(err => {
@@ -529,7 +568,7 @@ class TitlePage extends React.Component {
 <div className="uk-section">
       
       <h3 className="uk-text-center">Sponsor a newsletter!</h3>
-      <p className="uk-text-center" style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}></p>
+      <p className="uk-text-center" style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}>{`Every day NWA Daily is sent out to over ${this.state.emails.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} subscribers and has a 50% plus open rate. It's a great way to reach an engaged, local audience.`}</p>
       <form class="uk-form" style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}>
             
       <div class="test">
@@ -603,15 +642,15 @@ class TitlePage extends React.Component {
                     </label>
                     <input style={{width:"100%",color:"#307765", marginBottom:"0px",paddingBottom:"0px"}} 
                       className="uk-input" 
-                      id="jobLink"
-                      name="link" 
+                      id="logoLink"
+                      name="logo" 
                       type="text" 
                       placeholder="Link to logo"
                       labelText="Link to logo"
                       value={this.state.logo}
                         onChange={(e) => {
                           console.log(e.target.value)
-                          this.setState({link:e.target.value})
+                          this.setState({logo:e.target.value})
                       }}
                       />
                       <br></br>
@@ -619,46 +658,78 @@ class TitlePage extends React.Component {
                       <label>
                     Date for ad to run
                     </label>
-                      <input style={{width:"100%",color:"#307765", marginBottom:"0px",paddingBottom:"0px"}} 
-                      className="uk-input" 
-                      id="date"
-                      name="date" 
-                      type="date" 
-                      min="2023-01-09" max="2023-01-17"
-                      placeholder="Ad Date"
-                      labelText="Ad Date"
-                      value={this.state.date}
-                        onChange={(e) => {
-                          console.log(e.target.value)
-                          this.setState({date:e.target.value})
-                      }}
-                      />
-                      
-                      <br></br>
-                      <br></br>
-                      <div style={{textAlign: "center"}}>
-                          <button 
-                          style={{width:"50%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
-                          className="uk-button uk-button-default"
-                          onClick={this.submitBasicHandler}
-                          >Submit</button>
-                          </div>
-                      <br></br>
-                      <div className="uk-container">
-                  
-                  
-              </div>
-              <br></br>
-              <br></br>
-                      {/* <div style={{textAlign: "center"}}>
-                  <button 
-                    style={{textAlign: "center",backgroundColor:"#307765",opacity:1,color:"white"}} 
+              {/*   <input style={{width:"100%",color:"#307765", marginBottom:"0px",paddingBottom:"0px"}} 
+                className="uk-input" 
+                id="date"
+                name="date" 
+                type="date" 
+                min="2023-01-09" max="2023-01-17"
+                placeholder="Ad Date"
+                labelText="Ad Date"
+                value={this.state.date}
+                  onChange={(e) => {
+                    console.log(e.target.value)
+                    this.setState({date:e.target.value})
+                }}
+                /> */}
+                    <>
+            
+            <DatePicker 
+              selected={this.state.dpDate}
+              onChange={value => this.handleDPChange(value)}
+              filterDate = {(date) => {
+                return moment() < date;
+              }}
+              customInput={ <CustomCalendarComponent
+                ipDate={this.state.ipDate}
+                handleIpChange={(val)=>this.handleIpChange(val)}
+              />}
+              dateFormat={"MM/dd/yyyy"}
+              showMonthDropdown
+              showYearDropdown
+              excludeDates={holidays}
+              dropdownMode = 'select'
+            />
+        </>
+        <br></br>
+                <br></br>
+                <div style={{textAlign: "center"}}>
+                {this.state.price === 0 ?
+                (
+                  <h4>This date is unavailable. Please choose another one.</h4>
+                )
+                :
+                (
+                  <h4>The title spot for this date is ${this.state.price}</h4>
+                )
+                }
+                </div>
+                <br></br>
+                <br></br>
+                <div style={{textAlign: "center"}}>
+                    <button 
+                    style={{width:"40%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
                     className="uk-button uk-button-default"
-                    onClick={this.submitHandler}
-                    >Post Job</button>
-                    </div> */}
+                    onClick={this.submitBasicHandler}
+                    >Submit</button>
                     </div>
-                      )
+                <br></br>
+                <div className="uk-container">
+            
+            
+        </div>
+        <br></br>
+        <br></br>
+                {/* <div style={{textAlign: "center"}}>
+            <button 
+              style={{textAlign: "center",backgroundColor:"#307765",opacity:1,color:"white"}} 
+              className="uk-button uk-button-default"
+              onClick={this.submitHandler}
+              >Post Job</button>
+              </div> */}
+              </div>
+              
+                )
                       :
                       (
                         <div class="uk-margin">
@@ -676,7 +747,7 @@ class TitlePage extends React.Component {
 <div className="uk-section">
       
       <h3 className="uk-text-center">Sponsor a newsletter!</h3>
-      <p className="uk-text-center" style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}>Every day NWA Daily is sent out to over 22,000 subscribers and has a 50% plus open rate. It's a great way to reach an engaged, local audience.</p>
+      <p className="uk-text-center" style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}>{`Every day NWA Daily is sent out to over ${this.state.emails.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} subscribers and has a 50% plus open rate. It's a great way to reach an engaged, local audience.`}</p>
       <form class="uk-form" style={{marginLeft:"auto",marginRight:"auto",width:"75%"}}>
             
               <div class="test">
@@ -750,15 +821,15 @@ class TitlePage extends React.Component {
               </label>
               <input style={{width:"100%",color:"#307765", marginBottom:"0px",paddingBottom:"0px"}} 
                 className="uk-input" 
-                id="jobLink"
-                name="link" 
+                id="logoLink"
+                name="logo" 
                 type="text" 
                 placeholder="Link to logo"
                 labelText="Link to logo"
                 value={this.state.logo}
                   onChange={(e) => {
                     console.log(e.target.value)
-                    this.setState({link:e.target.value})
+                    this.setState({logo:e.target.value})
                 }}
                 />
                 <br></br>
