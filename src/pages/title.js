@@ -44,6 +44,7 @@ class TitlePage extends React.Component {
       submitError: false,
       isSubmitted: false,
       date: new Date(),
+      price: 500.00,
       dpDate: moment().toDate(),
       ipDate: moment().format(momentDateFormat)
     }
@@ -63,6 +64,32 @@ class TitlePage extends React.Component {
 
   
   handleDPChange (val) {
+    val.setHours(val.getHours() - 5)
+    console.log(val.toISOString().slice(0,10))
+    fetch(`https://nwadailybackend.herokuapp.com/sponsors?_where[0][date]=${val.toISOString().split('T')[0]}`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+      .then(res => {
+        if (res.status !== 200 && res.status !== 201) {
+          throw new Error('Failed!');
+        }
+        return res.json();
+      })
+      .then(resData => {
+        console.log(resData)
+        if (resData.length === 0) {
+          this.setState({price:0});
+        }
+        else {
+          this.setState({price:resData[0].price});
+        }
+      })
+      .catch(err => {
+        console.log(err);
+      });
     this.setState({dpDate:val, ipDate:moment(val).format(momentDateFormat)});
   }; 
 
@@ -749,6 +776,19 @@ class TitlePage extends React.Component {
               dropdownMode = 'select'
             />
         </>
+        <br></br>
+                <br></br>
+                <div style={{textAlign: "center"}}>
+                {this.state.price === 0 ?
+                (
+                  <h4>This date is unavailable. Please choose another one.</h4>
+                )
+                :
+                (
+                  <h4>The title spot for this date is ${this.state.price}</h4>
+                )
+                }
+                </div>
                 <br></br>
                 <br></br>
                 <div style={{textAlign: "center"}}>
