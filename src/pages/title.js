@@ -568,8 +568,8 @@ class TitlePage extends React.Component {
 <div className="uk-section">
       
       <h3 className="uk-text-center">Sponsor a newsletter!</h3>
-      <p className="uk-text-center" style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}>{`Every day NWA Daily is sent out to over ${this.state.emails.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} subscribers and has a 50% plus open rate. It's a great way to reach an engaged, local audience.`}</p>
-      <form class="uk-form" style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}>
+      <p className="uk-text-center" style={{marginLeft:"auto",marginRight:"auto",width:"80%"}}>{`Every day NWA Daily is sent out to over ${this.state.emails.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} subscribers and has a 50% plus open rate. It's a great way to reach an engaged, local audience.`}</p>
+      <form class="uk-form" style={{marginLeft:"auto",marginRight:"auto",width:"90%"}}>
             
       <div class="test">
                     
@@ -708,7 +708,7 @@ class TitlePage extends React.Component {
                 <br></br>
                 <div style={{textAlign: "center"}}>
                     <button 
-                    style={{width:"40%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
+                    style={{width:"60%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
                     className="uk-button uk-button-default"
                     onClick={this.submitBasicHandler}
                     >Submit</button>
