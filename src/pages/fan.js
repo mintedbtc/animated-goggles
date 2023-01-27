@@ -20,7 +20,7 @@ class FanPage extends React.Component {
       location: "",
       basic: "0",
       featured: "0",
-      time:"annual",
+      time:"monthly",
       premium: "0",
       applicationLink: "",
       isModalOpen: false,
