@@ -18,14 +18,35 @@ class Popup extends React.Component {
       email: "",
       isModalOpen: false,
       submitError: false,
+      emails: 22000,
       isSubmitted: false,
       date: new Date()
     }
   }
 
-  componentDidMount(){
+  componentDidMount = () => {
 		// Set delay in milliseconds
 		window.setTimeout(() =>{this.setState({ isModalOpen: true })}, 2000);
+    fetch(`https://nwadailybackend.herokuapp.com/emails/count`, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+        .then(res => {
+          if (res.status !== 200 && res.status !== 201) {
+            throw new Error('Failed!');
+          }
+          return res.json();
+        })
+        .then(resData => {
+          console.log(resData)
+          this.setState({ emails: resData })
+        })
+        .catch(err => {
+          console.log(err);
+        });
+
 	}  
 
   handleModalClose = event => {
@@ -186,7 +207,7 @@ class Popup extends React.Component {
           >
             <Close />
           </IconButton>
-          <h3 style={{fontWeight:"bold"}}>Join thousands of NWA locals and subscribe to the free daily newsletter</h3>
+          <h3 style={{fontWeight:"bold"}}>{`Join ${this.state.emails.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} NWA locals and subscribe to the free daily newsletter`}</h3>
         </DialogTitle>
         <DialogContent
           id="modal-slide-description"
