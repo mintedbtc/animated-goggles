@@ -30,7 +30,7 @@ const Nav = () => {
                       <Link to="/guide">Guides</Link>
                     </li>
                     <li>
-                      <Link to="/events">Events</Link>
+                      <Link to="/events-in-northwest-arkansas">Events</Link>
                     </li>
                     <li>
                       <Link to="/story">Stories</Link>
