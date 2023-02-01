@@ -169,7 +169,7 @@ exports.createPages = async ({ graphql, actions }) => {
   
     events.forEach((event, index) => {
       createPage({
-        path: `/event/${event.node.slug}`,
+        path: `/events-in-northwest-arkansas/${event.node.slug}`,
         component: EventTemplate,
         context: {
           slug: event.node.slug,
