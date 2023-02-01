@@ -32,7 +32,7 @@ const Events = ({ events }) => {
                 
                    <a
                       className="event-mobile"
-                      href={'/event/'+event.node.slug}
+                      href={'/events-in-northwest-arkansas/'+event.node.slug}
                       // state={{ postId: post.id }}
                       >
                        
@@ -77,7 +77,7 @@ const Events = ({ events }) => {
                 
                    <a
                       className="event-mobile"
-                      href={'/event/'+event.node.slug}
+                      href={'/events-in-northwest-arkansas/'+event.node.slug}
                       // state={{ postId: post.id }}
                       >
                        
@@ -129,7 +129,7 @@ const Events = ({ events }) => {
                 
                    <a
                       className="event"
-                      href={'/event/'+event.node.slug}
+                      href={'/events-in-northwest-arkansas/'+event.node.slug}
                       // state={{ postId: post.id }}
                       >
                        
@@ -177,7 +177,7 @@ const Events = ({ events }) => {
                 
                    <a
                       className="event"
-                      href={'/event/'+event.node.slug}
+                      href={'/events-in-northwest-arkansas/'+event.node.slug}
                       // state={{ postId: post.id }}
                       >
                        
