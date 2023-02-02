@@ -33,6 +33,7 @@ class IndexPage extends React.Component {
       isSubmitted: false,
       isAdSubmitted: false,
       advertiser: "",
+      time:"monthly",
       emails: 22000,
       oneLiner: "0",
       extendedText: "0",
