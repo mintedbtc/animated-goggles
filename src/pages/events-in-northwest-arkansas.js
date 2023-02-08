@@ -362,6 +362,10 @@ render() {
       </Dialog>
       <div className="job-head">
       <h2 className="job-header">Browse upcoming events in Northwest Arkansas</h2>
+      <a href="/eventpost">
+      <button className="job-post-button"
+              >Post an event</button>
+      </a>
       {/* <a href="/jobpost">
       <button className="job-post-button"
               >Post an event</button>
