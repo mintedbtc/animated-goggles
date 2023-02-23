@@ -128,7 +128,7 @@ console.log(article)
               <tr><td><h3 style={{fontFamily:"Helvetica,Arial,sans-serif",textAlign:"center",fontSize:"20px",color:"#000000",fontWeight:"700",marginTop:"0",marginBottom:"0"}}>Together With</h3></td></tr>
               <tr>
               
-            <td width="100%" style={{textAlign:"center"}}><a href={article.sponsor.partnerWebsite} target="_blank"><img style={{width:"70%",maxWidth:"70%",maxHeight:"30%"}} src={article.sponsor.partnerLogo.publicURL}></img></a></td>
+              <td width="100%" style={{textAlign:"center"}}><a href={article.sponsor.partnerWebsite} target="_blank"><img style={{paddingTop:"5%",width:"40%",maxWidth:"70%",maxHeight:"20%"}} src={article.sponsor.partnerLogo.publicURL}></img></a></td>
             
             </tr>
             
@@ -297,7 +297,7 @@ console.log(article)
             </tr>
             </table>
             {
-              article.sponsor !== null && article.sponsor.partnerLogo !== null && article.sponsor.partnerWebsite !== null && article.sponsor.partnerMessage !== null  && article.sponsor.website !== null && article.sponsor.signup !== null?
+              article.sponsor !== null && article.sponsor.partnerLogo !== null && article.sponsor.partnerWebsite !== null && article.sponsor.partnerMessage !== null  && article.sponsor.website !== null && article.sponsor.signup !== null ?
             (
             <div>
             <br></br>
@@ -305,7 +305,7 @@ console.log(article)
               <tr><td><h3 style={{fontFamily:"Helvetica,Arial,sans-serif",textAlign:"center",fontSize:"20px",color:"#000000",fontWeight:"700",marginTop:"0",marginBottom:"0"}}>Together With</h3></td></tr>
               <tr>
               
-            <td width="100%" style={{textAlign:"center"}}><a href={article.sponsor.partnerWebsite} target="_blank"><img style={{width:"70%",maxWidth:"70%",maxHeight:"30%"}} src={article.sponsor.partnerLogo.publicURL}></img></a></td>
+            <td width="100%" style={{textAlign:"center"}}><a href={article.sponsor.partnerWebsite} target="_blank"><img style={{paddingTop:"5%",width:"40%",maxWidth:"70%",maxHeight:"20%"}} src={article.sponsor.partnerLogo.publicURL}></img></a></td>
             
             </tr>
             
