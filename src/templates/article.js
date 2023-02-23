@@ -297,7 +297,7 @@ console.log(article)
             </tr>
             </table>
             {
-              article.sponsor !== null ?
+              article.sponsor !== null && article.sponsor.partnerLogo !== null && article.sponsor.partnerWebsite !== null && article.sponsor.partnerMessage !== null  && article.sponsor.website !== null && article.sponsor.signup !== null?
             (
             <div>
             <br></br>
