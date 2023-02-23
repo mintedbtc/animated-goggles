@@ -296,7 +296,31 @@ console.log(article)
             
             </tr>
             </table>
+            {
+              article.sponsor !== null ?
+            (
+            <div>
+            <br></br>
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style={{borderCollapse: "collapse"}}>
+              <tr><td><h3 style={{fontFamily:"Helvetica,Arial,sans-serif",textAlign:"center",fontSize:"20px",color:"#000000",fontWeight:"700",marginTop:"0",marginBottom:"0"}}>Together With</h3></td></tr>
+              <tr>
+              
+            <td width="100%" style={{textAlign:"center"}}><a href={article.sponsor.partnerWebsite} target="_blank"><img style={{width:"70%",maxWidth:"70%",maxHeight:"30%"}} src={article.sponsor.partnerLogo.publicURL}></img></a></td>
             
+            </tr>
+            
+            
+              <tr>
+              <td>
+            <div key={article.strapiId} style={{color:"black",textAlign:"left",padding:"15px"}} dangerouslySetInnerHTML={{__html:article.sponsor.partnerMessage.split('a title=').join('a style="border-bottom:2px solid #307765;text-decoration:none;color:#333" title=').split('a href=').join('a style="border-bottom:2px solid #307765;text-decoration:none;color:#333" href=').split('<em>').join('<em style="color:#666">')}}></div>
+            </td>
+            </tr>
+            </table>
+            <br></br>
+            </div>)
+            :
+            <br></br>
+          }
             </div>
             </div>
             </div>
