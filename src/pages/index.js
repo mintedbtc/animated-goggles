@@ -487,7 +487,7 @@ render() {
         {breakpoints.sm ? 
         (
           <div id="coverImg" class="uk-background-cover uk-height-large uk-panel uk-flex uk-flex-center uk-flex-middle" style={{ backgroundImage: `url(${mobileBackground})` }}>
-        <div style={{marginTop:"40px",textAlign:"center"}} className="uk-container uk-container-large" >
+        <div style={{marginTop:"80px",textAlign:"center"}} className="uk-container uk-container-large" >
         <h3 style={{width:"100%"}}>A newsletter about all things NWA delivered to your inbox every weekday</h3>
         <div>
         <form class="uk-form">
