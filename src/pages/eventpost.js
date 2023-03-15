@@ -146,7 +146,7 @@ class JobpostPage extends React.Component {
 <div className="uk-section">
       
       <h3 className="uk-text-center">Post an event on our event calendar</h3>
-      <p style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}>Our event calendar helps our readers keep up with fun things going on in the newsletter. Post your even here so our readers and website visitors know about it. Each posting is $100.</p>
+      <p style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}>Our event calendar helps our readers keep up with fun things going on in the newsletter. post your event here so our readers and website visitors know about it. Each posting is $100.</p>
       <form class="uk-form" style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}>
             
               <div class="test">
@@ -327,7 +327,7 @@ class JobpostPage extends React.Component {
 <div className="uk-section">
       
       <h3 className="uk-text-center">Post an event on our event calendar</h3>
-      <p style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}>Our event calendar helps our readers keep up with fun things going on in the newsletter. Post your even here so our readers and website visitors know about it. Each posting is $100.</p>
+      <p style={{marginLeft:"auto",marginRight:"auto",width:"60%"}}>Our event calendar helps our readers keep up with fun things going on in the newsletter. post your event here so our readers and website visitors know about it. Each posting is $100.</p>
       <form class="uk-form" style={{marginLeft:"auto",marginRight:"auto",width:"75%"}}>
             
               <div class="test">
