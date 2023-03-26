@@ -73,7 +73,7 @@ const Story = ({ data }) => {
         <PopupComponent/>
           <h2 className="uk-text-center">{story.title}</h2>
           <p className="uk-text-center">{"By: "+story.author.name}</p>
-          <div style={{paddingLeft:"15%",paddingRight:"15%",paddingTop:"2%",paddingBottom:"5%"}}>
+          <div style={{width: "50%", paddingLeft:"25%",paddingRight:"15%",paddingTop:"2%",paddingBottom:"5%"}}>
           
           <div key={story.strapiId} style={{color:"black"}} dangerouslySetInnerHTML={{__html:story.content}}></div>
           </div>
