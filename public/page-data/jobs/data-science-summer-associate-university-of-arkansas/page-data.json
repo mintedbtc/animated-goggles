@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/data-science-summer-associate-university-of-arkansas",
+    "result": {"data":{"strapiJob":{"strapiId":3179,"slug":"data-science-summer-associate-university-of-arkansas","title":"Data Science Summer Associate","organization":"University of Arkansas","location":"Fayetteville, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/joxIwoZJRuOxBmTGyLr4","type":"basic","posted_date":"2023-02-21","applicationLink":"https://uasys.wd5.myworkdayjobs.com/en-US/UASYS/job/Fayetteville/Data-Science-Summer-Associate_R0032136-1","logo":null,"published_at":"2023-03-20T14:07:29.288Z","description":"University of Arkansas Data Science Summer Associate"}},"pageContext":{"slug":"data-science-summer-associate-university-of-arkansas"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

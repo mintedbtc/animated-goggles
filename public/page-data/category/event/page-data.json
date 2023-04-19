@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-js",
+    "path": "/category/event",
+    "result": {"data":{"articles":{"edges":[]},"category":{"name":"Event"}},"pageContext":{"slug":"event"}},
+    "staticQueryHashes": ["161018792","557794130"]}

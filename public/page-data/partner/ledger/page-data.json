@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-partner-js",
+    "path": "/partner/ledger",
+    "result": {"data":{"strapiPartner":{"strapiId":11,"Name":"Ledger","description":"Ledger offers on-demand access to rent tech-enabled meeting rooms and workspaces in a state of the art building anchored in the heart of Downtown Bentonville. To learn more about shared workspaces click HERE.","Location":"240 S Main Street Bentonville, AR 72712","slug":"ledger","url":"https://ledgerbentonville.com/shared-spaces/","logo":[{"url":"https://nwa-daily-photos.s3.amazonaws.com/ledger_primary_logo_B_color_1_412e30cc50.png"}],"published_at":"2022-08-25T10:06:17.374Z","facebook":"https://www.facebook.com/ledgerbentonville","instagram":"https://www.instagram.com/ledgerbentonville/"}},"pageContext":{"slug":"ledger"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

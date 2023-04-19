@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/inspector-maynard-inc",
+    "result": {"data":{"strapiJob":{"strapiId":3078,"slug":"inspector-maynard-inc","title":"Inspector","organization":"Maynard Inc","location":"Fayetteville, AR, USA","logoUrl":"https://cdn.filestackcontent.com/DWykmq9KRyyLfWFXLIYj","type":"basic","posted_date":"2023-02-27","applicationLink":"https://maynardinc.us/Careers/?job=9","logo":null,"published_at":"2023-03-20T14:06:23.666Z","description":"Maynard Inc Inspector"}},"pageContext":{"slug":"inspector-maynard-inc"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

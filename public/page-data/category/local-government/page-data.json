@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-js",
+    "path": "/category/local-government",
+    "result": {"data":{"articles":{"edges":[]},"category":{"name":"Local Government"}},"pageContext":{"slug":"local-government"}},
+    "staticQueryHashes": ["161018792","557794130"]}

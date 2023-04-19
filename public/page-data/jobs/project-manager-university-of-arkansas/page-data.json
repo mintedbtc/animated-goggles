@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/project-manager-university-of-arkansas",
+    "result": {"data":{"strapiJob":{"strapiId":2126,"slug":"project-manager-university-of-arkansas","title":"Project Manager","organization":"University of Arkansas","location":"Fayetteville, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/joxIwoZJRuOxBmTGyLr4","type":"basic","posted_date":"2023-01-27","applicationLink":"https://uasys.wd5.myworkdayjobs.com/en-US/UASYS/job/Fayetteville/Project-Manager_R0027098-1","logo":null,"published_at":"2023-02-16T18:42:37.458Z","description":"University of Arkansas Project Manager"}},"pageContext":{"slug":"project-manager-university-of-arkansas"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

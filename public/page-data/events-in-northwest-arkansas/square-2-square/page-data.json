@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-event-js",
+    "path": "/events-in-northwest-arkansas/square-2-square",
+    "result": {"data":{"strapiEvent":{"strapiId":47,"slug":"square-2-square","name":"Square 2 Square","organization":"The City of Fayetteville","location":"Razorback Greenway","type":"Bike Ride","date":"2021-10-03","eventLink":"https://www.fayetteville-ar.gov/1931/Square-to-Square-Bicycle-Ride","photo":null,"published_at":"2021-09-29T15:11:38.601Z","description":"<p>Bikers are starting at the Square in Bentonville and finishing at Walker Park in Fayetteville. The <a href=\"https://www.facebook.com/events/s/the-halfway-halt/515692419478005/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255);\">Halfway Halt</a> is back at <a href=\"https://www.facebook.com/events/s/the-halfway-halt/515692419478005/\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255);\">Turnbow Park</a> in Springdale as a midway point on the 30 mile journey.</p>"}},"pageContext":{"slug":"square-2-square"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

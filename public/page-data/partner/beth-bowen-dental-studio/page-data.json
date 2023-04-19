@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-partner-js",
+    "path": "/partner/beth-bowen-dental-studio",
+    "result": {"data":{"strapiPartner":{"strapiId":8,"Name":"Beth Bowen Dental Studio","description":"Beth Bowen Dental Studio is a dental office unlike anything you've experienced. Their patients receive personalized, compassionate care from one of the most highly-skilled dentists in the area. They prioritize listening to and caring for their patients. Learn more here.","Location":"2017 Green Acres Rd, Fayetteville, AR 72703","slug":"beth-bowen-dental-studio","url":"https://www.bethbowendds.com/","logo":[{"url":"https://nwa-daily-photos.s3.amazonaws.com/Beth_Bowen_Dental_Logo_Navy_1_eef73129b4.jpg"}],"published_at":"2022-08-23T07:29:40.598Z","facebook":"https://www.facebook.com/Beth-Bowen-DDS-107373291076696","instagram":"https://www.instagram.com/bowendentalstudio/"}},"pageContext":{"slug":"beth-bowen-dental-studio"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

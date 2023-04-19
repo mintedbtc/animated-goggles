@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/instructional-assistant-1.0-springdale-public-schools",
+    "result": {"data":{"strapiJob":{"strapiId":2700,"slug":"instructional-assistant-1.0-springdale-public-schools","title":"Instructional Assistant 1.0","organization":"Springdale Public Schools","location":"Springdale, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/yVJjYOl6Rbqy3H2BFpGt","type":"basic","posted_date":"2023-01-30","applicationLink":"https://apply.sdale.org/winocular/workspace/wSpace.EXE?Action=wsJobsMain&JobPosting=010634","logo":null,"published_at":"2023-02-22T12:15:19.171Z","description":"Springdale Public Schools Instructional Assistant 1.0"}},"pageContext":{"slug":"instructional-assistant-1.0-springdale-public-schools"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

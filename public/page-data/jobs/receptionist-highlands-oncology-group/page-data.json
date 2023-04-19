@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/receptionist-highlands-oncology-group",
+    "result": {"data":{"strapiJob":{"strapiId":841,"slug":"receptionist-highlands-oncology-group","title":"Receptionist","organization":"Highlands Oncology Group","location":"Fayetteville, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/X1Vh2yOUQWWyKWQ96dZm","type":"basic","posted_date":"2022-11-23","applicationLink":"https://www.indeed.com/cmp/Highlands-Oncology-Group/jobs?jk=95ae81078452ed25","logo":null,"published_at":"2022-12-16T12:17:28.812Z","description":"Highlands Oncology Group Receptionist"}},"pageContext":{"slug":"receptionist-highlands-oncology-group"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

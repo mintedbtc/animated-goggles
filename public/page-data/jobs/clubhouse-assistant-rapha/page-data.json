@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/clubhouse-assistant-rapha",
+    "result": {"data":{"strapiJob":{"strapiId":1625,"slug":"clubhouse-assistant-rapha","title":"Clubhouse Assistant","organization":"Rapha","location":"Bentonville, AR, USA","logoUrl":"https://cdn.filestackcontent.com/8a9bkMEdTLaGSd06ko1M","type":"basic","posted_date":"2022-12-13","applicationLink":"https://boards.greenhouse.io/rapha/jobs/4747086","logo":null,"published_at":"2023-02-01T11:58:57.967Z","description":"Rapha Clubhouse Assistant"}},"pageContext":{"slug":"clubhouse-assistant-rapha"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

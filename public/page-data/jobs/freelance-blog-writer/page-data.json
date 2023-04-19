@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/freelance-blog-writer",
+    "result": {"data":{"strapiJob":{"strapiId":151,"slug":"freelance-blog-writer","title":"Freelance Blog Writer","organization":"NWA Jade Jewelry","location":"Remote","logoUrl":"https://nwa-daily-photos.s3.amazonaws.com/cropped_Web_Header_83dd41cd29.gif","type":"Basic","posted_date":"2021-11-01","applicationLink":"https://nwajade.com/","logo":{"publicURL":"/static/6a084685652c5c297c109a6a8d5b5622/c1e92bd3c464eec03d9d980dc13e4ba1.gif"},"published_at":"2021-11-01T01:22:14.754Z","description":"<p>Looking for someone local and active who can write blog posts with photos about events, hiking, dining, activities etc. in NWA.</p>"}},"pageContext":{"slug":"freelance-blog-writer"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/mgr-customer-replenishment-the-hershey-company",
+    "result": {"data":{"strapiJob":{"strapiId":3148,"slug":"mgr-customer-replenishment-the-hershey-company","title":"Mgr Customer Replenishment","organization":"The Hershey Company","location":"Bentonville, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/CfcGHDsHQmuhOS2tRz9T","type":"basic","posted_date":"2023-02-23","applicationLink":"https://careers.thehersheycompany.com/job/Bentonville-Mgr-Customer-Replenishment-AR-72712/990090000/","logo":null,"published_at":"2023-03-20T14:07:08.857Z","description":"The Hershey Company Mgr Customer Replenishment"}},"pageContext":{"slug":"mgr-customer-replenishment-the-hershey-company"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

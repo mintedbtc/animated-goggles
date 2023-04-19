@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-js",
+    "path": "/category/university-of-arkansas",
+    "result": {"data":{"articles":{"edges":[]},"category":{"name":"University of Arkansas"}},"pageContext":{"slug":"university-of-arkansas"}},
+    "staticQueryHashes": ["161018792","557794130"]}

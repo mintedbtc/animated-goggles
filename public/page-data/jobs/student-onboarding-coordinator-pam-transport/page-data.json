@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/student-onboarding-coordinator-pam-transport",
+    "result": {"data":{"strapiJob":{"strapiId":1321,"slug":"student-onboarding-coordinator-pam-transport","title":"Student Onboarding Coordinator","organization":"PAM Transport","location":"Tontitown, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/w8TOGXrZSYu93q96STut","type":"basic","posted_date":"2022-12-27","applicationLink":"https://www.indeed.com/cmp/Pam-Transport/jobs?jk=63178036f610f2f5","logo":null,"published_at":"2023-01-19T12:53:47.397Z","description":"<p>PAM Transport Student Onboarding Coordinator</p>"}},"pageContext":{"slug":"student-onboarding-coordinator-pam-transport"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

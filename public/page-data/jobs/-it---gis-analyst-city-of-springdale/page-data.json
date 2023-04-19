@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/-it---gis-analyst-city-of-springdale",
+    "result": {"data":{"strapiJob":{"strapiId":805,"slug":"-it---gis-analyst-city-of-springdale","title":" IT - GIS Analyst","organization":"City of Springdale","location":"Springdale, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/Tsf7z3RdSfsHghypLElP","type":"basic","posted_date":"2022-11-09","applicationLink":"https://ar-springdale.civicplushrms.com/careers/JobDetail.aspx?enc=QPQDKqwXNuJybHyCBjvzp/GRt/qhQmBDlEsHfj/JcZQD7JdWcoeTMWcYBuIXO6O6","logo":null,"published_at":"2022-12-09T12:11:27.200Z","description":"City of Springdale  IT - GIS Analyst"}},"pageContext":{"slug":"-it---gis-analyst-city-of-springdale"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

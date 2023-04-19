@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-partner-js",
+    "path": "/partner/swepco",
+    "result": {"data":{"strapiPartner":{"strapiId":12,"Name":"SWEPCO","description":"Live, laugh, pay nothing for attic insulation. See if you qualify for attic insulation and other energy-saving home improvements from SWEPCO’s Home Performance with ENERGY STAR® Pathway—all at no cost to you. ","Location":"428 Travis St, Shreveport, LA 71101","slug":"swepco","url":"https://swepcosavings.com/#/residential/home-performance-energy-star-signup","logo":[{"url":"https://nwa-daily-photos.s3.amazonaws.com/SWEPCO_2_C_RG_1_517d6b574e.png"}],"published_at":"2022-08-25T10:11:51.351Z","facebook":"https://www.facebook.com/SWEPCO/","instagram":"https://www.instagram.com/swepco/?hl=en"}},"pageContext":{"slug":"swepco"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

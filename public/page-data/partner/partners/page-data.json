@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-partner-js",
+    "path": "/partner/partners",
+    "result": {"data":{"strapiPartner":{"strapiId":23,"Name":"Harding University Northwest Arkansas ABSN Program","description":"Harding University Northwest Arkansas ABSN Program","Location":"901 S 52nd St., Rogers, AR 72758","slug":"partners","url":"https://absn.harding.edu/?utm_source=NWA_Daily","logo":[{"url":"https://nwa-daily-photos.s3.amazonaws.com/primary_stacked_black_8f32d73594.png"}],"published_at":"2023-03-15T04:44:53.632Z","facebook":"https://www.facebook.com/Hardingabsn/?utm_source=NWA_Daily","instagram":"https://www.instagram.com/HardingUNursing/?utm_source=NWA_Daily"}},"pageContext":{"slug":"partners"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

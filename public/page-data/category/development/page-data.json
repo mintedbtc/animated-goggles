@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-js",
+    "path": "/category/development",
+    "result": {"data":{"articles":{"edges":[]},"category":{"name":"Development"}},"pageContext":{"slug":"development"}},
+    "staticQueryHashes": ["161018792","557794130"]}

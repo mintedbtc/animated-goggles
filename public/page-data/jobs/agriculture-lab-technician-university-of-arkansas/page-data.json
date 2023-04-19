@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/agriculture-lab-technician-university-of-arkansas",
+    "result": {"data":{"strapiJob":{"strapiId":3123,"slug":"agriculture-lab-technician-university-of-arkansas","title":"Agriculture Lab Technician","organization":"University of Arkansas","location":"Fayetteville, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/joxIwoZJRuOxBmTGyLr4","type":"basic","posted_date":"2023-02-24","applicationLink":"https://uasys.wd5.myworkdayjobs.com/en-US/UASYS/job/Fayetteville/Agriculture-Lab-Technician_R0032382","logo":null,"published_at":"2023-03-20T14:06:56.566Z","description":"University of Arkansas Agriculture Lab Technician"}},"pageContext":{"slug":"agriculture-lab-technician-university-of-arkansas"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/police---patrolman-city-of-springdale",
+    "result": {"data":{"strapiJob":{"strapiId":803,"slug":"police---patrolman-city-of-springdale","title":"Police - Patrolman","organization":"City of Springdale","location":"Springdale, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/Tsf7z3RdSfsHghypLElP","type":"basic","posted_date":"2022-11-09","applicationLink":"https://ar-springdale.civicplushrms.com/careers/JobDetail.aspx?enc=QPQDKqwXNuJybHyCBjvzp/GRt/qhQmBDlEsHfj/JcZQHn8indzUS8C06jEOrzZi5","logo":null,"published_at":"2022-12-09T12:11:26.614Z","description":"City of Springdale Police - Patrolman"}},"pageContext":{"slug":"police---patrolman-city-of-springdale"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

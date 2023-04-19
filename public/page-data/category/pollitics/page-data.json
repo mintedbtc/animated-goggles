@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-js",
+    "path": "/category/pollitics",
+    "result": {"data":{"articles":{"edges":[]},"category":{"name":"Pollitics"}},"pageContext":{"slug":"pollitics"}},
+    "staticQueryHashes": ["161018792","557794130"]}

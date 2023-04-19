@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-js",
+    "path": "/category/recreation",
+    "result": {"data":{"articles":{"edges":[]},"category":{"name":"Recreation"}},"pageContext":{"slug":"recreation"}},
+    "staticQueryHashes": ["161018792","557794130"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/1.0-special-education-timesheet-aide-springdale-public-schools",
+    "result": {"data":{"strapiJob":{"strapiId":1821,"slug":"1.0-special-education-timesheet-aide-springdale-public-schools","title":"1.0 Special Education Timesheet aide","organization":"Springdale Public Schools","location":"Springdale, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/yVJjYOl6Rbqy3H2BFpGt","type":"basic","posted_date":"2022-11-16","applicationLink":"https://apply.sdale.org/winocular/workspace/wSpace.EXE?Action=wsJobsMain&JobPosting=009956","logo":null,"published_at":"2023-02-01T12:01:11.598Z","description":"Springdale Public Schools 1.0 Special Education Timesheet aide"}},"pageContext":{"slug":"1.0-special-education-timesheet-aide-springdale-public-schools"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

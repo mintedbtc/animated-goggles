@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-js",
+    "path": "/category/covid-19",
+    "result": {"data":{"articles":{"edges":[]},"category":{"name":"COVID-19 "}},"pageContext":{"slug":"covid-19"}},
+    "staticQueryHashes": ["161018792","557794130"]}

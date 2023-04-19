@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/assistant-professor---engineering-university-of-arkansas",
+    "result": {"data":{"strapiJob":{"strapiId":656,"slug":"assistant-professor---engineering-university-of-arkansas","title":"Assistant Professor - Engineering","organization":"University of Arkansas","location":"Fayetteville, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/joxIwoZJRuOxBmTGyLr4","type":"basic","posted_date":"2022-10-05","applicationLink":"https://uasys.wd5.myworkdayjobs.com/en-US/UASYS/job/Fayetteville/Assistant-Professor---Engineering_R0022824","logo":null,"published_at":"2022-11-18T13:28:56.571Z","description":"University of Arkansas Assistant Professor - Engineering"}},"pageContext":{"slug":"assistant-professor---engineering-university-of-arkansas"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

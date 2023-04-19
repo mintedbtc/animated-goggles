@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/hr-generalist---human-resources-washington-regional-medical-center",
+    "result": {"data":{"strapiJob":{"strapiId":2062,"slug":"hr-generalist---human-resources-washington-regional-medical-center","title":"HR Generalist - Human Resources","organization":"Washington Regional Medical Center","location":"Fayetteville, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/3vMLvSD3QE67iwudtm39","type":"basic","posted_date":"2023-01-10","applicationLink":"https://wregional.secure.force.com/careers/ts2__JobDetails?jobId=a0I3k00000fG3QKEA0&tSource=","logo":null,"published_at":"2023-02-07T12:32:16.545Z","description":"Washington Regional Medical Center HR Generalist - Human Resources"}},"pageContext":{"slug":"hr-generalist---human-resources-washington-regional-medical-center"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

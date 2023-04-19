@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-post-js",
+    "path": "/post/nwa-weather-closings",
+    "result": {"data":{"strapiPost":{"strapiId":2543,"title":"NWA Weather Closings","topic":"Education","slug":"nwa-weather-closings","coverImage":null,"photoCredit":"Northwest Arkansas Democrat-Gazette","date":"2020-12-15","content":"<p>A full list of all area closures can be found <a title=\"https://www.nwahomepage.com/weather/closings/\" href=\"https://www.nwahomepage.com/weather/closings/\">HERE</a>. </p>"}},"pageContext":{"slug":"nwa-weather-closings"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

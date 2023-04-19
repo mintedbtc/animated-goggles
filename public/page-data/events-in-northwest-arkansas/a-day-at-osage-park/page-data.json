@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-event-js",
+    "path": "/events-in-northwest-arkansas/a-day-at-osage-park",
+    "result": {"data":{"strapiEvent":{"strapiId":11,"slug":"a-day-at-osage-park","name":"A Day at Osage Park","organization":"Peel Compton Foundation","location":"Bentonville, AR","type":"Outdoor Activities","date":"2021-10-10","eventLink":"https://www.peelcompton.org/events/a-day-at-osage-park/","photo":null,"published_at":"2021-09-09T20:40:32.371Z","description":"<p><strong style=\"color: var(--body_typography-color); background-color: rgba(255, 255, 255, 0);\">Osage Park</strong><span style=\"color: var(--body_typography-color); background-color: rgba(255, 255, 255, 0);\">&nbsp;is celebrating this unique space by bringing together the community and amazing organizations for this one-day event. The park will be filled with different opportunities to learn, play, and eat.</span></p>"}},"pageContext":{"slug":"a-day-at-osage-park"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

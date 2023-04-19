@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-js",
+    "path": "/category/education",
+    "result": {"data":{"articles":{"edges":[]},"category":{"name":"Education"}},"pageContext":{"slug":"education"}},
+    "staticQueryHashes": ["161018792","557794130"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-js",
+    "path": "/category/sports",
+    "result": {"data":{"articles":{"edges":[{"node":{"slug":"bentonville-remembers-former-football-coach","title":"Bentonville Remembers Former Football Coach","topic":"sports"}}]},"category":{"name":"Sports "}},"pageContext":{"slug":"sports"}},
+    "staticQueryHashes": ["161018792","557794130"]}

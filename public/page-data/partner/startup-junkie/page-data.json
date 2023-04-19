@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-partner-js",
+    "path": "/partner/startup-junkie",
+    "result": {"data":{"strapiPartner":{"strapiId":14,"Name":"Startup Junkie","description":"Startup Junkie","Location":"1 E Center Street, Fayetteville, AR, 72701","slug":"startup-junkie","url":"https://www.startupjunkie.org/","logo":[{"url":"https://nwa-daily-photos.s3.amazonaws.com/jm6x6p0zyk69v6z0rkvr_bb21262fdd.webp"}],"published_at":"2022-08-25T10:26:30.600Z","facebook":"https://www.facebook.com/startupjunkie/","instagram":"https://www.instagram.com/startup_junkie/?hl=en"}},"pageContext":{"slug":"startup-junkie"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

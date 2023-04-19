@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/grant-administrator-washington-county-government",
+    "result": {"data":{"strapiJob":{"strapiId":1440,"slug":"grant-administrator-washington-county-government","title":"Grant Administrator","organization":"Washington County Government","location":"","logoUrl":"https://cdn.filestackcontent.com/1WUJp1xDTNOfExJF8zbl","type":"basic","posted_date":"2023-01-04","applicationLink":"https://www.washingtoncountyar.gov/Home/Components/JobPosts/Job/4113/25","logo":null,"published_at":"2023-02-01T11:56:56.739Z","description":"Washington County Government Grant Administrator"}},"pageContext":{"slug":"grant-administrator-washington-county-government"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

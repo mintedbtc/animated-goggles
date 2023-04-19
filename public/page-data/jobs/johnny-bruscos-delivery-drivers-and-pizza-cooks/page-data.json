@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/johnny-bruscos-delivery-drivers-and-pizza-cooks",
+    "result": {"data":{"strapiJob":{"strapiId":144,"slug":"johnny-bruscos-delivery-drivers-and-pizza-cooks","title":"Delivery Drivers and Pizza Cooks","organization":"Johnny Bruscos New York Style Oizza","location":"Bentonville","logoUrl":"https://nwa-daily-photos.s3.amazonaws.com/johnnybrusc_28ee267482.png","type":"Basic","posted_date":"2021-09-30","applicationLink":"https://johnnybruscos.com/location/bentonville/","logo":{"publicURL":"/static/80baf540a0499d075c5457a3e1885e50/ad1a7873cf3846e2e8df045fa912c37b.png"},"published_at":"2021-09-30T00:04:31.812Z","description":"<p>Hiring Delivery Drivers and Pizza Cooks. Cooks paid on experience. Drivers are paid hourly $4 per delivery plus tips. Drivers walk with all tips daily.</p>"}},"pageContext":{"slug":"johnny-bruscos-delivery-drivers-and-pizza-cooks"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

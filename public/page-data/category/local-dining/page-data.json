@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-js",
+    "path": "/category/local-dining",
+    "result": {"data":{"articles":{"edges":[]},"category":{"name":"Local Dining"}},"pageContext":{"slug":"local-dining"}},
+    "staticQueryHashes": ["161018792","557794130"]}

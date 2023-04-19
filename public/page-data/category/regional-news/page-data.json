@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-js",
+    "path": "/category/regional-news",
+    "result": {"data":{"articles":{"edges":[]},"category":{"name":"Regional News "}},"pageContext":{"slug":"regional-news"}},
+    "staticQueryHashes": ["161018792","557794130"]}

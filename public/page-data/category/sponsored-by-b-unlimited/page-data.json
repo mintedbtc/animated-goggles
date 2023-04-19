@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-js",
+    "path": "/category/sponsored-by-b-unlimited",
+    "result": {"data":{"articles":{"edges":[]},"category":{"name":"Sponsored by B-Unlimited"}},"pageContext":{"slug":"sponsored-by-b-unlimited"}},
+    "staticQueryHashes": ["161018792","557794130"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/new-grad-cst---surgical-services-washington-regional-medical-center",
+    "result": {"data":{"strapiJob":{"strapiId":2266,"slug":"new-grad-cst---surgical-services-washington-regional-medical-center","title":"New Grad CST - Surgical Services","organization":"Washington Regional Medical Center","location":"Fayetteville, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/3vMLvSD3QE67iwudtm39","type":"basic","posted_date":"2023-01-19","applicationLink":"https://wregional.secure.force.com/careers/ts2__JobDetails?jobId=a0I3k00000fGPsQEAW&tSource=","logo":null,"published_at":"2023-02-16T18:44:41.958Z","description":"Washington Regional Medical Center New Grad CST - Surgical Services"}},"pageContext":{"slug":"new-grad-cst---surgical-services-washington-regional-medical-center"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

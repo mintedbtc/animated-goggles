@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/faculty---position-in-biology-and-chemistry-john-brown-university",
+    "result": {"data":{"strapiJob":{"strapiId":2721,"slug":"faculty---position-in-biology-and-chemistry-john-brown-university","title":"Faculty - Position in Biology and Chemistry","organization":"John Brown University","location":"","logoUrl":"https://cdn.filepicker.io/api/file/SgDIOlidQcGsd0aI0sLS","type":"basic","posted_date":"2023-01-27","applicationLink":"https://www.jbu.edu/human-resources/faculty-job-listings/position-in-biology-and-chemistry?hsLang=en","logo":null,"published_at":"2023-02-22T12:15:32.783Z","description":"John Brown University Faculty - Position in Biology and Chemistry"}},"pageContext":{"slug":"faculty---position-in-biology-and-chemistry-john-brown-university"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

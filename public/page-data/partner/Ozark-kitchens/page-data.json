@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-partner-js",
+    "path": "/partner/Ozark-kitchens",
+    "result": {"data":{"strapiPartner":{"strapiId":10,"Name":"Ozark Kitchens","description":"Designer Remodeling Service specializing in Kitchens and Baths. OZKB offers complete remodeling services from start to finish resulting in an unforgettably phenomenal home improvement experience. Serving Northwest Arkansas.","Location":"920 B 71 Plaza Court Springdale, AR 72764","slug":"Ozark-kitchens","url":"https://www.ozarkkitchens.com/","logo":[{"url":"https://nwa-daily-photos.s3.amazonaws.com/IMG_0523_4da30086aa.png"}],"published_at":"2022-08-23T07:36:10.682Z","facebook":"https://www.facebook.com/OzarkKitchens","instagram":"https://www.instagram.com/Ozarkkitchensandbaths/"}},"pageContext":{"slug":"Ozark-kitchens"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

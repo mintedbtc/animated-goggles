@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/facilities-staff-the-jones-center",
+    "result": {"data":{"strapiJob":{"strapiId":3013,"slug":"facilities-staff-the-jones-center","title":"Facilities Staff","organization":"The Jones Center","location":"Springdale, AR, USA","logoUrl":"https://cdn.filestackcontent.com/wmdMTM7AQJ2wFJxUmq35","type":"basic","posted_date":"2023-02-11","applicationLink":"https://jonesnet.isolvedhire.com/jobs/810980.html","logo":null,"published_at":"2023-03-09T13:57:49.068Z","description":"The Jones Center Facilities Staff"}},"pageContext":{"slug":"facilities-staff-the-jones-center"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/sup-lab-northwest-health",
+    "result": {"data":{"strapiJob":{"strapiId":2256,"slug":"sup-lab-northwest-health","title":"Sup Lab","organization":"Northwest Health","location":"Springdale, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/rAbuteGlTEuaACckApbj","type":"basic","posted_date":"2023-01-19","applicationLink":"https://recruiting.ultipro.com/COM1038/JobBoard/ca597a5e-d152-4f9d-9b59-6d1a9f64c2a7/OpportunityDetail?opportunityId=f94eb624-f92d-45d6-87f9-ac35813684a1","logo":null,"published_at":"2023-02-16T18:44:28.914Z","description":"Northwest Health Sup Lab"}},"pageContext":{"slug":"sup-lab-northwest-health"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

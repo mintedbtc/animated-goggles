@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/draftsperson-tyson-foods",
+    "result": {"data":{"strapiJob":{"strapiId":1638,"slug":"draftsperson-tyson-foods","title":"Draftsperson","organization":"Tyson Foods","location":"Springdale, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/zdBSXxi5QluiTZSaioQI","type":"basic","posted_date":"2022-12-10","applicationLink":"https://tysonfoods.wd5.myworkdayjobs.com/en-US/TSN/job/Corporate---Springdale-Arkansas/Draftsperson_R0220756-1","logo":null,"published_at":"2023-02-01T11:59:06.929Z","description":"Tyson Foods Draftsperson"}},"pageContext":{"slug":"draftsperson-tyson-foods"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

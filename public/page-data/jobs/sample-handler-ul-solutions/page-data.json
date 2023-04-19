@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/sample-handler-ul-solutions",
+    "result": {"data":{"strapiJob":{"strapiId":2148,"slug":"sample-handler-ul-solutions","title":"Sample Handler","organization":"UL Solutions","location":"Bentonville, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/3F07VtYaTYqCk7DzmvmC","type":"basic","posted_date":"2023-01-27","applicationLink":"https://usenglish-ul.icims.com/jobs/31556/sample-handler/job","logo":null,"published_at":"2023-02-16T18:42:54.503Z","description":"UL Solutions Sample Handler"}},"pageContext":{"slug":"sample-handler-ul-solutions"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

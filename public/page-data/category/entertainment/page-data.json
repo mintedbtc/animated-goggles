@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-js",
+    "path": "/category/entertainment",
+    "result": {"data":{"articles":{"edges":[]},"category":{"name":"Entertainment"}},"pageContext":{"slug":"entertainment"}},
+    "staticQueryHashes": ["161018792","557794130"]}

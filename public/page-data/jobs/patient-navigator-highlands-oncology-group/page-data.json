@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/patient-navigator-highlands-oncology-group",
+    "result": {"data":{"strapiJob":{"strapiId":333,"slug":"patient-navigator-highlands-oncology-group","title":"Patient Navigator","organization":"Highlands Oncology Group","location":"Springdale, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/X1Vh2yOUQWWyKWQ96dZm","type":"basic","posted_date":"2022-10-28","applicationLink":"https://www.indeed.com/cmp/Highlands-Oncology-Group/jobs?jk=e6129a916ea0e6b5","logo":null,"published_at":"2022-11-18T13:25:07.042Z","description":"Highlands Oncology Group Patient Navigator"}},"pageContext":{"slug":"patient-navigator-highlands-oncology-group"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

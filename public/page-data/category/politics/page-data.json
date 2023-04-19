@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-js",
+    "path": "/category/politics",
+    "result": {"data":{"articles":{"edges":[]},"category":{"name":"Politics"}},"pageContext":{"slug":"politics"}},
+    "staticQueryHashes": ["161018792","557794130"]}

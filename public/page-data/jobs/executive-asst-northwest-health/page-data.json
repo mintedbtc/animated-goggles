@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/executive-asst-northwest-health",
+    "result": {"data":{"strapiJob":{"strapiId":1337,"slug":"executive-asst-northwest-health","title":"Executive Asst","organization":"Northwest Health","location":"Bentonville, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/rAbuteGlTEuaACckApbj","type":"basic","posted_date":"2022-12-31","applicationLink":"https://www.careershealthcare.com/jobs/329235/executive-asst","logo":null,"published_at":"2023-01-27T12:04:21.012Z","description":"Northwest Health Executive Asst"}},"pageContext":{"slug":"executive-asst-northwest-health"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

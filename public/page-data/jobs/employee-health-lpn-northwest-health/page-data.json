@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/employee-health-lpn-northwest-health",
+    "result": {"data":{"strapiJob":{"strapiId":1523,"slug":"employee-health-lpn-northwest-health","title":"Employee Health LPN","organization":"Northwest Health","location":"Springdale, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/rAbuteGlTEuaACckApbj","type":"basic","posted_date":"2022-12-22","applicationLink":"https://recruiting.ultipro.com/COM1038/JobBoard/ca597a5e-d152-4f9d-9b59-6d1a9f64c2a7/OpportunityDetail?opportunityId=a3cad525-ecf8-48a7-bec4-53acf859b3c2","logo":null,"published_at":"2023-02-01T11:57:42.425Z","description":"Northwest Health Employee Health LPN"}},"pageContext":{"slug":"employee-health-lpn-northwest-health"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

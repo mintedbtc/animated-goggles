@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/sales-associate-coldwell-banker",
+    "result": {"data":{"strapiJob":{"strapiId":447,"slug":"sales-associate-coldwell-banker","title":"Sales Associate","organization":"Coldwell Banker","location":"Fayetteville, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/Tr3E9ulSoKvBFDfOnmDB","type":"basic","posted_date":"2022-10-23","applicationLink":"https://www.coldwellbanker.com/careers/coldwell-banker-opportunities.companyId.29cf84be-3115-11d7-a2c7-00b0d0494558.html?job=20","logo":null,"published_at":"2022-11-18T13:26:19.862Z","description":"Coldwell Banker Sales Associate"}},"pageContext":{"slug":"sales-associate-coldwell-banker"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

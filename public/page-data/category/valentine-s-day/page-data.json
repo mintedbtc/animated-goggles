@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-js",
+    "path": "/category/valentine-s-day",
+    "result": {"data":{"articles":{"edges":[]},"category":{"name":"Valentine's Day"}},"pageContext":{"slug":"valentine-s-day"}},
+    "staticQueryHashes": ["161018792","557794130"]}

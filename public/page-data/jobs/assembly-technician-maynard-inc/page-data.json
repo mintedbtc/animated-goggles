@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/assembly-technician-maynard-inc",
+    "result": {"data":{"strapiJob":{"strapiId":3082,"slug":"assembly-technician-maynard-inc","title":"Assembly Technician","organization":"Maynard Inc","location":"Wichita, KS, USA","logoUrl":"https://cdn.filestackcontent.com/DWykmq9KRyyLfWFXLIYj","type":"basic","posted_date":"2023-02-27","applicationLink":"https://maynardinc.us/Careers/?job=5","logo":null,"published_at":"2023-03-20T14:06:25.082Z","description":"Maynard Inc Assembly Technician"}},"pageContext":{"slug":"assembly-technician-maynard-inc"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

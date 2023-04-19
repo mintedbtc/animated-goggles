@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-event-js",
+    "path": "/events-in-northwest-arkansas/fall-classic",
+    "result": {"data":{"strapiEvent":{"strapiId":14,"slug":"fall-classic","name":"Fall Classic","organization":"Razorback Baseball","location":"Fayetteville, AR","type":"Sports","date":"2021-09-11","eventLink":"https://arkansasrazorbacks.com/hogs-fall-classic-set-for-sept-10/","photo":null,"published_at":"2021-09-10T11:45:21.231Z","description":"<p><strong>Play ball:</strong> Razorback baseball is back with the <a href=\"https://arkansasrazorbacks.com/hogs-fall-classic-set-for-sept-10/\" rel=\"noopener noreferrer\" target=\"_blank\">first scrimmage</a> of the season tonight at 6p.</p>"}},"pageContext":{"slug":"fall-classic"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

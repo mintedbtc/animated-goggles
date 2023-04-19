@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/vice-president-for-academic-affairs-john-brown-university",
+    "result": {"data":{"strapiJob":{"strapiId":1972,"slug":"vice-president-for-academic-affairs-john-brown-university","title":"Vice President for Academic Affairs","organization":"John Brown University","location":"","logoUrl":"https://cdn.filepicker.io/api/file/SgDIOlidQcGsd0aI0sLS","type":"basic","posted_date":"2023-01-14","applicationLink":"https://www.jbu.edu/human-resources/faculty-job-listings/vp-academic-affairs?hsLang=en","logo":null,"published_at":"2023-02-07T12:31:23.816Z","description":"John Brown University Vice President for Academic Affairs"}},"pageContext":{"slug":"vice-president-for-academic-affairs-john-brown-university"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

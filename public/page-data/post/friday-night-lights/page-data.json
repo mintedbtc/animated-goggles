@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-post-js",
+    "path": "/post/friday-night-lights",
+    "result": {"data":{"strapiPost":{"strapiId":2386,"title":"Friday Night lights","topic":"Sports","slug":"friday-night-lights","coverImage":null,"photoCredit":"Hudl","date":"2020-10-17","content":"<h4><strong>High school football matchups for this week:</strong></h4><ul><li><div>Springdale (2-4) @ Rogers (3-1)</div></li><li><div>Fayetteville (1-4) @ Bentonville (6-0)</div></li><li><div>Springdale Har-Ber (2-4) @ Bentonville West (4-2)</div></li><li><div>Rogers Heritage (1-5) @ Southside (1-5)</div></li><li><div>Farmington (2-3) @ Clarksville (2-3)</div></li><li><div>Prairie Grove (5-1) @ Huntsville (3-3)</div></li></ul>"}},"pageContext":{"slug":"friday-night-lights"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

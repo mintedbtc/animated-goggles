@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-event-js",
+    "path": "/events-in-northwest-arkansas/lady-razorbacks-vs-missouri",
+    "result": {"data":{"strapiEvent":{"strapiId":244,"slug":"lady-razorbacks-vs-missouri","name":"🐗 Lady Razorbacks vs. Missouri","organization":"Arkansas Razorbacks","location":"Fayetteville, AR","type":"Sports","date":"2023-02-13","eventLink":"https://arkansasrazorbacks.evenue.net/cgi-bin/ncommerce3/SEGetEventList?groupCode=WBI&linkID=arkansas&shopperContext=&caller=&appCode=","photo":null,"published_at":"2023-02-10T12:20:29.932Z","description":"<p>See Arkansas's full schedule <a href=\"https://arkansasrazorbacks.evenue.net/cgi-bin/ncommerce3/SEGetEventList?groupCode=WBI&amp;linkID=arkansas&amp;shopperContext=&amp;caller=&amp;appCode=\" rel=\"noopener noreferrer\" target=\"_blank\">HERE</a>.</p>"}},"pageContext":{"slug":"lady-razorbacks-vs-missouri"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

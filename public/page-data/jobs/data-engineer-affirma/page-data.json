@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/data-engineer-affirma",
+    "result": {"data":{"strapiJob":{"strapiId":439,"slug":"data-engineer-affirma","title":"Data Engineer","organization":"Affirma","location":"United States","logoUrl":"https://cdn.filepicker.io/api/file/8jvX4AvLQdeOcX2FBqTo","type":"basic","posted_date":"2022-10-25","applicationLink":"https://www.affirma.com/about/careers#JOB-1407","logo":null,"published_at":"2022-11-18T13:26:15.902Z","description":"Affirma Data Engineer"}},"pageContext":{"slug":"data-engineer-affirma"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

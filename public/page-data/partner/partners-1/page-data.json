@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-partner-js",
+    "path": "/partner/partners-1",
+    "result": {"data":{"strapiPartner":{"strapiId":24,"Name":"Adventure Subaru","description":"Adventure Subaru","Location":"2269 N.Henbest Dr. Fayetteville, AR 72704","slug":"partners-1","url":"https://www.adventuresubaru.com/?utm_source=NWA_Daily","logo":[{"url":"https://nwa-daily-photos.s3.amazonaws.com/Adventure_Subaru_Logo_bacd8934cb.png"}],"published_at":"2023-03-15T14:50:27.575Z","facebook":"https://www.facebook.com/AdventureSubaru/?utm_source=NWA_Daily","instagram":"https://www.instagram.com/adventuresubaru/?utm_source=NWA_Daily"}},"pageContext":{"slug":"partners-1"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

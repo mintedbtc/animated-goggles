@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-partner-js",
+    "path": "/partner/mount-sequoyah",
+    "result": {"data":{"strapiPartner":{"strapiId":21,"Name":"Mount Sequoyah","description":"Mount Sequoyah","Location":"150 N Skyline Dr Fayetteville, AR 72701","slug":"mount-sequoyah","url":"https://mountsequoyah.org/","logo":[{"url":"https://nwa-daily-photos.s3.amazonaws.com/ms_secondary_logo_reverse_e15b00a160.png"}],"published_at":"2022-08-26T19:26:51.717Z","facebook":"https://www.facebook.com/MountSequoyahCenter","instagram":"https://www.instagram.com/mountsequoyah/?hl=en"}},"pageContext":{"slug":"mount-sequoyah"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

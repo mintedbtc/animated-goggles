@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-event-js",
+    "path": "/events-in-northwest-arkansas/eureka-strings-at-the-railyard",
+    "result": {"data":{"strapiEvent":{"strapiId":33,"slug":"eureka-strings-at-the-railyard","name":"Eureka Strings at the Railyard","organization":"Railyard","location":"Railyard, Rogers","type":"Concert","date":"2021-09-19","eventLink":"https://visitrogersarkansas.com/events/railyard-live-eureka-strings","photo":null,"published_at":"2021-09-17T03:39:20.226Z","description":"<p>Free (reserved ticket required for seating)</p><p>Table seating $20 (seats up to 4 people)</p>"}},"pageContext":{"slug":"eureka-strings-at-the-railyard"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

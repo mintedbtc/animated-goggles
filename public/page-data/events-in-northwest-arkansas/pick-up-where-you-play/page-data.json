@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-event-js",
+    "path": "/events-in-northwest-arkansas/pick-up-where-you-play",
+    "result": {"data":{"strapiEvent":{"strapiId":28,"slug":"pick-up-where-you-play","name":"Pick Up Where You Play","organization":"City of Fayetteville","location":"City of Fayetteville ","type":"Volunteer","date":"2021-09-19","eventLink":"https://www.fayetteville-ar.gov/CivicSend/ViewMessage/Message/152617","photo":null,"published_at":"2021-09-17T03:12:10.219Z","description":"<p>The city of Fayetteville is hosting a clean up day as opportunity for us to give back to our beautiful home.</p>"}},"pageContext":{"slug":"pick-up-where-you-play"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

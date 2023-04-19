@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-event-js",
+    "path": "/events-in-northwest-arkansas/famous-hardware",
+    "result": {"data":{"strapiEvent":{"strapiId":19,"slug":"famous-hardware","name":"Famous Hardware","organization":"Factory Obscura","location":"Springdale, AR","type":"Arts & Culture","date":"2021-09-11","eventLink":"https://www.facebook.com/events/109147851401433/?event_time_id=109147791401439","photo":null,"published_at":"2021-09-10T11:55:39.331Z","description":"<p class=\"ql-align-center\"><strong>Explore:</strong> <a href=\"https://www.facebook.com/events/109147774734774/?event_time_id=109147791401439\" rel=\"noopener noreferrer\" target=\"_blank\">Brain to Brain Paper Plane</a> is still in Downtown Springdale. Make it a trip, see it if you haven't already.</p>"}},"pageContext":{"slug":"famous-hardware"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

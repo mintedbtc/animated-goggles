@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/data-visualization-engineer-the-hershey-company",
+    "result": {"data":{"strapiJob":{"strapiId":2184,"slug":"data-visualization-engineer-the-hershey-company","title":"Data Visualization Engineer","organization":"The Hershey Company","location":"Bentonville, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/CfcGHDsHQmuhOS2tRz9T","type":"basic","posted_date":"2023-01-25","applicationLink":"https://careers.thehersheycompany.com/job/Bentonville-Data-Visualization-Engineer-AR-72712/984928000/","logo":null,"published_at":"2023-02-16T18:43:26.105Z","description":"The Hershey Company Data Visualization Engineer"}},"pageContext":{"slug":"data-visualization-engineer-the-hershey-company"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

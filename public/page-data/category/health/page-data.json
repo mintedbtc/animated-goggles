@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-js",
+    "path": "/category/health",
+    "result": {"data":{"articles":{"edges":[]},"category":{"name":"Health"}},"pageContext":{"slug":"health"}},
+    "staticQueryHashes": ["161018792","557794130"]}

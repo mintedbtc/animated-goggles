@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/arkansas-childrens-northwest-mri-technologist",
+    "result": {"data":{"strapiJob":{"strapiId":183,"slug":"arkansas-childrens-northwest-mri-technologist","title":"MRI Technologist","organization":"Arkansas Children’s Northwest","location":"Springdale, AR","logoUrl":"https://nwa-daily-photos.s3.amazonaws.com/ark_logo_2518c085a1.png","type":"Basic","posted_date":"2022-07-29","applicationLink":"https://archildrens.wd1.myworkdayjobs.com/en-US/External_Career_Site/job/Springdale/MRI-Technologist--FT_R0012103","logo":{"publicURL":"/static/fdb77a750d265365647c787c29de442d/13ddc71d3da97c79e7cd0470269c3355.png"},"published_at":"2022-07-29T12:26:18.113Z","description":"<p> </p>"}},"pageContext":{"slug":"arkansas-childrens-northwest-mri-technologist"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

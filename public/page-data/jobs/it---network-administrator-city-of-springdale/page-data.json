@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/it---network-administrator-city-of-springdale",
+    "result": {"data":{"strapiJob":{"strapiId":2204,"slug":"it---network-administrator-city-of-springdale","title":"IT - Network administrator","organization":"City of Springdale","location":"Springdale, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/Tsf7z3RdSfsHghypLElP","type":"basic","posted_date":"2023-01-24","applicationLink":"https://ar-springdale.civicplushrms.com/careers/JobDetail.aspx?enc=QPQDKqwXNuJybHyCBjvzp/GRt/qhQmBDlEsHfj/JcZSiaCOvFrUDz441OtfWS9PE","logo":null,"published_at":"2023-02-16T18:43:46.728Z","description":"City of Springdale IT - Network administrator"}},"pageContext":{"slug":"it---network-administrator-city-of-springdale"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

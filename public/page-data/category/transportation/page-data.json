@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-js",
+    "path": "/category/transportation",
+    "result": {"data":{"articles":{"edges":[]},"category":{"name":"Transportation"}},"pageContext":{"slug":"transportation"}},
+    "staticQueryHashes": ["161018792","557794130"]}

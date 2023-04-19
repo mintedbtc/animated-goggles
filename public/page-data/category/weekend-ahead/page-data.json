@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-js",
+    "path": "/category/weekend-ahead",
+    "result": {"data":{"articles":{"edges":[]},"category":{"name":"Weekend Ahead"}},"pageContext":{"slug":"weekend-ahead"}},
+    "staticQueryHashes": ["161018792","557794130"]}

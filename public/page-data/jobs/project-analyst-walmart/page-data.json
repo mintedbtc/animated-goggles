@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/project-analyst-walmart",
+    "result": {"data":{"strapiJob":{"strapiId":1775,"slug":"project-analyst-walmart","title":"Project Analyst","organization":"Walmart","location":"Bentonville, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/AJflfV5aTXjlp1Kzk0iA","type":"basic","posted_date":"2022-11-22","applicationLink":"https://careers.walmart.com/us/jobs/WD1329564-project-analyst","logo":null,"published_at":"2023-02-01T12:00:40.241Z","description":"Walmart Project Analyst"}},"pageContext":{"slug":"project-analyst-walmart"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

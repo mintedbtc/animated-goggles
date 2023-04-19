@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-event-js",
+    "path": "/events-in-northwest-arkansas/coler-bike-in-movie",
+    "result": {"data":{"strapiEvent":{"strapiId":13,"slug":"coler-bike-in-movie","name":"Coler Bike-In Movie","organization":"Coler Mountain","location":"Bentonville, AR","type":"Outdoor Activities","date":"2021-09-11","eventLink":"https://www.eventbrite.com/e/coler-bike-in-movie-tickets-159873280285?aff=ebdssbdestsearch","photo":null,"published_at":"2021-09-10T11:43:49.304Z","description":"<p><strong>Movie night</strong>: Come hang at Coler mountain on the <a href=\"https://www.eventbrite.com/e/coler-bike-in-movie-tickets-159873280285?aff=ebdssbdestsearch\" rel=\"noopener noreferrer\" target=\"_blank\">homestead tonight</a> for an outdoor movie!</p>"}},"pageContext":{"slug":"coler-bike-in-movie"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

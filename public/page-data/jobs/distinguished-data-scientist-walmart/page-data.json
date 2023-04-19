@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/distinguished-data-scientist-walmart",
+    "result": {"data":{"strapiJob":{"strapiId":1526,"slug":"distinguished-data-scientist-walmart","title":"Distinguished Data Scientist","organization":"Walmart","location":"Bentonville, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/AJflfV5aTXjlp1Kzk0iA","type":"basic","posted_date":"2022-12-22","applicationLink":"https://careers.walmart.com/us/jobs/WD1342546-distinguished-data-scientist","logo":null,"published_at":"2023-02-01T11:57:44.291Z","description":"Walmart Distinguished Data Scientist"}},"pageContext":{"slug":"distinguished-data-scientist-walmart"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

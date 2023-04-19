@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-js",
+    "path": "/category/holiday",
+    "result": {"data":{"articles":{"edges":[]},"category":{"name":"Holiday"}},"pageContext":{"slug":"holiday"}},
+    "staticQueryHashes": ["161018792","557794130"]}

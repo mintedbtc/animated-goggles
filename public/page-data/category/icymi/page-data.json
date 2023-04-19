@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-js",
+    "path": "/category/icymi",
+    "result": {"data":{"articles":{"edges":[]},"category":{"name":"ICYMI"}},"pageContext":{"slug":"icymi"}},
+    "staticQueryHashes": ["161018792","557794130"]}

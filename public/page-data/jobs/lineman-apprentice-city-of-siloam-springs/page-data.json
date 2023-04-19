@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/lineman-apprentice-city-of-siloam-springs",
+    "result": {"data":{"strapiJob":{"strapiId":1083,"slug":"lineman-apprentice-city-of-siloam-springs","title":"Lineman Apprentice","organization":"City of Siloam Springs","location":"Siloam Springs, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/QWq7iafYQ9qnfrugxyRd","type":"basic","posted_date":"2022-12-02","applicationLink":"https://www.siloamsprings.com/Jobs.aspx?UniqueId=98&From=All&CommunityJobs=False&JobID=Lineman-Apprentice-101","logo":null,"published_at":"2023-01-01T23:26:02.565Z","description":"City of Siloam Springs Lineman Apprentice"}},"pageContext":{"slug":"lineman-apprentice-city-of-siloam-springs"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

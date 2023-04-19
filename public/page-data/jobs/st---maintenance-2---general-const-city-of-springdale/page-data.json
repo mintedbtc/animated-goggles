@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/st---maintenance-2---general-const-city-of-springdale",
+    "result": {"data":{"strapiJob":{"strapiId":804,"slug":"st---maintenance-2---general-const-city-of-springdale","title":"ST - Maintenance 2 - General Const","organization":"City of Springdale","location":"Springdale, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/Tsf7z3RdSfsHghypLElP","type":"basic","posted_date":"2022-11-09","applicationLink":"https://ar-springdale.civicplushrms.com/careers/JobDetail.aspx?enc=QPQDKqwXNuJybHyCBjvzp/GRt/qhQmBDlEsHfj/JcZTVaJPK1zV4h6uPAcVKOPt+","logo":null,"published_at":"2022-12-09T12:11:26.901Z","description":"City of Springdale ST - Maintenance 2 - General Const"}},"pageContext":{"slug":"st---maintenance-2---general-const-city-of-springdale"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

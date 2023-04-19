@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-js",
+    "path": "/category/health-wellness",
+    "result": {"data":{"articles":{"edges":[]},"category":{"name":"Health & Wellness"}},"pageContext":{"slug":"health-wellness"}},
+    "staticQueryHashes": ["161018792","557794130"]}

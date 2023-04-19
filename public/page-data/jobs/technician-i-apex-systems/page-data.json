@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/technician-i-apex-systems",
+    "result": {"data":{"strapiJob":{"strapiId":1445,"slug":"technician-i-apex-systems","title":"Technician I","organization":"Apex Systems","location":"Memphis, TN, USA","logoUrl":"https://cdn.filepicker.io/api/file/AnznEBVYQOC2wrDGaMNd","type":"basic","posted_date":"2023-01-04","applicationLink":"https://www.apexsystems.com/job/1318936_usa/technician-i","logo":null,"published_at":"2023-02-01T11:56:58.394Z","description":"Apex Systems Technician I"}},"pageContext":{"slug":"technician-i-apex-systems"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

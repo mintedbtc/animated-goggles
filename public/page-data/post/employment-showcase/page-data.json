@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-post-js",
+    "path": "/post/employment-showcase",
+    "result": {"data":{"strapiPost":{"strapiId":2398,"title":"Employment showcase","topic":"Business","slug":"employment-showcase","coverImage":null,"photoCredit":null,"date":"2020-10-24","content":"<p>ICYMI, the Rogers Chamber is hosting a <a title=\"https://www.rogerslowell.com/pages/nwa-employment-showcase/\" href=\"https://www.rogerslowell.com/pages/nwa-employment-showcase/\">NWA Employment Showcase</a> for job seekers and employers. </p><ul><li><div>The <a title=\"https://www.rogerslowell.com/events/2020/10/01/signature-events/northwest-arkansas-employment-showcase/\" href=\"https://www.rogerslowell.com/events/2020/10/01/signature-events/northwest-arkansas-employment-showcase/\">Event</a> runs through the end of the month (Oct. 31)</div></li></ul><p></p>"}},"pageContext":{"slug":"employment-showcase"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-js",
+    "path": "/category/sponsored-by-beardedgoat",
+    "result": {"data":{"articles":{"edges":[]},"category":{"name":"Sponsored by beardedgoat"}},"pageContext":{"slug":"sponsored-by-beardedgoat"}},
+    "staticQueryHashes": ["161018792","557794130"]}

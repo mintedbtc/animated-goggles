@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/web-developer-affirma",
+    "result": {"data":{"strapiJob":{"strapiId":442,"slug":"web-developer-affirma","title":"Web Developer","organization":"Affirma","location":"United States","logoUrl":"https://cdn.filepicker.io/api/file/8jvX4AvLQdeOcX2FBqTo","type":"basic","posted_date":"2022-10-25","applicationLink":"https://www.affirma.com/about/careers#JOB-1418","logo":null,"published_at":"2022-11-18T13:26:16.943Z","description":"Affirma Web Developer"}},"pageContext":{"slug":"web-developer-affirma"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

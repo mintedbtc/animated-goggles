@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-event-js",
+    "path": "/events-in-northwest-arkansas/pedal-kids-race-series",
+    "result": {"data":{"strapiEvent":{"strapiId":22,"slug":"pedal-kids-race-series","name":"Pedal Kids Race Series ","organization":"Buddy Pegs","location":"Buddy Pegs Family Ride HQ","type":"Bicycle Race","date":"2021-10-10","eventLink":"https://buddypegs.com/pkrs/","photo":null,"published_at":"2021-09-16T15:12:24.002Z","description":"<p><strong>Buddy Pegs</strong> is hosting a race series for kids ages 2-12. It will be 4 different weekends: Oct 9, Oct 30, Nov. 13, Dec 11.</p>"}},"pageContext":{"slug":"pedal-kids-race-series"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

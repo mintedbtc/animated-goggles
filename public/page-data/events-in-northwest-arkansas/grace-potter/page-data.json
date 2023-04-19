@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-event-js",
+    "path": "/events-in-northwest-arkansas/grace-potter",
+    "result": {"data":{"strapiEvent":{"strapiId":42,"slug":"grace-potter","name":"Grace Potter","organization":"The Momentary","location":"Momentary Green","type":"Concert","date":"2021-10-01","eventLink":"https://themomentary.org/calendar/grace-potter/","photo":null,"published_at":"2021-09-24T09:57:36.419Z","description":"<p>GRAMMY Award winning artist Grace Potter will be on the Momentary Green and admission is free, though registration is required.</p>"}},"pageContext":{"slug":"grace-potter"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

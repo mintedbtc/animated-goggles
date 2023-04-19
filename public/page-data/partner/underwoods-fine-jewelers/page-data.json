@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-partner-js",
+    "path": "/partner/underwoods-fine-jewelers",
+    "result": {"data":{"strapiPartner":{"strapiId":2,"Name":"Underwoods Fine Jewelers","description":"Since 1957, Underwoods has been committed to quality and value. Named \"Coolest Store in America\" by InStore Magazine, and winner of state, national, and international design awards, Underwoods' dedication to craftsmanship and design excellence creates timeless jewelry.","Location":"611 W Dickson St, Fayetteville, AR 72701","slug":"underwoods-fine-jewelers","url":"https://www.underwoods.com/","logo":[{"url":"https://nwa-daily-photos.s3.amazonaws.com/Underwoods_logo_RGB_300ppi_87965dd275.jpeg"}],"published_at":"2022-08-09T12:29:48.405Z","facebook":"https://www.facebook.com/underwoodsjewelers","instagram":"https://www.instagram.com/underwoodsjewel_ar/?hl=en"}},"pageContext":{"slug":"underwoods-fine-jewelers"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

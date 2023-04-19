@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-js",
+    "path": "/category/sponsored-by-the-peel-compton-foundation",
+    "result": {"data":{"articles":{"edges":[]},"category":{"name":"Sponsored by The Peel Compton Foundation"}},"pageContext":{"slug":"sponsored-by-the-peel-compton-foundation"}},
+    "staticQueryHashes": ["161018792","557794130"]}

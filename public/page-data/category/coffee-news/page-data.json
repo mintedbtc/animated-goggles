@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-js",
+    "path": "/category/coffee-news",
+    "result": {"data":{"articles":{"edges":[]},"category":{"name":"Coffee News"}},"pageContext":{"slug":"coffee-news"}},
+    "staticQueryHashes": ["161018792","557794130"]}

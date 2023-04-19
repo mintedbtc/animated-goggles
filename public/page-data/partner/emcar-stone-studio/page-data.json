@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-partner-js",
+    "path": "/partner/emcar-stone-studio",
+    "result": {"data":{"strapiPartner":{"strapiId":5,"Name":"Emcar Stone Studio","description":"Emcar Stone Studio is a family owned and operated full service fabrication and installation company servicing NWA that specializes in residential/commercial: quartz, granite, marble, and quartzite countertops. Contact them today for a complimentary quote!","Location":"3807 S Thompson St, Springdale, AR 72764","slug":"emcar-stone-studio","url":"https://www.emcarstone.com/","logo":[{"url":"https://nwa-daily-photos.s3.amazonaws.com/Emcar_Stone_Logo_final_1_24a7182c2b.jpg"}],"published_at":"2022-08-20T22:39:20.128Z","facebook":"https://www.facebook.com/EmcarStoneStudio/","instagram":"https://www.instagram.com/emcarstonestudio/?hl=en"}},"pageContext":{"slug":"emcar-stone-studio"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

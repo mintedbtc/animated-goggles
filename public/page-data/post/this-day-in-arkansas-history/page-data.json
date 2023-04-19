@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-post-js",
+    "path": "/post/this-day-in-arkansas-history",
+    "result": {"data":{"strapiPost":{"strapiId":2485,"title":"This Day in Arkansas History","topic":"History","slug":"this-day-in-arkansas-history","coverImage":null,"photoCredit":"Arkansas","date":"2020-11-28","content":"<p>On November 27, 1957 the “last elements” of the 101st Airborne, United States Army, departed Little Rock after standing guard at Little Rock Central High School. Inside the school, a rock was thrown at a hall guard by a student on their exit. </p><p></p>"}},"pageContext":{"slug":"this-day-in-arkansas-history"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

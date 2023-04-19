@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/patient-navigator-northwest-health",
+    "result": {"data":{"strapiJob":{"strapiId":739,"slug":"patient-navigator-northwest-health","title":"Patient Navigator","organization":"Northwest Health","location":"Springdale, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/rAbuteGlTEuaACckApbj","type":"basic","posted_date":"2022-11-15","applicationLink":"https://recruiting.ultipro.com/COM1038/JobBoard/ca597a5e-d152-4f9d-9b59-6d1a9f64c2a7/OpportunityDetail?opportunityId=3f2d8627-693d-4698-9373-66b624e2e377","logo":null,"published_at":"2022-12-09T12:10:53.240Z","description":"Northwest Health Patient Navigator"}},"pageContext":{"slug":"patient-navigator-northwest-health"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

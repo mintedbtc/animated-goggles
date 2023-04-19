@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-js",
+    "path": "/category/region",
+    "result": {"data":{"articles":{"edges":[]},"category":{"name":"Region"}},"pageContext":{"slug":"region"}},
+    "staticQueryHashes": ["161018792","557794130"]}

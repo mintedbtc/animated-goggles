@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/radiology-tech-washington-regional-medical-center",
+    "result": {"data":{"strapiJob":{"strapiId":3103,"slug":"radiology-tech-washington-regional-medical-center","title":"Radiology Tech","organization":"Washington Regional Medical Center","location":"Fayetteville, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/3vMLvSD3QE67iwudtm39","type":"basic","posted_date":"2023-02-24","applicationLink":"https://wregional.secure.force.com/careers/ts2__JobDetails?jobId=a0I3k00000hFx3kEAC&tSource=","logo":null,"published_at":"2023-03-20T14:06:43.215Z","description":"Washington Regional Medical Center Radiology Tech"}},"pageContext":{"slug":"radiology-tech-washington-regional-medical-center"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}
