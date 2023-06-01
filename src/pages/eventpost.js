@@ -446,7 +446,7 @@ class JobpostPage extends React.Component {
                 value={this.state.date}
                   onChange={(e) => {
                     console.log(e.target.value)
-                    this.setState({date:e.target.value})
+                    this.setState({date:e.target.value.getDate() + 1})
                 }}
                 />
                 <br></br>
