@@ -75,7 +75,7 @@ class JobpostPage extends React.Component {
         organization: organization,
         description: description,
         eventLink: eventLink,
-        date: date,
+        date: date.getDate() + 1,
         // property: "NWA Daily"
       }
   
