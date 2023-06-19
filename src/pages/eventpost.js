@@ -266,7 +266,7 @@ class JobpostPage extends React.Component {
                 value={this.state.date}
                   onChange={(e) => {
                       const date = new Date(e.target.value);
-                      date.setDate(date.getDate() + 1);
+                      date.setDate(date.getDate());
                       this.setState({date: date.toISOString().split('T')[0]});
                   }}
                 />
@@ -447,7 +447,7 @@ class JobpostPage extends React.Component {
                 value={this.state.date}
                   onChange={(e) => {
                       const date = new Date(e.target.value);
-                      date.setDate(date.getDate() + 1);
+                      date.setDate(date.getDate());
                       this.setState({date: date.toISOString().split('T')[0]});
                   }}
                 />
