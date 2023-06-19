@@ -445,9 +445,10 @@ class JobpostPage extends React.Component {
                 labelText="Event Date"
                 value={this.state.date}
                   onChange={(e) => {
-                    console.log(e.target.value)
-                    this.setState({date:e.target.value.getDate() + 1})
-                }}
+                      const date = new Date(e.target.value);
+                      date.setDate(date.getDate() + 1);
+                      this.setState({date: date.toISOString().split('T')[0]});
+                  }}
                 />
                 <br></br>
                 <br></br>

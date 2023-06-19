@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-partner-js",
+    "path": "/partner/1",
+    "result": {"data":{"strapiPartner":{"strapiId":25,"Name":"1","description":"<ul><li><strong><em><u><span class=\"ql-cursor\">﻿</span></u></em></strong></li></ul>","Location":"3137 Laguna Street","slug":"1","url":"http://www.example.com","logo":[],"published_at":"2023-06-02T15:57:48.142Z","facebook":"testing@example.com","instagram":"testing@example.com"}},"pageContext":{"slug":"1"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

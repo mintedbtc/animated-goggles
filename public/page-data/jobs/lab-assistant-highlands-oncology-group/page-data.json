@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/lab-assistant-highlands-oncology-group",
+    "result": {"data":{"strapiJob":{"strapiId":3364,"slug":"lab-assistant-highlands-oncology-group","title":"Lab Assistant","organization":"Highlands Oncology Group","location":"Rogers, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/X1Vh2yOUQWWyKWQ96dZm","type":"basic","posted_date":"2023-04-28","applicationLink":"https://www.indeed.com/viewjob?jk=3eff3da7ef8ff173","logo":null,"published_at":"2023-05-22T13:36:41.611Z","description":"Highlands Oncology Group Lab Assistant"}},"pageContext":{"slug":"lab-assistant-highlands-oncology-group"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

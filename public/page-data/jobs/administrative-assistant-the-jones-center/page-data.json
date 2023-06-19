@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/administrative-assistant-the-jones-center",
+    "result": {"data":{"strapiJob":{"strapiId":3409,"slug":"administrative-assistant-the-jones-center","title":"Administrative Assistant","organization":"The Jones Center","location":"Springdale, AR, USA","logoUrl":"https://cdn.filestackcontent.com/wmdMTM7AQJ2wFJxUmq35","type":"basic","posted_date":"2023-04-28","applicationLink":"https://jonesnet.isolvedhire.com/jobs/871978.html","logo":null,"published_at":"2023-05-22T13:37:02.844Z","description":"The Jones Center Administrative Assistant"}},"pageContext":{"slug":"administrative-assistant-the-jones-center"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

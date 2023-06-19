@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/corporate-recruiter-tyson-foods",
+    "result": {"data":{"strapiJob":{"strapiId":3300,"slug":"corporate-recruiter-tyson-foods","title":"Corporate Recruiter","organization":"Tyson Foods","location":"Springdale, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/zdBSXxi5QluiTZSaioQI","type":"basic","posted_date":"2023-03-11","applicationLink":"https://tysonfoods.wd5.myworkdayjobs.com/en-US/TSN/job/Corporate---Springdale-Arkansas/Corporate-Recruiter_R0236245-1","logo":null,"published_at":"2023-04-14T08:38:36.108Z","description":"Tyson Foods Corporate Recruiter"}},"pageContext":{"slug":"corporate-recruiter-tyson-foods"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

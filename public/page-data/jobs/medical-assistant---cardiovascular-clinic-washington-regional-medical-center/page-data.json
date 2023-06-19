@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/medical-assistant---cardiovascular-clinic-washington-regional-medical-center",
+    "result": {"data":{"strapiJob":{"strapiId":3260,"slug":"medical-assistant---cardiovascular-clinic-washington-regional-medical-center","title":"Medical Assistant - Cardiovascular Clinic","organization":"Washington Regional Medical Center","location":"Fayetteville, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/3vMLvSD3QE67iwudtm39","type":"basic","posted_date":"2023-03-14","applicationLink":"https://wregional.secure.force.com/careers/ts2__JobDetails?jobId=a0I3k00000hH1V3EAK&tSource=","logo":null,"published_at":"2023-04-14T08:37:46.946Z","description":"Washington Regional Medical Center Medical Assistant - Cardiovascular Clinic"}},"pageContext":{"slug":"medical-assistant---cardiovascular-clinic-washington-regional-medical-center"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

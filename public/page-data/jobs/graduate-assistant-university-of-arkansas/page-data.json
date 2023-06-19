@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/graduate-assistant-university-of-arkansas",
+    "result": {"data":{"strapiJob":{"strapiId":3232,"slug":"graduate-assistant-university-of-arkansas","title":"Graduate Assistant","organization":"University of Arkansas","location":"","logoUrl":"https://cdn.filepicker.io/api/file/joxIwoZJRuOxBmTGyLr4","type":"basic","posted_date":"2023-03-07","applicationLink":"https://uasys.wd5.myworkdayjobs.com/en-US/UASYS/job/UAPBATTCAgricultural-Technology-and-Training-Center/Graduate-Assistant_R0033099","logo":null,"published_at":"2023-04-03T04:55:40.305Z","description":"University of Arkansas Graduate Assistant"}},"pageContext":{"slug":"graduate-assistant-university-of-arkansas"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/mechanic-fte-1.0-springdale-public-schools",
+    "result": {"data":{"strapiJob":{"strapiId":3290,"slug":"mechanic-fte-1.0-springdale-public-schools","title":"Mechanic FTE 1.0","organization":"Springdale Public Schools","location":"Springdale, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/yVJjYOl6Rbqy3H2BFpGt","type":"basic","posted_date":"2023-03-14","applicationLink":"https://apply.sdale.org/winocular/workspace/wSpace.EXE?Action=wsJobsMain&JobPosting=010744","logo":null,"published_at":"2023-04-14T08:38:18.439Z","description":"Springdale Public Schools Mechanic FTE 1.0"}},"pageContext":{"slug":"mechanic-fte-1.0-springdale-public-schools"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

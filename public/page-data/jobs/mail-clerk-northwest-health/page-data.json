@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/mail-clerk-northwest-health",
+    "result": {"data":{"strapiJob":{"strapiId":3306,"slug":"mail-clerk-northwest-health","title":"Mail Clerk","organization":"Northwest Health","location":"Springdale, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/rAbuteGlTEuaACckApbj","type":"basic","posted_date":"2023-03-10","applicationLink":"https://recruiting.ultipro.com/COM1038/JobBoard/ca597a5e-d152-4f9d-9b59-6d1a9f64c2a7/OpportunityDetail?opportunityId=f45988b8-55b6-4acc-b2dd-cb13366fe9f3","logo":null,"published_at":"2023-04-14T08:38:44.121Z","description":"Northwest Health Mail Clerk"}},"pageContext":{"slug":"mail-clerk-northwest-health"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}
