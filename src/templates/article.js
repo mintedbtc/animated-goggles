@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
 import Moment from "react-moment";
@@ -8,6 +8,7 @@ import SubscribeComponent from "../components/subscribe";
 import PopupComponent from "../components/popup";
 import { useBreakpoint } from 'gatsby-plugin-breakpoints';
 import ReactHtmlParser from 'react-html-parser';
+import axios from 'axios';
 
 export const query = graphql`
   query EditionQuery($slug: String!) {
@@ -58,6 +59,33 @@ export const query = graphql`
 `;
 
 const Article = ({ data }) => {
+  const [additionalData, setAdditionalData] = useState(null);
+  const [channel, setChannel] = useState('');
+  
+  useEffect(() => {
+    // This will return the current URL as a string
+    const currentUrl = window.location.href
+    // Create a new URL object from the string
+    const url = new URL(currentUrl);
+
+    // Use URLSearchParams to get the value of 'channel'
+    const channelValue = url.searchParams.get('channel');
+
+    // Update state with the value of 'channel'
+    setChannel(channelValue);
+    console.log(channelValue)
+
+    axios.post('https://nwadailybackend.herokuapp.com/newsletter', {
+        postId: channelValue,
+    })
+    .then(response => {
+      setAdditionalData(response.data);
+    })
+    .catch(error => {
+      console.error('Error fetching additional data:', error);
+    });
+  }, []);  // Empty dependency array so this runs once after the component mounts
+
   const breakpoints = useBreakpoint();
   const article = data.strapiEdition;
   console.log(article.posts[0].content)
@@ -77,10 +105,12 @@ console.log(article)
 console.log(article.date)
 const dt = new Date(article.posts[0].date)
 console.log(article)
+if (channel === null) {
   return (
     <Layout seo={seo}>
       <div>
         <PopupComponent/>
+        
           <h2 className="uk-text-center" style={{paddingTop:"3%",marginTop:"3%"}}>{article.headline}</h2>
 
 
@@ -391,48 +421,6 @@ console.log(article)
             </div>
             )
         })}
-        
-        {/* <div style={{borderBottom:"1px solid #f9f9f9", borderRadius:"20px", marginBottom:"7px", textAlign:"left"}}>
-              <div style={{borderBottom:"1px solid #f5f5f5", borderRadius:"19px"}}>
-              <div style={{borderRight:"1px solid #f5f5f5", borderBottom:"1px solid #f2f2f2", borderRadius:"18px"}}>
-              <div style={{borderRight:"1px solid #f2f2f2", borderBottom:"1px solid #f0f0f0", borderRadius:"17px"}}>
-              <div style={{borderRight:"1px solid #eee",borderBottom:"1px solid #eee",borderRadius:"16px"}}>
-              <div style={{borderLeft:"0.3px solid #f5f5f5", borderTop:"0.1px solid #f2f2f2", borderRadius:"18px"}}>
-              <div style={{borderLeft:"0.3px solid #f2f2f2", borderTop:"0.1px solid #f0f0f0", borderRadius:"17px"}}>
-              <div style={{borderLeft:"0.3px solid #eee",borderTop:"0.1px solid #eee",borderRadius:"16px"}}>
-
-
-        
-              <table width="100%" cellpadding="0" cellspacing="0" border="0" style={{borderCollapse: "collapse"}}>
-              <tr>
-              <td style={{padding: "15px"}}>
-              <h3 style={{fontFamily:"Helvetica,Arial,sans-serif",fontSize:"16px",color:"#307765",fontWeight:"700",marginTop:"0",marginBottom:"0"}}>
-                NWA Daily Picks
-              </h3>
-              <h3 style={{fontFamily:"Helvetica,Arial,sans-serif",fontSize:"24px",color:"#333",fontWeight:"700",marginBottom:"0",lineHeight:"26px",marginTop:"8px"}}>
-              <font color="#000000">
-              In other news
-              </font>
-              </h3>
-              </td>
-              </tr>
-              </table>
-              <table width="100%" cellpadding="0" cellspacing="0" border="0" style={{borderCollapse: "collapse"}}>
-                <tr>
-                <td>
-                <div style={{color:"black", padding: "15px"}} dangerouslySetInnerHTML={{__html:article.pick.content.split('a title=').join('a style="border-bottom:2px solid #307765;text-decoration:none;color:#333" title=').split('a href=').join('a style="border-bottom:2px solid #307765;text-decoration:none;color:#333" href=').split('<em>').join('<em style="color:#666;">').split('<li>').join('<li style="padding-bottom:10px;">')}}></div>
-                </td>
-            </tr>
-            </table>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            
-            </div> */}
         </div>
         )}
           
@@ -442,7 +430,18 @@ console.log(article)
       </div>
       <SubscribeComponent/>
     </Layout>
-  );
+  )}
+  else {
+    return (
+      <Layout seo={seo}>
+        <div>
+          <PopupComponent/>
+          
+        </div>
+        <div dangerouslySetInnerHTML={{__html: additionalData?.data?.content?.free?.email.replace(/{{OPEN_TRACKING_PIXEL}}/g, '') || ''}}></div>
+        <SubscribeComponent/>
+      </Layout>
+  )}
 };
 
 export default Article;

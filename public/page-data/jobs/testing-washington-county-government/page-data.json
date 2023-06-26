@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/testing-washington-county-government",
+    "result": {"data":{"strapiJob":{"strapiId":3610,"slug":"testing-washington-county-government","title":"Testing","organization":"Washington County Government","location":"","logoUrl":"https://cdn.filestackcontent.com/1WUJp1xDTNOfExJF8zbl","type":"basic","posted_date":"2023-06-14","applicationLink":"https://www.washingtoncountyar.gov/Home/Components/JobPosts/Job/4197/25","logo":null,"published_at":"2023-06-16T11:26:56.919Z","description":"Washington County Government Testing"}},"pageContext":{"slug":"testing-washington-county-government"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

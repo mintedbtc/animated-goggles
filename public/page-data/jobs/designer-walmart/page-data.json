@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/designer-walmart",
+    "result": {"data":{"strapiJob":{"strapiId":3537,"slug":"designer-walmart","title":"Designer","organization":"Walmart","location":"Bentonville, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/AJflfV5aTXjlp1Kzk0iA","type":"basic","posted_date":"2023-04-29","applicationLink":"https://careers.walmart.com/us/jobs/WD1438424-designer","logo":null,"published_at":"2023-06-08T16:12:05.329Z","description":"Walmart Designer"}},"pageContext":{"slug":"designer-walmart"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/financial-analyst-ox",
+    "result": {"data":{"strapiJob":{"strapiId":3479,"slug":"financial-analyst-ox","title":"Financial Analyst","organization":"Ox","location":"Bentonville, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/cbzbTnhSQvKknHLHegrt","type":"basic","posted_date":"2023-04-30","applicationLink":"https://jobs.lever.co/getox/6fea2194-25f0-4757-b8a8-2313c28857c1","logo":null,"published_at":"2023-06-08T16:11:34.506Z","description":"Ox Financial Analyst"}},"pageContext":{"slug":"financial-analyst-ox"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/staff-data-engineer-walmart",
+    "result": {"data":{"strapiJob":{"strapiId":3565,"slug":"staff-data-engineer-walmart","title":"Staff Data Engineer","organization":"Walmart","location":"Bentonville, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/AJflfV5aTXjlp1Kzk0iA","type":"basic","posted_date":"2023-04-29","applicationLink":"https://careers.walmart.com/us/jobs/WD1476151-staff-data-engineer","logo":null,"published_at":"2023-06-08T16:12:16.384Z","description":"Walmart Staff Data Engineer"}},"pageContext":{"slug":"staff-data-engineer-walmart"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}
