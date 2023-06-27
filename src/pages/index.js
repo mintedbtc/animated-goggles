@@ -260,13 +260,9 @@ class IndexPage extends React.Component {
         referring_site: "www.northwestarkansasdaily.com",
       }
   
-    fetch(`https://api.beehiiv.com/v2/publications/pub_2213b531-0bad-4dc4-932c-2bf5fa45f9dd/subscriptions`, {
+    fetch(`https://nwadailybackend.herokuapp.com/subscribe`, {
       method: 'POST',
       body: JSON.stringify(requestBody),
-      headers: {
-        'Content-Type': "application/json",
-        'Authorization': "Bearer vE1PxdBGYnAHN4DKrgnBcTRA6F7zxDIQz2bk2cV9kkBpPOuvHvpooZKBeM4yfgcT"
-      }
     })
       .then(res => {
         if (res.status !== 200 && res.status !== 201) {
