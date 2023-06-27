@@ -251,18 +251,21 @@ class IndexPage extends React.Component {
     const email = this.state.email.toLowerCase()
     const location = this.state.location
     const requestBody = {
+        publication_id: "pub_2213b531-0bad-4dc4-932c-2bf5fa45f9dd",
         email: email,
-        location: location,
-        source: postId,
-        subscribeDate: this.state.date,
-        property: "NWA Daily"
+        utm_source: "website",
+        utm_campaign: "website",
+        utm_medium: "website",
+        channel:location,
+        referring_site: "www.northwestarkansasdaily.com",
       }
   
-    fetch(`https://nwadailybackend.herokuapp.com/signup`, {
+    fetch(`https://api.beehiiv.com/v2/publications/pub_2213b531-0bad-4dc4-932c-2bf5fa45f9dd/subscriptions`, {
       method: 'POST',
       body: JSON.stringify(requestBody),
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': "application/json",
+        'Authorization': "Bearer vE1PxdBGYnAHN4DKrgnBcTRA6F7zxDIQz2bk2cV9kkBpPOuvHvpooZKBeM4yfgcT"
       }
     })
       .then(res => {
