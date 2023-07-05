@@ -293,7 +293,7 @@ class AdvertisePage extends React.Component {
               (
                 <div style={{paddingBottom:"50px",marginBottom:"0px"}} className="uk-section uk-section-muted uk-section-large">
                 <h2 className="uk-title uk-text-center">Advertise with us</h2>
-                <h3 className="uk-text-center" style={{color:"#666",marginLeft:"auto",marginRight:"auto",width:"93%"}}>{`Get in front of ${this.state.emails.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} Northwest Arkansans. Select any or all of these options to indicate your interest, submit your email, and we'll get right back to you`}</h3>
+                <h3 className="uk-text-center" style={{color:"#666",marginLeft:"auto",marginRight:"auto",width:"93%"}}>{`Get in front of ${this.state.emails.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} Northwest Arkansans. You can review the different options below to see the spots we offer. In the meantime, we've sent you an email to introduce ourselves.`}</h3>
                 <form class="uk-form" style={{marginLeft:"auto",marginRight:"auto",width:"93%"}}>
                       
                         <div class="test">
@@ -429,7 +429,7 @@ class AdvertisePage extends React.Component {
               (
                 <div style={{paddingBottom:"50px",marginBottom:"0px"}} className="uk-section uk-section-muted uk-section-large">
       <h2 className="uk-title uk-text-center">Advertise with us</h2>
-      <h3 className="uk-text-center" style={{color:"#666",marginLeft:"auto",marginRight:"auto",width:"70%"}}>{`Get in front of ${this.state.emails.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} Northwest Arkansans. Select any or all of these options to indicate your interest, submit your email, and we'll get right back to you`}</h3>
+      <h3 className="uk-text-center" style={{color:"#666",marginLeft:"auto",marginRight:"auto",width:"70%"}}>{`Get in front of ${this.state.emails.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")} Northwest Arkansans. You can review the different options below to see the spots we offer. In the meantime, we've sent you an email to introduce ourselves.`}</h3>
       
       <form class="uk-form" style={{marginLeft:"auto",marginRight:"auto",width:"50%"}}>
             
