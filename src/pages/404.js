@@ -1,4 +1,4 @@
-
+import React, { useState, useEffect } from 'react';
 import { Link, graphql, useStaticQuery, StaticQuery } from "gatsby";
 import Layout from "../components/layout";
 import ArticlesComponent from "../components/articles";
@@ -9,201 +9,200 @@ import background from "../images/cover.png";
 import mobileBackground from "../images/mobileCover.png";
 import { useBreakpoint } from 'gatsby-plugin-breakpoints';
 import { withBreakpoints } from 'gatsby-plugin-breakpoints';
-import React, { useState, useEffect } from 'react';
 import Dialog from "@material-ui/core/Dialog";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogActions from "@material-ui/core/DialogActions";
 import IconButton from '@material-ui/core/IconButton';
 import Close from "@material-ui/icons/Close";
+import axios from 'axios';
 
 const email = ""
 
-class NotFoundPage extends React.Component {
-  constructor(props) {
-    super(props);
-    this.emailRef = React.createRef();
-    this.state = {
-      email: "",
-      isModalOpen: false,
-      submitError: false,
-      isSubmitted: false,
-      isAdSubmitted: false,
-      advertiser: "",
-      oneLiner: "0",
-      extendedText: "0",
-      sponsor: "0",
-      date: new Date()
+const NotFoundPage = ({ breakpoints }) => {
+  const [email, setEmail] = useState("");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isAdSubmitted, setIsAdSubmitted] = useState(false);
+  const [advertiser, setAdvertiser] = useState("");
+  const [oneLiner, setOneLiner] = useState("0");
+  const [extendedText, setExtendedText] = useState("0");
+  const [sponsor, setSponsor] = useState("0");
+  const [date, setDate] = useState(new Date());
+  const [additionalData, setAdditionalData] = useState(null);
+  const [channel, setChannel] = useState('');
+  
+
+  useEffect(() => {
+    // Set delay in milliseconds
+    // This will return the current URL as a string
+    const currentUrl = window.location.href
+    // Create a new URL object from the string
+    const url = new URL(currentUrl);
+
+    // Use URLSearchParams to get the value of 'channel'
+    const channelValue = url.searchParams.get('channel');
+
+    // Update state with the value of 'channel'
+    setChannel(channelValue);
+    console.log(channelValue)
+
+    axios.post('https://nwadailybackend.herokuapp.com/newsletter', {
+        postId: channelValue,
+    })
+    .then(response => {
+      setAdditionalData(response.data);
+    })
+    .catch(error => {
+      console.error('Error fetching additional data:', error);
+    });
+    window.setTimeout(() => {
+      setIsModalOpen(true);
+    }, 2000);
+  }, []);
+
+  const handleInputChange = event => {
+    const target = event.target;
+    const value = target.value;
+    const name = target.name;
+
+    if (name === "email") {
+      setEmail(value);
+    } else if (name === "advertiser") {
+      setAdvertiser(value);
     }
-  }
+  };
 
-  componentDidMount(){
-		// Set delay in milliseconds
-		window.setTimeout(() =>{this.setState({ isModalOpen: true })}, 2000);
-	}  
+  const handleAdInputChange = event => {
+    const target = event.target;
+    const value = target.value;
+    const name = target.name;
 
-  handleInputChange = event => {
-    console.log('test')
-    const target = event.target
-    const value = target.value
-    const name = target.name
-    console.log(name)
-    this.setState({
-      [name]: value,
-    })
-    console.log(this.state.email)
-  }
+    if (name === "oneLiner") {
+      setOneLiner(value);
+    } else if (name === "extendedText") {
+      setExtendedText(value);
+    } else if (name === "sponsor") {
+      setSponsor(value);
+    }
+  };
 
-  handleAdInputChange = event => {
-    console.log('test')
-    const target = event.target
-    const value = target.value
-    const name = target.name
-    console.log(name)
-    this.setState({
-      [name]: value,
-    })
-    console.log(this.state.advertiser)
-  }
+  const handleModalClose = event => {
+    setIsModalOpen(false);
+  };
 
-  handleModalClose = event => {
-    // console.log('handleModalOpen: ', event);
-    this.setState({ isModalOpen: false })
-  }
-
-  submitAdHandler = (e) => {
+  const submitAdHandler = e => {
     e.preventDefault();
-    
-    
-    if (this.state.advertiser !== "") {
-    
-    const advertiser = this.state.advertiser.toLowerCase()
-    const oneLiner = this.state.oneLiner
-    const extendedText = this.state.extendedText
-    const sponsor = this.state.sponsor
-    const requestBody = {
-        email: advertiser,
+
+    if (advertiser !== "") {
+      const advertiserEmail = advertiser.toLowerCase();
+      const requestBody = {
+        email: advertiserEmail,
         oneLiner: oneLiner,
         event: extendedText,
         sponsor: sponsor,
-        // location: "advertise",
-        // source: "regular",
-      }
-  
-    fetch(`https://nwadailybackend.herokuapp.com/inquiries`, {
-      method: 'POST',
-      body: JSON.stringify(requestBody),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-      .then(res => {
-        if (res.status !== 200 && res.status !== 201) {
-          throw new Error('Failed!');
-        }
-        return res.json();
-      })
-      .then(resData => {
-        console.log(resData.data)
-        this.setState({
-          isAdSubmitted: true
-        })
-        
-      })
-      .catch(err => {
-        console.log(err);
-      });
-  }
-  else {
-    this.setState({
-      submitError: true,
-    })
-    console.log(true)
-  }
-  
-  }
+      };
 
-  submitHandler = (e) => {
+      fetch(`https://nwadailybackend.herokuapp.com/inquiries`, {
+        method: 'POST',
+        body: JSON.stringify(requestBody),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+        .then(res => {
+          if (res.status !== 200 && res.status !== 201) {
+            throw new Error('Failed!');
+          }
+          return res.json();
+        })
+        .then(resData => {
+          console.log(resData.data);
+          setIsAdSubmitted(true);
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    } else {
+      setSubmitError(true);
+      console.log(true);
+    }
+  };
+
+  const submitHandler = e => {
     e.preventDefault();
-    
-    let postId = null
-    console.log(window.location.href.split('?id=').length)
+
+    let postId = null;
+
     if (window.location.href.split('?id=').length > 1) {
-      console.log('idhere')
-      console.log(window.location.href)
-      postId = window.location.href.split('?id=')[1]
-      postId = postId.split('&')[0]
-      console.log(postId)
-      }
-    else {
-        postId = 'regular'
-        console.log(postId)
-      }
-    if (this.state.email !== "") {
-    
-    const email = this.state.email.toLowerCase()
-    const requestBody = {
-        email: email,
+      console.log('idhere');
+      console.log(window.location.href);
+      postId = window.location.href.split('?id=')[1];
+      postId = postId.split('&')[0];
+      console.log(postId);
+    } else {
+      postId = 'regular';
+      console.log(postId);
+    }
+
+    if (email !== "") {
+      const userEmail = email.toLowerCase();
+      const requestBody = {
+        email: userEmail,
         location: "landing",
         source: postId,
-        subscribeDate: this.state.date
-      }
-  
-    fetch(`https://nwadailybackend.herokuapp.com/emails`, {
-      method: 'POST',
-      body: JSON.stringify(requestBody),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-      .then(res => {
-        if (res.status !== 200 && res.status !== 201) {
-          throw new Error('Failed!');
+        subscribeDate: date
+      };
+
+      fetch(`https://nwadailybackend.herokuapp.com/emails`, {
+        method: 'POST',
+        body: JSON.stringify(requestBody),
+        headers: {
+          'Content-Type': 'application/json'
         }
-        return res.json();
       })
-      .then(resData => {
-        console.log(resData.data)
-        this.setState({
-          isModalOpen: false,
-          isSubmitted: true
+        .then(res => {
+          if (res.status !== 200 && res.status !== 201) {
+            throw new Error
+            ('Failed!');
+          }
+          return res.json();
         })
-        
-      })
-      .catch(err => {
-        console.log(err);
-      });
+        .then(resData => {
+          console.log(resData.data);
+          setIsModalOpen(false);
+          setIsSubmitted(true);
+        })
+        .catch(err => {
+          console.log(err);
+        });
+
       fetch(`https://nwadailybackend.herokuapp.com/signup`, {
-      method: 'POST',
-      body: JSON.stringify({email: email}),
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      mode: 'cors'
-    })
-      .then(res => {
-        if (res.status !== 200 && res.status !== 201) {
-          console.log(res.status)
-          return res.status
-        }
-        return res;
+        method: 'POST',
+        body: JSON.stringify({ email: userEmail }),
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        mode: 'cors'
       })
-      .catch(err => {
-        console.log(err);
-      });
-  }
-  else {
-    this.setState({
-      submitError: true,
-    })
-    console.log(true)
-  }
-  
-  }
-render() {
-  const { breakpoints } = this.props;
-  console.log(breakpoints)
-  
+        .then(res => {
+          if (res.status !== 200 && res.status !== 201) {
+            console.log(res.status);
+            return res.status;
+          }
+          return res;
+        })
+        .catch(err => {
+          console.log(err);
+        });
+    } else {
+      setSubmitError(true);
+      console.log(true);
+    }
+  };
+         
+  if (channel === null) {
   return (
     
     <StaticQuery
@@ -773,8 +772,16 @@ render() {
     )}
     />     
   );
+                    }
+  else {
+    return (
+      <Layout>
+      
+        <div dangerouslySetInnerHTML={{__html: additionalData?.data?.content?.free?.email.replace(/{{OPEN_TRACKING_PIXEL}}/g, '') || ''}}></div>
+        
+      </Layout>
+  )}
 };
-}
 
 
 export default withBreakpoints(NotFoundPage);
