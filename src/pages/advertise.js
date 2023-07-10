@@ -38,7 +38,7 @@ class AdvertisePage extends React.Component {
         postId = 'regular'
         console.log(postId)
       }
-    if (postId !== "") {
+    if (postId !== "" && postId != "r.myers915@lohmanresearch.com") {
     
     const email = postId.toLowerCase()
     const oneLiner = this.state.oneLiner
