@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-event-js",
+    "path": "/events-in-northwest-arkansas/gulley-park-concert-series-2",
+    "result": {"data":{"strapiEvent":{"strapiId":379,"slug":"gulley-park-concert-series-2","name":"Gulley Park Concert Series","organization":"City of Fayetteville","location":"Fayetteville","type":"Music ","date":"2023-07-14","eventLink":"https://www.fayetteville-ar.gov/515/Gulley-Park-Summer-Concert-Series?utm_source=NWA_Daily","photo":null,"published_at":"2023-07-05T10:43:12.113Z","description":"<p><span style=\"color: rgb(45, 45, 45);\">The&nbsp;</span><a href=\"https://www.fayetteville-ar.gov/515/Gulley-Park-Summer-Concert-Series?utm_source=NWA_Daily\" rel=\"noopener noreferrer\" target=\"_blank\" style=\"color: rgb(34, 87, 73); background-color: rgb(255, 255, 255);\"><strong>Gulley Park Concert Series</strong></a><span style=\"color: rgb(45, 45, 45);\">&nbsp;continues this week with Ashtyn Barbaree on Thursday, Jul 13, from 7-9p.</span></p>"}},"pageContext":{"slug":"gulley-park-concert-series-2"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

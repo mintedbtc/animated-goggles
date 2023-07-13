@@ -25,123 +25,6 @@ class AdvertisePage extends React.Component {
   componentDidMount = () => {
 		// Set delay in milliseconds
 		window.setTimeout(() =>{this.setState({ isModalOpen: true })}, 2000);
-    let postId = null
-    console.log(window.location.href.split('?id=').length)
-    if (window.location.href.split('?id=').length > 1) {
-      console.log('idhere')
-      console.log(window.location.href)
-      postId = window.location.href.split('?id=')[1]
-      postId = postId.split('&email=')[1]
-      console.log(postId)
-      }
-    else {
-        postId = 'regular'
-        console.log(postId)
-      }
-    if (postId !== "" && postId != "r.myers915@lohmanresearch.com") {
-    
-    const email = postId.toLowerCase()
-    const oneLiner = this.state.oneLiner
-    const extendedText = this.state.extendedText
-    const sponsor = this.state.sponsor
-    const requestBody = {
-        email: email,
-        oneLiner: oneLiner,
-        event: extendedText,
-        sponsor: sponsor,
-        property: "NWA Daily"
-        // location: "advertise",
-        // source: "regular",
-      }
-  
-    fetch(`https://nwadailybackend.herokuapp.com/inquiries`, {
-      method: 'POST',
-      body: JSON.stringify(requestBody),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-      .then(res => {
-        if (res.status !== 200 && res.status !== 201) {
-          throw new Error('Failed!');
-        }
-        return res.json();
-      })
-      .then(resData => {
-        console.log(resData.data)
-        this.setState({
-          isModalOpen: false,
-          isSubmitted: true
-        })
-        
-      })
-      .catch(err => {
-        console.log(err);
-      });
-    //   fetch(`https://boiling-lake-07785.herokuapp.com/https://nwadaily-emailer.herokuapp.com/signup/`, {
-    //   method: 'POST',
-    //   body: JSON.stringify({email: email}),
-    //   headers: {
-    //     'Access-Control-Allow-Origin':'http://localhost:8000/',
-    //     'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
-    //     'Content-Type': 'application/json'
-    //   },
-    //   mode: 'cors'
-    // })
-    //   .then(res => {
-    //     if (res.status !== 200 && res.status !== 201) {
-    //       console.log(res.status)
-    //       return res.status
-    //     }
-    //     return res;
-    //   })
-    //   .catch(err => {
-    //     console.log(err);
-    //   });
-    fetch(`https://nwadailybackend.herokuapp.com/advertiser`, {
-      method: 'POST',
-      body: JSON.stringify({email: email}),
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      mode: 'cors'
-    })
-      .then(res => {
-        if (res.status !== 200 && res.status !== 201) {
-          console.log(res.status)
-          return res.status
-        }
-        return res;
-      })
-      .catch(err => {
-        console.log(err);
-      });
-  }
-  else {
-    this.setState({
-      submitError: true,
-    })
-    console.log(true)
-  }
-    fetch(`https://nwadailybackend.herokuapp.com/emails/count`, {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json'
-        }
-      })
-        .then(res => {
-          if (res.status !== 200 && res.status !== 201) {
-            throw new Error('Failed!');
-          }
-          return res.json();
-        })
-        .then(resData => {
-          console.log(resData)
-          this.setState({ emails: resData })
-        })
-        .catch(err => {
-          console.log(err);
-        });
 
 	}  
 
@@ -341,7 +224,7 @@ class AdvertisePage extends React.Component {
                     <div className="uk-text-center">
                     <img src="https://nwa-daily-photos.s3.amazonaws.com/sponsor_3905f62571.png" width="67%" height="67%" style={{marginBottom:"5%",textAlign:"center"}} alt="Bulletin Ad" />
                     </div>
-                    {/* {this.state.sponsor === "0" ? 
+                    {this.state.sponsor === "0" ? 
                     (
                     <button 
                       style={{width:"35%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
@@ -358,7 +241,7 @@ class AdvertisePage extends React.Component {
                         this.setState({ sponsor: "0" })
                       }}
                     >Selected</button>
-                    )} */}
+                    )}
                 </div>
 
             </div>
@@ -370,7 +253,7 @@ class AdvertisePage extends React.Component {
                     <div className="uk-text-center">
                     <img src="https://nwa-daily-photos.s3.amazonaws.com/extened_Text_decd614915.png" width="67%" height="67%" style={{marginBottom:"5%",textAlign:"center"}} alt="Bulletin Ad" />
                     </div>
-                    {/* {this.state.extendedText === "0" ? 
+                    {this.state.extendedText === "0" ? 
                     (
                     <button 
                       style={{width:"35%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
@@ -387,7 +270,7 @@ class AdvertisePage extends React.Component {
                         this.setState({ extendedText: "0" })
                       }}
                     >Selected</button>
-                    )} */}
+                    )}
                 </div>
 
             </div>
@@ -399,7 +282,7 @@ class AdvertisePage extends React.Component {
                     <div className="uk-text-center">
                     <img src="https://nwa-daily-photos.s3.amazonaws.com/bulletin_0a3e0d74e3.png" width="67%" height="67%" style={{marginBottom:"5%",textAlign:"center"}} alt="Bulletin Ad" />
                     </div>
-                    {/* {this.state.oneLiner === "0" ? 
+                    {this.state.oneLiner === "0" ? 
                     (
                     <button 
                       style={{width:"35%",backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} 
@@ -418,7 +301,7 @@ class AdvertisePage extends React.Component {
                         this.setState({ oneLiner: "0" })
                       }}
                       >Selected</button>
-                    )} */}
+                    )}
                 </div>
 
             </div>
@@ -451,11 +334,11 @@ class AdvertisePage extends React.Component {
                   this.setState({email:e.target.value})
               }}
               />
-            {/* <button 
+            <button 
               style={{backgroundColor:"#307765",opacity:1,color:"white"}} 
               className="uk-button uk-button-default"
               onClick={this.submitHandler}
-              >Submit</button> */}
+              >Submit</button>
               </div>
                 )
                 :
@@ -477,7 +360,7 @@ class AdvertisePage extends React.Component {
                     <div className="uk-text-center">
                     <img src="https://nwa-daily-photos.s3.amazonaws.com/sponsor_3905f62571.png" width="67%" height="67%" style={{marginBottom:"5%",textAlign:"center"}} alt="Bulletin Ad" />
                     </div>
-                    {/* {this.state.sponsor === "0" ? 
+                    {this.state.sponsor === "0" ? 
                     (
                     <button style={{backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} className="uk-button uk-button-default uk-position-bottom-center"
                       onClick={e => {
@@ -492,7 +375,7 @@ class AdvertisePage extends React.Component {
                         this.setState({ sponsor: "0" })
                       }}
                     >Selected</button>
-                    )} */}
+                    )}
                 </div>
 
             </div>
@@ -504,7 +387,7 @@ class AdvertisePage extends React.Component {
                     <div className="uk-text-center">
                     <img src="https://nwa-daily-photos.s3.amazonaws.com/extened_Text_decd614915.png" width="67%" height="67%" style={{marginBottom:"5%",textAlign:"center"}} alt="Bulletin Ad" />
                     </div>
-                    {/* {this.state.extendedText === "0" ? 
+                    {this.state.extendedText === "0" ? 
                     (
                     <button style={{backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} className="uk-button uk-button-default uk-position-bottom-center"
                     onClick={e => {
@@ -519,7 +402,7 @@ class AdvertisePage extends React.Component {
                         this.setState({ extendedText: "0" })
                       }}
                     >Selected</button>
-                    )} */}
+                    )}
                 </div>
 
             </div>
@@ -531,7 +414,7 @@ class AdvertisePage extends React.Component {
                     <div className="uk-text-center">
                     <img src="https://nwa-daily-photos.s3.amazonaws.com/bulletin_0a3e0d74e3.png" width="67%" height="67%" style={{marginBottom:"5%",textAlign:"center"}} alt="Bulletin Ad" />
                     </div>
-                    {/* {this.state.oneLiner === "0" ? 
+                    {this.state.oneLiner === "0" ? 
                     (
                     <button style={{backgroundColor:"#307765",opacity:1,color:"white",marginBottom:"10px"}} className="uk-button uk-button-default uk-position-bottom-center"
                     onClick={e => {
@@ -546,7 +429,7 @@ class AdvertisePage extends React.Component {
                         this.setState({ oneLiner: "0" })
                       }}
                     >Selected</button>
-                    )} */}
+                    )}
                 </div>
 
             </div>
