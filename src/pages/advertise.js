@@ -25,7 +25,23 @@ class AdvertisePage extends React.Component {
   componentDidMount = () => {
 		// Set delay in milliseconds
 		window.setTimeout(() =>{this.setState({ isModalOpen: true })}, 2000);
-
+    let postId = null
+    console.log(window.location.href.split('?id=').length)
+    if (window.location.href.split('?id=').length > 1) {
+      console.log('idhere')
+      console.log(window.location.href)
+      postId = window.location.href.split('?id=')[1]
+      postId = postId.split('&email=')[1]
+      console.log(postId)
+      this.setState({
+        email: postId,
+      })
+      }
+    else {
+        postId = 'regular'
+        console.log(postId)
+      }
+    
 	}  
 
   handleInputChange = event => {
