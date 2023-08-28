@@ -238,7 +238,7 @@ class AdvertisePage extends React.Component {
 
                 <div className="uk-card uk-card-default uk-card-hover uk-card-body" id="ad-card-sponsor">
                     <h3 className="uk-card-title uk-text-center" id="sponsor-title">Title Sponsor</h3>
-                    <p>Best for building brand awareness as it’s the first thing readers see when they open the email.</p>
+                    <p>This is the best spot for building brand awareness.</p>
                     <div className="uk-text-center">
                     <img src="https://nwa-daily-photos.s3.amazonaws.com/sponsor_3905f62571.png" width="67%" height="67%" style={{marginBottom:"5%",textAlign:"center"}} alt="Bulletin Ad" />
                     </div>
@@ -376,7 +376,7 @@ class AdvertisePage extends React.Component {
 
                 <div className="uk-card uk-card-default uk-card-hover uk-card-body" id="ad-card-sponsor">
                     <h3 className="uk-card-title uk-text-center" id="sponsor-title">Title Sponsor</h3>
-                    <p>Best for building brand awareness as it’s the first thing readers see when they open the email.</p>
+                    <p>This is the best spot for building brand awareness.</p>
                     <div className="uk-text-center">
                     <img src="https://nwa-daily-photos.s3.amazonaws.com/sponsor_3905f62571.png" width="67%" height="67%" style={{marginBottom:"5%",textAlign:"center"}} alt="Bulletin Ad" />
                     </div>
