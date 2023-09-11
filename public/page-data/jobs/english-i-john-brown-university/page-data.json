@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-job-js",
+    "path": "/jobs/english-i-john-brown-university",
+    "result": {"data":{"strapiJob":{"strapiId":3742,"slug":"english-i-john-brown-university","title":"English I","organization":"John Brown University","location":"Siloam Springs, AR, USA","logoUrl":"https://cdn.filepicker.io/api/file/SA7v8OUZQ7ebjA7FWFRq","type":"basic","posted_date":"2023-08-03","applicationLink":"https://www.jbu.edu/human-resources/faculty-job-listings/english-one-adjunct/?hsLang=en","logo":null,"published_at":"2023-08-06T20:39:56.876Z","description":"John Brown University English I"}},"pageContext":{"slug":"english-i-john-brown-university"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}

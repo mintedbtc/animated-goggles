@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-event-js",
+    "path": "/events-in-northwest-arkansas/fayetteville-feather-fest",
+    "result": {"data":{"strapiEvent":{"strapiId":439,"slug":"fayetteville-feather-fest","name":"Fayetteville Feather Fest Wing Eating Competition ","organization":"Central BBQ","location":"Fayetteville ","type":"Event","date":"2023-07-30","eventLink":"https://eatcbq.com/pages/register","photo":null,"published_at":"2023-07-13T19:33:49.124Z","description":"<p>🐓 <strong>I believe I can fly</strong>: Central BBQ will host the first ever <a href=\"https://eatcbq.com/pages/register\" rel=\"noopener noreferrer\" target=\"_blank\">Fayetteville Feather Fest</a> wing eating competition on Saturday, Jul 29, from 12-2p. You ready to fly?&nbsp;</p>"}},"pageContext":{"slug":"fayetteville-feather-fest"}},
+    "staticQueryHashes": ["161018792","3055651617","557794130"]}
