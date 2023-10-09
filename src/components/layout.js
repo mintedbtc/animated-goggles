@@ -26,8 +26,7 @@ const Layout = ({ children, seo }) => (
         <Seo seo={seo} />
         <Helmet>
         <script async src="https://js.sparkloop.app/team_3438fa0f43.js" data-sparkloop></script>
-        <script>(function(w,i,d,g,e,t){w["WidgetTrackerObject"]=g;(w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments);}),(w[g].ds=1*new Date());(e="script"),(t=d.createElement(e)),(e=d.getElementsByTagName(e)[0]);t.async=1;t.src=i;e.parentNode.insertBefore(t,e);})(window,"https://widgetbe.com/agent",document,"widgetTracker");window.widgetTracker("create", "WT-GZHGEDIV");window.widgetTracker("send", "pageview");
-        </script>
+        {/* <script>(function(w,i,d,g,e,t){w["WidgetTrackerObject"]=g;(w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments);}),(w[g].ds=1*new Date());(e="script"),(t=d.createElement(e)),(e=d.getElementsByTagName(e)[0]);t.async=1;t.src=i;e.parentNode.insertBefore(t,e);})(window,"https://widgetbe.com/agent",document,"widgetTracker");window.widgetTracker("create", "WT-GZHGEDIV");window.widgetTracker("send", "pageview");</script> */}
         </Helmet>
         <Nav />
         <main>{children}</main>
