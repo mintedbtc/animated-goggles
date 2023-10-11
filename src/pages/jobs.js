@@ -274,7 +274,7 @@ render() {
 
 {/* const JobsPage = () => {
   const data = useStaticQuery(query);
-  const breakpoints = useBreakpoint()
+  
   
   const seo = {
     metaTitle: "NWA Daily Job Board",
