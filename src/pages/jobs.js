@@ -264,7 +264,13 @@ render() {
                               }
                               `}
                               render={data => (
-                                <Layout seo={data.strapiHomepage.seo}>
+                                <Layout seo={
+                                  {
+                                      metaTitle: "NWA Daily Job Board",
+                                      metaDescription: "Find cool jobs in Northwest Arkansas from small businesses, startups, and corporations in Bentonville, Fayetteville, Springdale, Rogers, and more",
+                                      shareImage: data.strapiHomepage.seo.shareImage
+                                    }
+                                }>
 
 {/* const JobsPage = () => {
   const data = useStaticQuery(query);
