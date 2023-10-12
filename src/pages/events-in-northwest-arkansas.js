@@ -244,8 +244,8 @@ render() {
                               render={data => (
                                 <Layout seo={
                                   {
-                                      metaTitle: "NWA Daily Job Board",
-                                      metaDescription: "Find cool jobs in Northwest Arkansas from small businesses, startups, and corporations in Bentonville, Fayetteville, Springdale, Rogers, and more",
+                                      metaTitle: "NWA Daily Event Calendar",
+                                      metaDescription: "Keep up with fun events in Northwest Arkansas from festivals to restaurant openings to outdoors events and more in Bentonville, Fayetteville, Springdale, Rogers, and more",
                                       shareImage: data.strapiHomepage.seo.shareImage
                                     }
                                 }>
