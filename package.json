@@ -4,7 +4,7 @@
   "description": "NWA Daily is a free email newsletter that keeps subscribers up to date on all the latest happenings and news in Northwest Arkansas. NWA Daily curates and summarizes events, sports, politics, local government, business, arts and culture, and restaurant news and delivers it straight to subscribers' email inboxes daily",
   "version": "0.1.0",
   "proxy": "https://api.beehiiv.com/v2/publications/pub_2213b531-0bad-4dc4-932c-2bf5fa45f9dd/",
-  "engines": { "node": "18.x" },
+  "engines": { "node": "20.x" },
   "author": "Daniel Fritsche",
   "dependencies": {
     "@material-ui/core": "^4.11.3",
