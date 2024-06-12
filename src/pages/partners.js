@@ -242,13 +242,7 @@ render() {
                               }
                               `}
                               render={data => (
-                                <Layout seo={
-                                {
-                                  metaTitle: "NWA Daily Sponsors",
-                                  metaDescription: "Become a sponsor of NWA Daily",
-                                  shareImage: data.strapiHomepage.seo.shareImage
-                                }
-                              }>
+                                <Layout seo={data.strapiHomepage.seo}>
 
 {/* const EventsPage = () => {
   const data = useStaticQuery(query);
